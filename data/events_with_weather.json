@@ -12,72 +12,56 @@
           {
             "time": "11:00 AM",
             "temperature": 68.4,
-            "temperature_unit": "FAHRENHEIT",
             "feels_like": 75.9,
-            "feels_like_unit": "FAHRENHEIT",
             "condition": "Partly sunny",
             "precipitation_type": "RAIN",
             "precipitation_prob": 5,
             "wind_speed": 6.2,
-            "wind_speed_unit": "MPH",
             "wind_speed_direction": "NORTHEAST"
           },
           {
             "time": "12:00 PM",
             "temperature": 71.6,
-            "temperature_unit": "FAHRENHEIT",
             "feels_like": 75.9,
-            "feels_like_unit": "FAHRENHEIT",
             "condition": "Mostly cloudy",
             "precipitation_type": "RAIN",
             "precipitation_prob": 10,
             "wind_speed": 5.0,
-            "wind_speed_unit": "MPH",
             "wind_speed_direction": "NORTHEAST"
           },
           {
             "time": "01:00 PM",
             "temperature": 73.6,
-            "temperature_unit": "FAHRENHEIT",
             "feels_like": 76.3,
-            "feels_like_unit": "FAHRENHEIT",
             "condition": "Mostly cloudy",
             "precipitation_type": "RAIN",
             "precipitation_prob": 10,
             "wind_speed": 3.1,
-            "wind_speed_unit": "MPH",
             "wind_speed_direction": "NORTHEAST"
           },
           {
             "time": "02:00 PM",
             "temperature": 74.7,
-            "temperature_unit": "FAHRENHEIT",
             "feels_like": 76.6,
-            "feels_like_unit": "FAHRENHEIT",
             "condition": "Mostly cloudy",
             "precipitation_type": "RAIN",
             "precipitation_prob": 10,
             "wind_speed": 5.0,
-            "wind_speed_unit": "MPH",
             "wind_speed_direction": "NORTHEAST"
           },
           {
             "time": "03:00 PM",
             "temperature": 75.6,
-            "temperature_unit": "FAHRENHEIT",
             "feels_like": 77.0,
-            "feels_like_unit": "FAHRENHEIT",
             "condition": "Mostly cloudy",
             "precipitation_type": "RAIN",
             "precipitation_prob": 10,
             "wind_speed": 5.0,
-            "wind_speed_unit": "MPH",
             "wind_speed_direction": "NORTH_NORTHEAST"
           }
         ],
         "daily_high": 75.6,
-        "daily_low": 52.9,
-        "temperature_unit": "FAHRENHEIT"
+        "daily_low": 52.9
       }
     },
     {
@@ -92,72 +76,56 @@
           {
             "time": "01:00 PM",
             "temperature": 70.2,
-            "temperature_unit": "FAHRENHEIT",
             "feels_like": 75.9,
-            "feels_like_unit": "FAHRENHEIT",
             "condition": "Partly sunny",
             "precipitation_type": "RAIN",
             "precipitation_prob": 0,
             "wind_speed": 3.7,
-            "wind_speed_unit": "MPH",
             "wind_speed_direction": "SOUTHEAST"
           },
           {
             "time": "02:00 PM",
             "temperature": 72.0,
-            "temperature_unit": "FAHRENHEIT",
             "feels_like": 76.3,
-            "feels_like_unit": "FAHRENHEIT",
             "condition": "Partly sunny",
             "precipitation_type": "RAIN",
             "precipitation_prob": 0,
             "wind_speed": 3.7,
-            "wind_speed_unit": "MPH",
             "wind_speed_direction": "SOUTHEAST"
           },
           {
             "time": "03:00 PM",
             "temperature": 72.9,
-            "temperature_unit": "FAHRENHEIT",
             "feels_like": 76.5,
-            "feels_like_unit": "FAHRENHEIT",
             "condition": "Partly sunny",
             "precipitation_type": "RAIN",
             "precipitation_prob": 0,
             "wind_speed": 5.0,
-            "wind_speed_unit": "MPH",
             "wind_speed_direction": "SOUTH"
           },
           {
             "time": "04:00 PM",
             "temperature": 73.9,
-            "temperature_unit": "FAHRENHEIT",
             "feels_like": 76.8,
-            "feels_like_unit": "FAHRENHEIT",
             "condition": "Partly sunny",
             "precipitation_type": "RAIN",
             "precipitation_prob": 0,
             "wind_speed": 6.8,
-            "wind_speed_unit": "MPH",
             "wind_speed_direction": "SOUTH_SOUTHWEST"
           },
           {
             "time": "05:00 PM",
             "temperature": 73.9,
-            "temperature_unit": "FAHRENHEIT",
             "feels_like": 76.8,
-            "feels_like_unit": "FAHRENHEIT",
             "condition": "Partly sunny",
             "precipitation_type": "RAIN",
             "precipitation_prob": 5,
             "wind_speed": 8.1,
-            "wind_speed_unit": "MPH",
             "wind_speed_direction": "SOUTHWEST"
           }
         ],
         "daily_high": 73.9,
-        "daily_low": 53.2,
-        "temperature_unit": "FAHRENHEIT"
+        "daily_low": 53.2
       }
     }
   ]

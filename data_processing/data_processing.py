@@ -145,16 +145,13 @@ def get_weather_for_event(event: str):
                 weather_info = {
                     'time': forecast_dt.strftime('%I:%M %p'),
                     'temperature': temp_fahrenheit,
-                    'temperature_unit': 'FAHRENHEIT',
                     'feels_like': feels_like_fahrenheit,
-                    'feels_like_unit': 'FAHRENHEIT',
                     'condition': forecast_hour.get('weatherCondition', {}).get('description', {}).get('text', 'N/A'),
                     'precipitation_type': forecast_hour.get('precipitation', {}).get('probability', {}).get('type',
                                                                                                             'N/A'),
                     'precipitation_prob': forecast_hour.get('precipitation', {}).get('probability', {}).get('percent',
                                                                                                             'N/A'),
                     'wind_speed': wind_speed_mph,
-                    'wind_speed_unit': 'MPH',
                     'wind_speed_direction': forecast_hour.get('wind', {}).get('direction', {}).get('cardinal', 'N/A')
                 }
                 relevant_forecasts.append(weather_info)
@@ -163,8 +160,7 @@ def get_weather_for_event(event: str):
         return {
             'hourly_forecast': relevant_forecasts[:5],  # Limit to 5 hours
             'daily_high': daily_temps['high'],
-            'daily_low': daily_temps['low'],
-            'temperature_unit': daily_temps['unit']
+            'daily_low': daily_temps['low']
         }
 
     except Exception as e:
@@ -203,23 +199,20 @@ def get_daily_temperatures(forecast_data, event_date):
         if daily_temperatures:
             return {
                 'high': max(daily_temperatures),
-                'low': min(daily_temperatures),
-                'unit': 'FAHRENHEIT'
+                'low': min(daily_temperatures)
             }
         else:
             # No temperature data found for the date
             return {
                 'high': 'N/A',
-                'low': 'N/A',
-                'unit': 'FAHRENHEIT'
+                'low': 'N/A'
             }
 
     except Exception as e:
         logger.error(f"Error extracting daily temperatures: {e}")
         return {
             'high': 'N/A',
-            'low': 'N/A',
-            'unit': 'FAHRENHEIT'
+            'low': 'N/A'
         }
 
 

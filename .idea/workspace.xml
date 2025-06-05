@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8728e6ee-2c7b-49d8-b137-3740f36197ac" name="Changes" comment="convert units">
+    <list default="true" id="8728e6ee-2c7b-49d8-b137-3740f36197ac" name="Changes" comment="add 5th hour">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/events_with_weather.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/events_with_weather.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_processing/data_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_processing/data_processing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log_file.log" beforeDir="false" afterPath="$PROJECT_DIR$/log_file.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +42,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.main.executor": "Run",
+    "Python.main.executor": "Debug",
     "Python.weather_gui.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -127,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749150097082</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add 5th hour">
+      <option name="closed" value="true" />
+      <created>1749150241041</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1749150241041</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -135,6 +146,7 @@
     <MESSAGE value="integrate logging" />
     <MESSAGE value="add daily high/low temps" />
     <MESSAGE value="convert units" />
-    <option name="LAST_COMMIT_MESSAGE" value="convert units" />
+    <MESSAGE value="add 5th hour" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 5th hour" />
   </component>
 </project>
