@@ -136,18 +136,11 @@ def get_weather_for_event(event: str):
             # Check if this forecast is within 4 hours of event start
             time_diff = forecast_dt - event_datetime
             if timedelta(hours=-1) <= time_diff <= timedelta(hours=4):
-                # Get original values
-                temp_celsius = forecast_hour.get('temperature', {}).get('degrees', 'N/A')
-                feels_like_celsius = forecast_hour.get('feelsLikeTemperature', {}).get('degrees', 'N/A')
-                wind_speed_kph = forecast_hour.get('wind', {}).get('speed', {}).get('value', 'N/A')
-
-                # Convert temperatures to Fahrenheit
-                temp_fahrenheit = celsius_to_fahrenheit(temp_celsius) if temp_celsius != 'N/A' else 'N/A'
+                # Get original values and convert units
+                temp_fahrenheit = celsius_to_fahrenheit(forecast_hour.get('temperature', {}).get('degrees'))
                 feels_like_fahrenheit = celsius_to_fahrenheit(
-                    feels_like_celsius) if feels_like_celsius != 'N/A' else 'N/A'
-
-                # Convert wind speed to MPH
-                wind_speed_mph = kph_to_mph(wind_speed_kph) if wind_speed_kph != 'N/A' else 'N/A'
+                    forecast_hour.get('feelsLikeTemperature', {}).get('degrees'))
+                wind_speed_mph = kph_to_mph(forecast_hour.get('wind', {}).get('speed', {}).get('value'))
 
                 weather_info = {
                     'time': forecast_dt.strftime('%I:%M %p'),
