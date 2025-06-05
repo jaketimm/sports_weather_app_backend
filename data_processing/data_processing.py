@@ -136,19 +136,32 @@ def get_weather_for_event(event: str):
             # Check if this forecast is within 4 hours of event start
             time_diff = forecast_dt - event_datetime
             if timedelta(hours=-1) <= time_diff <= timedelta(hours=4):
+                # Get original values
+                temp_celsius = forecast_hour.get('temperature', {}).get('degrees', 'N/A')
+                feels_like_celsius = forecast_hour.get('feelsLikeTemperature', {}).get('degrees', 'N/A')
+                wind_speed_kph = forecast_hour.get('wind', {}).get('speed', {}).get('value', 'N/A')
+
+                # Convert temperatures to Fahrenheit
+                temp_fahrenheit = celsius_to_fahrenheit(temp_celsius) if temp_celsius != 'N/A' else 'N/A'
+                feels_like_fahrenheit = celsius_to_fahrenheit(
+                    feels_like_celsius) if feels_like_celsius != 'N/A' else 'N/A'
+
+                # Convert wind speed to MPH
+                wind_speed_mph = kph_to_mph(wind_speed_kph) if wind_speed_kph != 'N/A' else 'N/A'
+
                 weather_info = {
                     'time': forecast_dt.strftime('%I:%M %p'),
-                    'temperature': forecast_hour.get('temperature', {}).get('degrees', 'N/A'),
-                    'temperature_unit': forecast_hour.get('temperature', {}).get('unit', 'CELSIUS'),
-                    'feels_like': forecast_hour.get('feelsLikeTemperature', {}).get('degrees', 'N/A'),
-                    'feels_like_unit': forecast_hour.get('feelsLikeTemperature', {}).get('unit', 'CELSIUS'),
+                    'temperature': temp_fahrenheit,
+                    'temperature_unit': 'FAHRENHEIT',
+                    'feels_like': feels_like_fahrenheit,
+                    'feels_like_unit': 'FAHRENHEIT',
                     'condition': forecast_hour.get('weatherCondition', {}).get('description', {}).get('text', 'N/A'),
                     'precipitation_type': forecast_hour.get('precipitation', {}).get('probability', {}).get('type',
                                                                                                             'N/A'),
                     'precipitation_prob': forecast_hour.get('precipitation', {}).get('probability', {}).get('percent',
                                                                                                             'N/A'),
-                    'wind_speed': forecast_hour.get('wind', {}).get('speed', {}).get('value', 'N/A'),
-                    'wind_speed_unit': forecast_hour.get('wind', {}).get('speed', {}).get('unit', 'Kph'),
+                    'wind_speed': wind_speed_mph,
+                    'wind_speed_unit': 'MPH',
                     'wind_speed_direction': forecast_hour.get('wind', {}).get('direction', {}).get('cardinal', 'N/A')
                 }
                 relevant_forecasts.append(weather_info)
@@ -190,27 +203,22 @@ def get_daily_temperatures(forecast_data, event_date):
                 temp_data = forecast_hour.get('temperature', {})
                 temp_value = temp_data.get('degrees')
                 if temp_value is not None:
-                    daily_temperatures.append({
-                        'value': temp_value,
-                        'unit': temp_data.get('unit', 'CELSIUS')
-                    })
+                    # Convert Celsius to Fahrenheit
+                    temp_fahrenheit = celsius_to_fahrenheit(temp_value)
+                    daily_temperatures.append(temp_fahrenheit)
 
         if daily_temperatures:
-            # Extract temperature values for min/max calculation
-            temp_values = [temp['value'] for temp in daily_temperatures]
-            temp_unit = daily_temperatures[0]['unit']  # Use unit from first temperature
-
             return {
-                'high': max(temp_values),
-                'low': min(temp_values),
-                'unit': temp_unit
+                'high': max(daily_temperatures),
+                'low': min(daily_temperatures),
+                'unit': 'FAHRENHEIT'
             }
         else:
             # No temperature data found for the date
             return {
                 'high': 'N/A',
                 'low': 'N/A',
-                'unit': 'CELSIUS'
+                'unit': 'FAHRENHEIT'
             }
 
     except Exception as e:
@@ -218,8 +226,28 @@ def get_daily_temperatures(forecast_data, event_date):
         return {
             'high': 'N/A',
             'low': 'N/A',
-            'unit': 'CELSIUS'
+            'unit': 'FAHRENHEIT'
         }
+
+
+def celsius_to_fahrenheit(celsius):
+    """Convert Celsius to Fahrenheit."""
+    if celsius == 'N/A' or celsius is None:
+        return 'N/A'
+    try:
+        return round((celsius * 9 / 5) + 32, 1)
+    except (TypeError, ValueError):
+        return 'N/A'
+
+
+def kph_to_mph(kph):
+    """Convert kilometers per hour to miles per hour."""
+    if kph == 'N/A' or kph is None:
+        return 'N/A'
+    try:
+        return round(kph * 0.621371, 1)
+    except (TypeError, ValueError):
+        return 'N/A'
 
 
 def get_location_forecast(location: str):

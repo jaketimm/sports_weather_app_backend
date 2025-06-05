@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8728e6ee-2c7b-49d8-b137-3740f36197ac" name="Changes" comment="integrate logging">
+    <list default="true" id="8728e6ee-2c7b-49d8-b137-3740f36197ac" name="Changes" comment="add daily high/low temps">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/events_with_weather.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/events_with_weather.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/track_forecast.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/track_forecast.json" afterDir="false" />
@@ -43,7 +43,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.main.executor": "Debug",
+    "Python.main.executor": "Run",
     "Python.weather_gui.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -99,12 +99,29 @@
       <option name="project" value="LOCAL" />
       <updated>1749140342550</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add daily high/low temps">
+      <option name="closed" value="true" />
+      <created>1749148703968</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749148703968</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add daily high/low temps">
+      <option name="closed" value="true" />
+      <created>1749148709759</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749148709759</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="integrate logging" />
-    <option name="LAST_COMMIT_MESSAGE" value="integrate logging" />
+    <MESSAGE value="add daily high/low temps" />
+    <option name="LAST_COMMIT_MESSAGE" value="add daily high/low temps" />
   </component>
 </project>
