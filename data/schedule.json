@@ -1,0 +1,745 @@
+{
+  "2025-01-31": [
+    {
+      "location": "CLASH BOWMAN GRAY",
+      "day_of_week": "SUN",
+      "date": "2025-02-02",
+      "time": "8 PM",
+      "channel": "FOX"
+    }
+  ],
+  "2025-02-14": [
+    {
+      "location": "DAYTONA 500",
+      "day_of_week": "SUN",
+      "date": "2025-02-16",
+      "time": "2:30 PM",
+      "channel": "FOX"
+    },
+    {
+      "location": "DAYTONA",
+      "day_of_week": "SAT",
+      "date": "2025-02-15",
+      "time": "5 PM",
+      "channel": "CW"
+    },
+    {
+      "location": "DAYTONA",
+      "day_of_week": "FRI",
+      "date": "2025-02-14",
+      "time": "7:30 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-02-21": [
+    {
+      "location": "ATLANTA",
+      "day_of_week": "SUN",
+      "date": "2025-02-23",
+      "time": "3 PM",
+      "channel": "FOX"
+    },
+    {
+      "location": "ATLANTA",
+      "day_of_week": "SAT",
+      "date": "2025-02-22",
+      "time": "5 PM",
+      "channel": "CW"
+    },
+    {
+      "location": "ATLANTA",
+      "day_of_week": "SAT",
+      "date": "2025-02-22",
+      "time": "2 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-02-28": [
+    {
+      "location": "COTA",
+      "day_of_week": "SUN",
+      "date": "2025-03-02",
+      "time": "3:30 PM",
+      "channel": "FOX"
+    },
+    {
+      "location": "COTA",
+      "day_of_week": "SAT",
+      "date": "2025-03-01",
+      "time": "2:30 PM",
+      "channel": "CW"
+    }
+  ],
+  "2025-03-07": [
+    {
+      "location": "PHOENIX",
+      "day_of_week": "SUN",
+      "date": "2025-03-09",
+      "time": "3:30 PM",
+      "channel": "FS1"
+    },
+    {
+      "location": "PHOENIX",
+      "day_of_week": "SAT",
+      "date": "2025-03-08",
+      "time": "5 PM",
+      "channel": "CW"
+    }
+  ],
+  "2025-03-14": [
+    {
+      "location": "LAS VEGAS",
+      "day_of_week": "SUN",
+      "date": "2025-03-16",
+      "time": "3:30 PM",
+      "channel": "FS1"
+    },
+    {
+      "location": "LAS VEGAS",
+      "day_of_week": "SAT",
+      "date": "2025-03-15",
+      "time": "4:30 PM",
+      "channel": "CW"
+    },
+    {
+      "location": "LAS VEGAS",
+      "day_of_week": "FRI",
+      "date": "2025-03-14",
+      "time": "9 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-03-21": [
+    {
+      "location": "MIAMI",
+      "day_of_week": "SUN",
+      "date": "2025-03-23",
+      "time": "3 PM",
+      "channel": "FS1"
+    },
+    {
+      "location": "MIAMI",
+      "day_of_week": "SAT",
+      "date": "2025-03-22",
+      "time": "4 PM",
+      "channel": "CW"
+    },
+    {
+      "location": "MIAMI",
+      "day_of_week": "FRI",
+      "date": "2025-03-21",
+      "time": "8 PM",
+      "channel": "FOX"
+    }
+  ],
+  "2025-03-28": [
+    {
+      "location": "MARTINSVILLE",
+      "day_of_week": "SUN",
+      "date": "2025-03-30",
+      "time": "3 PM",
+      "channel": "FS1"
+    },
+    {
+      "location": "MARTINSVILLE",
+      "day_of_week": "SAT",
+      "date": "2025-03-29",
+      "time": "5 PM",
+      "channel": "CW"
+    },
+    {
+      "location": "MARTINSVILLE",
+      "day_of_week": "FRI",
+      "date": "2025-03-28",
+      "time": "7:30 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-04-04": [
+    {
+      "location": "DARLINGTON",
+      "day_of_week": "SUN",
+      "date": "2025-04-06",
+      "time": "3 PM",
+      "channel": "FS1"
+    },
+    {
+      "location": "DARLINGTON",
+      "day_of_week": "SAT",
+      "date": "2025-04-05",
+      "time": "3:30 PM",
+      "channel": "CW"
+    }
+  ],
+  "2025-04-11": [
+    {
+      "location": "BRISTOL",
+      "day_of_week": "SUN",
+      "date": "2025-04-13",
+      "time": "3 PM",
+      "channel": "FS1"
+    },
+    {
+      "location": "BRISTOL",
+      "day_of_week": "SAT",
+      "date": "2025-04-12",
+      "time": "5 PM",
+      "channel": "CW"
+    },
+    {
+      "location": "BRISTOL",
+      "day_of_week": "FRI",
+      "date": "2025-04-11",
+      "time": "7:30 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-04-18": [
+    {
+      "location": "ROCKINGHAM",
+      "day_of_week": "SAT",
+      "date": "2025-04-19",
+      "time": "4 PM",
+      "channel": "CW"
+    },
+    {
+      "location": "ROCKINGHAM",
+      "day_of_week": "FRI",
+      "date": "2025-04-18",
+      "time": "5 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-04-25": [
+    {
+      "location": "TALLADEGA",
+      "day_of_week": "SUN",
+      "date": "2025-04-27",
+      "time": "3 PM",
+      "channel": "FOX"
+    },
+    {
+      "location": "TALLADEGA",
+      "day_of_week": "SAT",
+      "date": "2025-04-26",
+      "time": "4 PM",
+      "channel": "CW"
+    }
+  ],
+  "2025-05-02": [
+    {
+      "location": "TEXAS",
+      "day_of_week": "SUN",
+      "date": "2025-05-04",
+      "time": "3:30 PM",
+      "channel": "FS1"
+    },
+    {
+      "location": "TEXAS",
+      "day_of_week": "SAT",
+      "date": "2025-05-03",
+      "time": "2 PM",
+      "channel": "CW"
+    },
+    {
+      "location": "TEXAS",
+      "day_of_week": "FRI",
+      "date": "2025-05-02",
+      "time": "8 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-05-09": [
+    {
+      "location": "KANSAS",
+      "day_of_week": "SUN",
+      "date": "2025-05-11",
+      "time": "3 PM",
+      "channel": "FS1"
+    },
+    {
+      "location": "KANSAS",
+      "day_of_week": "SAT",
+      "date": "2025-05-10",
+      "time": "7:30 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-05-16": [
+    {
+      "location": "N. WILKESBORO",
+      "day_of_week": "SUN",
+      "date": "2025-05-18",
+      "time": "8 PM",
+      "channel": "FS1"
+    },
+    {
+      "location": "N. WILKESBORO",
+      "day_of_week": "SAT",
+      "date": "2025-05-17",
+      "time": "1:30 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-05-23": [
+    {
+      "location": "CHARLOTTE",
+      "day_of_week": "SUN",
+      "date": "2025-05-25",
+      "time": "6 PM",
+      "channel": "PRIME"
+    },
+    {
+      "location": "CHARLOTTE",
+      "day_of_week": "SAT",
+      "date": "2025-05-24",
+      "time": "4:30 PM",
+      "channel": "CW"
+    },
+    {
+      "location": "CHARLOTTE",
+      "day_of_week": "FRI",
+      "date": "2025-05-23",
+      "time": "8:30 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-05-30": [
+    {
+      "location": "NASHVILLE",
+      "day_of_week": "SUN",
+      "date": "2025-06-01",
+      "time": "7 PM",
+      "channel": "PRIME"
+    },
+    {
+      "location": "NASHVILLE",
+      "day_of_week": "SAT",
+      "date": "2025-05-31",
+      "time": "7:30 PM",
+      "channel": "CW"
+    },
+    {
+      "location": "NASHVILLE",
+      "day_of_week": "FRI",
+      "date": "2025-05-30",
+      "time": "8 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-06-06": [
+    {
+      "location": "MICHIGAN",
+      "day_of_week": "SUN",
+      "date": "2025-06-08",
+      "time": "2 PM",
+      "channel": "PRIME"
+    },
+    {
+      "location": "MICHIGAN",
+      "day_of_week": "SAT",
+      "date": "2025-06-07",
+      "time": "12 PM",
+      "channel": "FOX"
+    }
+  ],
+  "2025-06-13": [
+    {
+      "location": "MEXICO CITY",
+      "day_of_week": "SUN",
+      "date": "2025-06-15",
+      "time": "3 PM",
+      "channel": "PRIME"
+    },
+    {
+      "location": "MEXICO CITY",
+      "day_of_week": "SAT",
+      "date": "2025-06-14",
+      "time": "4:30 PM",
+      "channel": "CW"
+    }
+  ],
+  "2025-06-20": [
+    {
+      "location": "POCONO",
+      "day_of_week": "SUN",
+      "date": "2025-06-22",
+      "time": "2 PM",
+      "channel": "PRIME"
+    },
+    {
+      "location": "POCONO",
+      "day_of_week": "SAT",
+      "date": "2025-06-21",
+      "time": "3:30 PM",
+      "channel": "CW"
+    },
+    {
+      "location": "POCONO",
+      "day_of_week": "FRI",
+      "date": "2025-06-20",
+      "time": "5 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-06-27": [
+    {
+      "location": "ATLANTA",
+      "day_of_week": "SAT",
+      "date": "2025-06-28",
+      "time": "7 PM",
+      "channel": "TNT"
+    },
+    {
+      "location": "ATLANTA",
+      "day_of_week": "FRI",
+      "date": "2025-06-27",
+      "time": "7:30 PM",
+      "channel": "CW"
+    },
+    {
+      "location": "LIME ROCK",
+      "day_of_week": "SAT",
+      "date": "2025-06-28",
+      "time": "1 PM",
+      "channel": "FOX"
+    }
+  ],
+  "2025-07-04": [
+    {
+      "location": "CHICAGO",
+      "day_of_week": "SUN",
+      "date": "2025-07-06",
+      "time": "2 PM",
+      "channel": "TNT"
+    },
+    {
+      "location": "CHICAGO",
+      "day_of_week": "SAT",
+      "date": "2025-07-05",
+      "time": "4:30 PM",
+      "channel": "CW"
+    }
+  ],
+  "2025-07-11": [
+    {
+      "location": "SONOMA",
+      "day_of_week": "SUN",
+      "date": "2025-07-13",
+      "time": "3:30 PM",
+      "channel": "TNT"
+    },
+    {
+      "location": "SONOMA",
+      "day_of_week": "SAT",
+      "date": "2025-07-12",
+      "time": "4:30 PM",
+      "channel": "CW"
+    }
+  ],
+  "2025-07-18": [
+    {
+      "location": "DOVER",
+      "day_of_week": "SUN",
+      "date": "2025-07-20",
+      "time": "2 PM",
+      "channel": "TNT"
+    },
+    {
+      "location": "DOVER",
+      "day_of_week": "SAT",
+      "date": "2025-07-19",
+      "time": "4:30 PM",
+      "channel": "CW"
+    }
+  ],
+  "2025-07-25": [
+    {
+      "location": "INDIANAPOLIS",
+      "day_of_week": "SUN",
+      "date": "2025-07-27",
+      "time": "2 PM",
+      "channel": "TNT"
+    },
+    {
+      "location": "INDIANAPOLIS",
+      "day_of_week": "SAT",
+      "date": "2025-07-26",
+      "time": "4:30 PM",
+      "channel": "CW"
+    },
+    {
+      "location": "LUCAS OIL IRP",
+      "day_of_week": "FRI",
+      "date": "2025-07-25",
+      "time": "8 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-08-01": [
+    {
+      "location": "IOWA",
+      "day_of_week": "SUN",
+      "date": "2025-08-03",
+      "time": "3:30 PM",
+      "channel": "USA"
+    },
+    {
+      "location": "IOWA",
+      "day_of_week": "SAT",
+      "date": "2025-08-02",
+      "time": "4:30 PM",
+      "channel": "CW"
+    }
+  ],
+  "2025-08-08": [
+    {
+      "location": "WATKINS GLEN",
+      "day_of_week": "SUN",
+      "date": "2025-08-10",
+      "time": "2 PM",
+      "channel": "USA"
+    },
+    {
+      "location": "WATKINS GLEN",
+      "day_of_week": "SAT",
+      "date": "2025-08-09",
+      "time": "3 PM",
+      "channel": "CW"
+    },
+    {
+      "location": "WATKINS GLEN",
+      "day_of_week": "FRI",
+      "date": "2025-08-08",
+      "time": "5 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-08-15": [
+    {
+      "location": "RICHMOND",
+      "day_of_week": "SAT",
+      "date": "2025-08-16",
+      "time": "7:30 PM",
+      "channel": "USA"
+    },
+    {
+      "location": "RICHMOND",
+      "day_of_week": "FRI",
+      "date": "2025-08-15",
+      "time": "7:30 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-08-22": [
+    {
+      "location": "DAYTONA",
+      "day_of_week": "SAT",
+      "date": "2025-08-23",
+      "time": "7:30 PM",
+      "channel": "NBC"
+    },
+    {
+      "location": "DAYTONA",
+      "day_of_week": "FRI",
+      "date": "2025-08-22",
+      "time": "7:30 PM",
+      "channel": "CW"
+    }
+  ],
+  "2025-08-29": [
+    {
+      "location": "DARLINGTON",
+      "day_of_week": "SUN",
+      "date": "2025-08-31",
+      "time": "6 PM",
+      "channel": "USA"
+    },
+    {
+      "location": "PORTLAND",
+      "day_of_week": "SAT",
+      "date": "2025-08-30",
+      "time": "7:30 PM",
+      "channel": "CW"
+    },
+    {
+      "location": "DARLINGTON",
+      "day_of_week": "SAT",
+      "date": "2025-08-30",
+      "time": "12 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-09-05": [
+    {
+      "location": "WWTR",
+      "day_of_week": "SUN",
+      "date": "2025-09-07",
+      "time": "3 PM",
+      "channel": "USA"
+    },
+    {
+      "location": "WWTR",
+      "day_of_week": "SAT",
+      "date": "2025-09-06",
+      "time": "7:30 PM",
+      "channel": "CW"
+    }
+  ],
+  "2025-09-12": [
+    {
+      "location": "BRISTOL",
+      "day_of_week": "SAT",
+      "date": "2025-09-13",
+      "time": "7:30 PM",
+      "channel": "USA"
+    },
+    {
+      "location": "BRISTOL",
+      "day_of_week": "FRI",
+      "date": "2025-09-12",
+      "time": "7:30 PM",
+      "channel": "CW"
+    }
+  ],
+  "2025-09-19": [
+    {
+      "location": "NEW HAMPSHIRE",
+      "day_of_week": "SUN",
+      "date": "2025-09-21",
+      "time": "2 PM",
+      "channel": "USA"
+    },
+    {
+      "location": "NEW HAMPSHIRE",
+      "day_of_week": "SAT",
+      "date": "2025-09-20",
+      "time": "12 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-09-26": [
+    {
+      "location": "KANSAS",
+      "day_of_week": "SUN",
+      "date": "2025-09-28",
+      "time": "3 PM",
+      "channel": "USA"
+    },
+    {
+      "location": "KANSAS",
+      "day_of_week": "SAT",
+      "date": "2025-09-27",
+      "time": "4 PM",
+      "channel": "CW"
+    }
+  ],
+  "2025-10-03": [
+    {
+      "location": "ROVAL",
+      "day_of_week": "SUN",
+      "date": "2025-10-05",
+      "time": "3 PM",
+      "channel": "USA"
+    },
+    {
+      "location": "ROVAL",
+      "day_of_week": "SAT",
+      "date": "2025-10-04",
+      "time": "4 PM",
+      "channel": "CW"
+    },
+    {
+      "location": "ROVAL",
+      "day_of_week": "FRI",
+      "date": "2025-10-03",
+      "time": "3:30 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-10-10": [
+    {
+      "location": "LAS VEGAS",
+      "day_of_week": "SUN",
+      "date": "2025-10-12",
+      "time": "5:30 PM",
+      "channel": "USA"
+    },
+    {
+      "location": "LAS VEGAS",
+      "day_of_week": "SAT",
+      "date": "2025-10-11",
+      "time": "7:30 PM",
+      "channel": "CW"
+    }
+  ],
+  "2025-10-17": [
+    {
+      "location": "TALLADEGA",
+      "day_of_week": "SUN",
+      "date": "2025-10-19",
+      "time": "2 PM",
+      "channel": "NBC"
+    },
+    {
+      "location": "TALLADEGA",
+      "day_of_week": "SAT",
+      "date": "2025-10-18",
+      "time": "4 PM",
+      "channel": "CW"
+    },
+    {
+      "location": "TALLADEGA",
+      "day_of_week": "FRI",
+      "date": "2025-10-17",
+      "time": "3:30 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-10-24": [
+    {
+      "location": "MARTINSVILLE",
+      "day_of_week": "SUN",
+      "date": "2025-10-26",
+      "time": "2 PM",
+      "channel": "NBC"
+    },
+    {
+      "location": "MARTINSVILLE",
+      "day_of_week": "SAT",
+      "date": "2025-10-25",
+      "time": "7:30 PM",
+      "channel": "CW"
+    },
+    {
+      "location": "MARTINSVILLE",
+      "day_of_week": "FRI",
+      "date": "2025-10-24",
+      "time": "6 PM",
+      "channel": "FS1"
+    }
+  ],
+  "2025-10-31": [
+    {
+      "location": "PHOENIX",
+      "day_of_week": "SUN",
+      "date": "2025-11-02",
+      "time": "3 PM",
+      "channel": "NBC"
+    },
+    {
+      "location": "PHOENIX",
+      "day_of_week": "SAT",
+      "date": "2025-11-01",
+      "time": "7:30 PM",
+      "channel": "CW"
+    },
+    {
+      "location": "PHOENIX",
+      "day_of_week": "FRI",
+      "date": "2025-10-31",
+      "time": "7:30 PM",
+      "channel": "FS1"
+    }
+  ]
+}
