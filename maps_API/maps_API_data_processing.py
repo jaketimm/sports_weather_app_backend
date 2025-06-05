@@ -2,7 +2,9 @@ import json
 import urllib.parse
 import requests
 import os
+import logging
 
+logger = logging.getLogger(__name__)
 
 def build_weather_url(track_name, api_key, json_file='data/tracks.json'):
     '''Builds a weather forecast URL for a given track name using the Google Maps API.'''
@@ -27,6 +29,7 @@ def build_weather_url(track_name, api_key, json_file='data/tracks.json'):
             }
             return f"{base_url}?{urllib.parse.urlencode(params)}"
 
+    logger.error(f"Track '{track_name}' not found in the data.")
     raise ValueError(f"Track '{track_name}' not found in the data.")
 
 
@@ -56,6 +59,7 @@ def get_forecast(maps_api_url, output_file='data/track_forecast.json'):
             else:
                 next_url = None  # Done
         else:
+            logger.error(f"API request failed with status code {response.status_code}: {response.text}")
             raise Exception(f"API request failed with status code {response.status_code}: {response.text}")
 
     # Save to file
@@ -63,7 +67,7 @@ def get_forecast(maps_api_url, output_file='data/track_forecast.json'):
     with open(output_file, 'w') as f:
         json.dump(all_forecast_data, f, indent=2)
 
-    print(f"Forecast saved to {output_file}")
+    logger.info(f"Forecast saved to {output_file}")
     return all_forecast_data
 
     

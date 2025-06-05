@@ -1,8 +1,11 @@
 import json
 import os
+import logging
 from dotenv import load_dotenv
 from datetime import datetime, timedelta
 from maps_API.maps_API_data_processing import build_weather_url, get_forecast
+
+logger = logging.getLogger(__name__)
 
 # Cache to store forecasts by location
 forecast_cache = {}
@@ -33,7 +36,7 @@ def get_current_weekend_events(schedule_file=DEFAULT_SCHEDULE_FILE, use_cached=T
     if use_cached:
         cached_events = load_events_with_weather()
         if cached_events and friday_str in cached_events:
-            print(f"Using cached events with weather data for {friday_str}")
+            logger.info(f"Using cached events with weather data for {friday_str}")
             return cached_events[friday_str]
     
     # Load JSON schedule data
@@ -64,7 +67,7 @@ def get_current_weekend_events(schedule_file=DEFAULT_SCHEDULE_FILE, use_cached=T
                     # We'll add the weather data after collecting all events
                     filtered_events.append(event)
             except ValueError as e:
-                print(f"Error parsing event time: {e}")
+                logger.error(f"Error parsing event time: {e}")
                 # If parsing fails, include the event
                 filtered_events.append(event)
         else:
@@ -78,8 +81,8 @@ def get_current_weekend_events(schedule_file=DEFAULT_SCHEDULE_FILE, use_cached=T
     # Sort events by date for consistent display
     filtered_events.sort(key=lambda e: e.get('date', ''))
 
-    # Print cache statistics
-    print(f"Forecast cache has data for {len(forecast_cache)} locations")
+    # log cache statistics
+    logger.info(f"Forecast cache has data for {len(forecast_cache)} locations")
     
     # Save the events with weather to a JSON file for future use
     # Store as a dictionary with the weekend date as the key
@@ -148,7 +151,7 @@ def get_weather_for_event(event: str):
         return relevant_forecasts[:4]  # Limit to 4 hours
         
     except Exception as e:
-        print(f"Error processing weather for {event.get('location', 'unknown')}: {e}")
+        logger.error(f"Error processing weather for {event.get('location', 'unknown')}: {e}")
         return []
     
     
@@ -156,7 +159,7 @@ def get_location_forecast(location: str):
     """Get forecast data for a location, using cache if available."""
     # Check if we already have forecast data for this location
     if location in forecast_cache:
-        print(f"Using cached forecast for {location}")
+        logger.info(f"Using cached forecast for {location}")
         return forecast_cache[location]
     
     try:
@@ -165,23 +168,23 @@ def get_location_forecast(location: str):
         # Access the API key
         api_key = os.getenv("MAPSAPI_KEY")
         if not api_key:
-            print("Warning: MAPSAPI_KEY environment variable not set")
+            logger.warning("Warning: MAPSAPI_KEY environment variable not set")
             return None
         
         # Build weather URL
         weather_url = build_weather_url(location, api_key)
 
-        print("Downloading data from Google Weather API...")
+        logger.info("Downloading data from Google Weather API...")
         # Get forecast data
         forecast_data = get_forecast(weather_url)
 
         # Cache the result
         forecast_cache[location] = forecast_data
-        print(f"Downloaded and cached forecast for {location}")
+        logger.info(f"Downloaded and cached forecast for {location}")
         
         return forecast_data
     except Exception as e:
-        print(f"Error getting forecast for {location}: {e}")
+        logger.error(f"Error getting forecast for {location}: {e}")
         return None
     
 
@@ -191,7 +194,7 @@ def load_json(file_path: str):
         with open(file_path, 'r') as f:
             return json.load(f)
     except (FileNotFoundError, json.JSONDecodeError) as e:
-        print(f"Error loading JSON: {e}")  # Log to console for debugging
+        logger.error(f"Error loading JSON: {e}")  # Log to console for debugging
         return None
 
 
@@ -215,10 +218,10 @@ def save_events_with_weather(events_with_weather: json, file_path=EVENTS_DATA_FI
     try:
         with open(file_path, 'w') as f:
             json.dump(events_with_weather, f, indent=2)
-        print(f"Saved events with weather data to {file_path}")
+        logger.info(f"Saved events with weather data to {file_path}")
         return True
     except Exception as e:
-        print(f"Error saving events with weather data: {e}")
+        logger.error(f"Error saving events with weather data: {e}")
         return False
 
 

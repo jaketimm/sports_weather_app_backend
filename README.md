@@ -1,12 +1,12 @@
 ## Description
 
-This project is a Python application that integrates racing schedules with weather forecasts. It parses racing event schedules, retrieves weather data for track locations, and provides a GUI to display this information. The app uses the Google Weather API to fetch and process weather and location data.
+This project is a Python application parses racing event schedules, retrieves weather data for track locations, and saves it
+to a JSON file. It uses the Google Weather API to fetch and process weather and location data.
 
 ## Features
 
 - Parse racing schedules from PDF or JSON data
 - Fetch weather forecasts for specific tracks
-- Display weather information with icons in a GUI
 - Process maps API data for locations
 
 ## Requirements
