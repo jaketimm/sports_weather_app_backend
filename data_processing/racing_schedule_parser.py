@@ -3,10 +3,14 @@ import re
 from datetime import datetime, timedelta
 from collections import defaultdict
 import json
+import os
+from config import DATA_DIR, SCHEDULE_FILE
 
 # Extract text from Nascar Schedule PDF
-def extract_text_from_pdf():
-    with pdfplumber.open("data/2025-NationalSeriesSchedule-Networks.pdf") as pdf:
+def extract_text_from_pdf(pdf_path=None):
+    if pdf_path is None:
+        pdf_path = os.path.join(DATA_DIR, "2025-NationalSeriesSchedule-Networks.pdf")
+    with pdfplumber.open(pdf_path) as pdf:
         for i, page in enumerate(pdf.pages):
             text = page.extract_text()
 
@@ -63,7 +67,7 @@ def parse_schedule(text, year=2025):
 
 
 # Convert weekends to JSON-serializable format
-def weekends_to_json(weekends, output_file="data/schedule.json"):
+def weekends_to_json(weekends, output_file=SCHEDULE_FILE):
     json_ready = {
         friday.strftime("%Y-%m-%d"): events
         for friday, events in weekends.items()

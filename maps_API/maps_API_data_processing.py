@@ -3,10 +3,11 @@ import urllib.parse
 import requests
 import os
 import logging
+from config import TRACKS_FILE, TRACK_FORECAST_FILE, MAPSAPI_BASE_URL, API_TIMEOUT
 
 logger = logging.getLogger(__name__)
 
-def build_weather_url(track_name, api_key, json_file='data/tracks.json'):
+def build_weather_url(track_name, api_key, json_file=TRACKS_FILE):
     '''Builds a weather forecast URL for a given track name using the Google Maps API.'''
     # Load the track data from JSON
     with open(json_file, 'r') as file:
@@ -21,19 +22,18 @@ def build_weather_url(track_name, api_key, json_file='data/tracks.json'):
             latitude = track['latitude']
             longitude = track['longitude']
             # Build the URL
-            base_url = "https://weather.googleapis.com/v1/forecast/hours:lookup"
             params = {
                 "key": api_key,
                 "location.latitude": latitude,
                 "location.longitude": longitude
             }
-            return f"{base_url}?{urllib.parse.urlencode(params)}"
+            return f"{MAPSAPI_BASE_URL}?{urllib.parse.urlencode(params)}"
 
     logger.error(f"Track '{track_name}' not found in the data.")
     raise ValueError(f"Track '{track_name}' not found in the data.")
 
 
-def get_forecast(maps_api_url, output_file='data/track_forecast.json'):
+def get_forecast(maps_api_url, output_file=TRACK_FORECAST_FILE):
     '''Fetches weather forecast data from the Google Maps API and saves it to a JSON file.'''
     all_forecast_data = {
         "forecastHours": []
@@ -43,7 +43,7 @@ def get_forecast(maps_api_url, output_file='data/track_forecast.json'):
 
     # Loop through paginated results
     while next_url:
-        response = requests.get(next_url)
+        response = requests.get(next_url, timeout=API_TIMEOUT)
         if response.status_code == 200:
             data = response.json()
 

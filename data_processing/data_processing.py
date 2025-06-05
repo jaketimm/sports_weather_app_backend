@@ -10,9 +10,12 @@ logger = logging.getLogger(__name__)
 # Cache to store forecasts by location
 forecast_cache = {}
 
+# Import configuration
+from config import EVENTS_WITH_WEATHER_FILE, SCHEDULE_FILE, FORECAST_HOURS_BEFORE_EVENT, FORECAST_HOURS_AFTER_EVENT
+
 # Constants for data files
-EVENTS_DATA_FILE = 'data/events_with_weather.json'
-DEFAULT_SCHEDULE_FILE = 'data/schedule.json'
+EVENTS_DATA_FILE = EVENTS_WITH_WEATHER_FILE
+DEFAULT_SCHEDULE_FILE = SCHEDULE_FILE
 
 
 def get_current_weekend_events(schedule_file=DEFAULT_SCHEDULE_FILE, use_cached=True):
@@ -133,9 +136,9 @@ def get_weather_for_event(event: str):
                 minute=display_time.get('minutes', 0)
             )
 
-            # Check if this forecast is within 5 hours of event start (1 hour before, 4 hours after)
+            # Check if this forecast is within configured hours of event start
             time_diff = forecast_dt - event_datetime
-            if timedelta(hours=-1) <= time_diff <= timedelta(hours=5):
+            if timedelta(hours=-FORECAST_HOURS_BEFORE_EVENT) <= time_diff <= timedelta(hours=FORECAST_HOURS_AFTER_EVENT):
                 # Get original values and convert units
                 temp_fahrenheit = celsius_to_fahrenheit(forecast_hour.get('temperature', {}).get('degrees'))
                 feels_like_fahrenheit = celsius_to_fahrenheit(
@@ -249,7 +252,7 @@ def get_location_forecast(location: str):
         # Access the API key
         api_key = os.getenv("MAPSAPI_KEY")
         if not api_key:
-            logger.warning("Warning: MAPSAPI_KEY environment variable not set")
+            logger.warning("Warning: MAPSAPI_KEY environment variable not set. Please check your .env file.")
             return None
 
         # Build weather URL

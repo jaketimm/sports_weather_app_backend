@@ -70,3 +70,16 @@
 2025-06-05 15:06:27,976 - data_processing.data_processing - INFO - Using cached forecast for MICHIGAN
 2025-06-05 15:06:27,977 - data_processing.data_processing - INFO - Forecast cache has data for 1 locations
 2025-06-05 15:06:27,978 - data_processing.data_processing - INFO - Saved events with weather data to data/events_with_weather.json
+2025-06-05 16:40:12,197 - data_processing.data_processing - INFO - Using cached events with weather data for 2025-06-06
+2025-06-05 16:40:28,357 - data_processing.data_processing - INFO - Downloading data from Google Weather API...
+2025-06-05 16:40:34,147 - maps_API.maps_API_data_processing - INFO - Forecast saved to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\data\track_forecast.json
+2025-06-05 16:40:34,148 - data_processing.data_processing - INFO - Downloaded and cached forecast for MICHIGAN
+2025-06-05 16:40:34,149 - data_processing.data_processing - INFO - Using cached forecast for MICHIGAN
+2025-06-05 16:40:34,150 - data_processing.data_processing - INFO - Forecast cache has data for 1 locations
+2025-06-05 16:40:34,151 - data_processing.data_processing - INFO - Saved events with weather data to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\data\events_with_weather.json
+2025-06-05 17:10:48,950 - data_processing.data_processing - INFO - Downloading data from Google Weather API...
+2025-06-05 17:10:51,716 - maps_API.maps_API_data_processing - INFO - Forecast saved to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\data\track_forecast.json
+2025-06-05 17:10:51,717 - data_processing.data_processing - INFO - Downloaded and cached forecast for MICHIGAN
+2025-06-05 17:10:51,718 - data_processing.data_processing - INFO - Using cached forecast for MICHIGAN
+2025-06-05 17:10:51,718 - data_processing.data_processing - INFO - Forecast cache has data for 1 locations
+2025-06-05 17:10:51,719 - data_processing.data_processing - INFO - Saved events with weather data to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\data\events_with_weather.json
