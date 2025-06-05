@@ -18,3 +18,31 @@
 2025-06-05 13:53:03,082 - data_processing.data_processing - INFO - Using cached forecast for MICHIGAN
 2025-06-05 13:53:03,082 - data_processing.data_processing - INFO - Forecast cache has data for 1 locations
 2025-06-05 13:53:03,083 - data_processing.data_processing - INFO - Saved events with weather data to data/events_with_weather.json
+2025-06-05 14:29:39,633 - data_processing.data_processing - INFO - Downloading data from Google Weather API...
+2025-06-05 14:29:42,334 - maps_API.maps_API_data_processing - INFO - Forecast saved to data/track_forecast.json
+2025-06-05 14:29:42,335 - data_processing.data_processing - INFO - Downloaded and cached forecast for MICHIGAN
+2025-06-05 14:29:42,335 - data_processing.data_processing - INFO - Using cached forecast for MICHIGAN
+2025-06-05 14:29:42,336 - data_processing.data_processing - INFO - Forecast cache has data for 1 locations
+2025-06-05 14:29:42,337 - data_processing.data_processing - INFO - Saved events with weather data to data/events_with_weather.json
+2025-06-05 14:31:49,868 - data_processing.data_processing - INFO - Downloading data from Google Weather API...
+2025-06-05 14:31:52,606 - maps_API.maps_API_data_processing - INFO - Forecast saved to data/track_forecast.json
+2025-06-05 14:31:52,607 - data_processing.data_processing - INFO - Downloaded and cached forecast for MICHIGAN
+2025-06-05 14:31:52,607 - data_processing.data_processing - INFO - Using cached forecast for MICHIGAN
+2025-06-05 14:31:52,609 - data_processing.data_processing - INFO - Downloading data from Google Weather API...
+2025-06-05 14:31:55,197 - maps_API.maps_API_data_processing - INFO - Forecast saved to data/track_forecast.json
+2025-06-05 14:31:55,197 - data_processing.data_processing - INFO - Downloaded and cached forecast for PHOENIX
+2025-06-05 14:31:55,198 - data_processing.data_processing - INFO - Forecast cache has data for 2 locations
+2025-06-05 14:31:55,198 - data_processing.data_processing - INFO - Saved events with weather data to data/events_with_weather.json
+2025-06-05 14:32:47,183 - data_processing.data_processing - INFO - Forecast cache has data for 0 locations
+2025-06-05 14:32:47,184 - data_processing.data_processing - INFO - Saved events with weather data to data/events_with_weather.json
+2025-06-05 14:33:12,052 - data_processing.data_processing - INFO - Downloading data from Google Weather API...
+2025-06-05 14:33:14,691 - maps_API.maps_API_data_processing - INFO - Forecast saved to data/track_forecast.json
+2025-06-05 14:33:14,691 - data_processing.data_processing - INFO - Downloaded and cached forecast for MICHIGAN
+2025-06-05 14:33:14,692 - data_processing.data_processing - INFO - Forecast cache has data for 1 locations
+2025-06-05 14:33:14,693 - data_processing.data_processing - INFO - Saved events with weather data to data/events_with_weather.json
+2025-06-05 14:34:49,131 - data_processing.data_processing - INFO - Downloading data from Google Weather API...
+2025-06-05 14:34:51,972 - maps_API.maps_API_data_processing - INFO - Forecast saved to data/track_forecast.json
+2025-06-05 14:34:51,972 - data_processing.data_processing - INFO - Downloaded and cached forecast for MICHIGAN
+2025-06-05 14:36:13,378 - data_processing.data_processing - INFO - Using cached forecast for MICHIGAN
+2025-06-05 14:36:14,886 - data_processing.data_processing - INFO - Forecast cache has data for 1 locations
+2025-06-05 14:36:14,887 - data_processing.data_processing - INFO - Saved events with weather data to data/events_with_weather.json
