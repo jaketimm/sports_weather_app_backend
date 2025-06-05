@@ -1,18 +1,18 @@
 ## Description
 
-This project is a Python application parses racing event schedules, retrieves weather data for track locations, and saves it
+This project is a Python application that parses racing event schedules, retrieves weather data for track locations, and saves it
 to a JSON file. It uses the Google Weather API to fetch and process weather and location data.
 
 ## Features
 
 - Parse racing schedules from PDF or JSON data
 - Fetch weather forecasts for specific tracks
-- Process maps API data for locations
+- Process maps weather API data for locations
 
 ## Requirements
 
 - Python 3.x
-- Required libraries: PyQt5 requests python-dotenv
+- Required libraries: PyQt5 requests python-dotenv pdfplumber
 
 ## Installation
 
@@ -24,7 +24,7 @@ to a JSON file. It uses the Google Weather API to fetch and process weather and 
 
 2. Install dependencies:
    ```
-   pip install PyQt5 requests python-dotenv
+   pip install PyQt5 requests python-dotenv pdfplumber
    ```
 
 ## Environment Setup
