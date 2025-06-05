@@ -6,7 +6,7 @@ import json
 
 # Extract text from Nascar Schedule PDF
 def extract_text_from_pdf():
-    with pdfplumber.open("../data/2025-NationalSeriesSchedule-Networks.pdf") as pdf:
+    with pdfplumber.open("data/2025-NationalSeriesSchedule-Networks.pdf") as pdf:
         for i, page in enumerate(pdf.pages):
             text = page.extract_text()
 
@@ -38,7 +38,7 @@ def parse_schedule(text, year=2025):
     events_by_weekend = defaultdict(list)
 
     for m in matches:
-        location = m.group('location').strip()
+        location = m.group('location').strip().replace('*', '')
         dow = m.group('day_of_week')
         month = m.group('month')
         day = m.group('day')
@@ -49,6 +49,7 @@ def parse_schedule(text, year=2025):
         weekend_friday = get_weekend_friday(event_date, dow)
 
         event_info = {
+            'Series': 'NASCAR',
             'location': location,
             'day_of_week': dow,
             'date': event_date.strftime("%Y-%m-%d"),

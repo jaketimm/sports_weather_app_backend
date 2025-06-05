@@ -1,6 +1,7 @@
 {
   "2025-06-06": [
     {
+      "Series": "NASCAR",
       "location": "MICHIGAN",
       "day_of_week": "SAT",
       "date": "2025-06-07",
@@ -9,9 +10,9 @@
       "weather": [
         {
           "time": "11:00 AM",
-          "temperature": 20.1,
+          "temperature": 20.2,
           "temperature_unit": "CELSIUS",
-          "feels_like": 24.5,
+          "feels_like": 24.4,
           "feels_like_unit": "CELSIUS",
           "condition": "Partly sunny",
           "precipitation_type": "RAIN",
@@ -22,7 +23,7 @@
         },
         {
           "time": "12:00 PM",
-          "temperature": 21.7,
+          "temperature": 21.9,
           "temperature_unit": "CELSIUS",
           "feels_like": 24.4,
           "feels_like_unit": "CELSIUS",
@@ -35,7 +36,7 @@
         },
         {
           "time": "01:00 PM",
-          "temperature": 22.7,
+          "temperature": 22.9,
           "temperature_unit": "CELSIUS",
           "feels_like": 24.6,
           "feels_like_unit": "CELSIUS",
@@ -48,9 +49,9 @@
         },
         {
           "time": "02:00 PM",
-          "temperature": 23.5,
+          "temperature": 23.7,
           "temperature_unit": "CELSIUS",
-          "feels_like": 24.7,
+          "feels_like": 24.8,
           "feels_like_unit": "CELSIUS",
           "condition": "Mostly cloudy",
           "precipitation_type": "RAIN",
@@ -62,6 +63,7 @@
       ]
     },
     {
+      "Series": "NASCAR",
       "location": "MICHIGAN",
       "day_of_week": "SUN",
       "date": "2025-06-08",
@@ -70,7 +72,7 @@
       "weather": [
         {
           "time": "01:00 PM",
-          "temperature": 21.2,
+          "temperature": 21.3,
           "temperature_unit": "CELSIUS",
           "feels_like": 24.4,
           "feels_like_unit": "CELSIUS",
@@ -83,7 +85,7 @@
         },
         {
           "time": "02:00 PM",
-          "temperature": 22.3,
+          "temperature": 22.2,
           "temperature_unit": "CELSIUS",
           "feels_like": 24.6,
           "feels_like_unit": "CELSIUS",
@@ -109,7 +111,7 @@
         },
         {
           "time": "04:00 PM",
-          "temperature": 23.4,
+          "temperature": 23.5,
           "temperature_unit": "CELSIUS",
           "feels_like": 24.9,
           "feels_like_unit": "CELSIUS",

@@ -1,6 +1,7 @@
 {
   "2025-01-31": [
     {
+      "Series": "NASCAR",
       "location": "CLASH BOWMAN GRAY",
       "day_of_week": "SUN",
       "date": "2025-02-02",
@@ -10,13 +11,15 @@
   ],
   "2025-02-14": [
     {
-      "location": "DAYTONA 500",
+      "Series": "NASCAR",
+      "location": "DAYTONA",
       "day_of_week": "SUN",
       "date": "2025-02-16",
       "time": "2:30 PM",
       "channel": "FOX"
     },
     {
+      "Series": "NASCAR",
       "location": "DAYTONA",
       "day_of_week": "SAT",
       "date": "2025-02-15",
@@ -24,6 +27,7 @@
       "channel": "CW"
     },
     {
+      "Series": "NASCAR",
       "location": "DAYTONA",
       "day_of_week": "FRI",
       "date": "2025-02-14",
@@ -33,6 +37,7 @@
   ],
   "2025-02-21": [
     {
+      "Series": "NASCAR",
       "location": "ATLANTA",
       "day_of_week": "SUN",
       "date": "2025-02-23",
@@ -40,6 +45,7 @@
       "channel": "FOX"
     },
     {
+      "Series": "NASCAR",
       "location": "ATLANTA",
       "day_of_week": "SAT",
       "date": "2025-02-22",
@@ -47,6 +53,7 @@
       "channel": "CW"
     },
     {
+      "Series": "NASCAR",
       "location": "ATLANTA",
       "day_of_week": "SAT",
       "date": "2025-02-22",
@@ -56,6 +63,7 @@
   ],
   "2025-02-28": [
     {
+      "Series": "NASCAR",
       "location": "COTA",
       "day_of_week": "SUN",
       "date": "2025-03-02",
@@ -63,6 +71,7 @@
       "channel": "FOX"
     },
     {
+      "Series": "NASCAR",
       "location": "COTA",
       "day_of_week": "SAT",
       "date": "2025-03-01",
@@ -72,6 +81,7 @@
   ],
   "2025-03-07": [
     {
+      "Series": "NASCAR",
       "location": "PHOENIX",
       "day_of_week": "SUN",
       "date": "2025-03-09",
@@ -79,6 +89,7 @@
       "channel": "FS1"
     },
     {
+      "Series": "NASCAR",
       "location": "PHOENIX",
       "day_of_week": "SAT",
       "date": "2025-03-08",
@@ -88,6 +99,7 @@
   ],
   "2025-03-14": [
     {
+      "Series": "NASCAR",
       "location": "LAS VEGAS",
       "day_of_week": "SUN",
       "date": "2025-03-16",
@@ -95,6 +107,7 @@
       "channel": "FS1"
     },
     {
+      "Series": "NASCAR",
       "location": "LAS VEGAS",
       "day_of_week": "SAT",
       "date": "2025-03-15",
@@ -102,6 +115,7 @@
       "channel": "CW"
     },
     {
+      "Series": "NASCAR",
       "location": "LAS VEGAS",
       "day_of_week": "FRI",
       "date": "2025-03-14",
@@ -111,6 +125,7 @@
   ],
   "2025-03-21": [
     {
+      "Series": "NASCAR",
       "location": "MIAMI",
       "day_of_week": "SUN",
       "date": "2025-03-23",
@@ -118,6 +133,7 @@
       "channel": "FS1"
     },
     {
+      "Series": "NASCAR",
       "location": "MIAMI",
       "day_of_week": "SAT",
       "date": "2025-03-22",
@@ -125,6 +141,7 @@
       "channel": "CW"
     },
     {
+      "Series": "NASCAR",
       "location": "MIAMI",
       "day_of_week": "FRI",
       "date": "2025-03-21",
@@ -134,6 +151,7 @@
   ],
   "2025-03-28": [
     {
+      "Series": "NASCAR",
       "location": "MARTINSVILLE",
       "day_of_week": "SUN",
       "date": "2025-03-30",
@@ -141,6 +159,7 @@
       "channel": "FS1"
     },
     {
+      "Series": "NASCAR",
       "location": "MARTINSVILLE",
       "day_of_week": "SAT",
       "date": "2025-03-29",
@@ -148,6 +167,7 @@
       "channel": "CW"
     },
     {
+      "Series": "NASCAR",
       "location": "MARTINSVILLE",
       "day_of_week": "FRI",
       "date": "2025-03-28",
@@ -157,6 +177,7 @@
   ],
   "2025-04-04": [
     {
+      "Series": "NASCAR",
       "location": "DARLINGTON",
       "day_of_week": "SUN",
       "date": "2025-04-06",
@@ -164,6 +185,7 @@
       "channel": "FS1"
     },
     {
+      "Series": "NASCAR",
       "location": "DARLINGTON",
       "day_of_week": "SAT",
       "date": "2025-04-05",
@@ -173,6 +195,7 @@
   ],
   "2025-04-11": [
     {
+      "Series": "NASCAR",
       "location": "BRISTOL",
       "day_of_week": "SUN",
       "date": "2025-04-13",
@@ -180,6 +203,7 @@
       "channel": "FS1"
     },
     {
+      "Series": "NASCAR",
       "location": "BRISTOL",
       "day_of_week": "SAT",
       "date": "2025-04-12",
@@ -187,6 +211,7 @@
       "channel": "CW"
     },
     {
+      "Series": "NASCAR",
       "location": "BRISTOL",
       "day_of_week": "FRI",
       "date": "2025-04-11",
@@ -196,6 +221,7 @@
   ],
   "2025-04-18": [
     {
+      "Series": "NASCAR",
       "location": "ROCKINGHAM",
       "day_of_week": "SAT",
       "date": "2025-04-19",
@@ -203,6 +229,7 @@
       "channel": "CW"
     },
     {
+      "Series": "NASCAR",
       "location": "ROCKINGHAM",
       "day_of_week": "FRI",
       "date": "2025-04-18",
@@ -212,6 +239,7 @@
   ],
   "2025-04-25": [
     {
+      "Series": "NASCAR",
       "location": "TALLADEGA",
       "day_of_week": "SUN",
       "date": "2025-04-27",
@@ -219,6 +247,7 @@
       "channel": "FOX"
     },
     {
+      "Series": "NASCAR",
       "location": "TALLADEGA",
       "day_of_week": "SAT",
       "date": "2025-04-26",
@@ -228,6 +257,7 @@
   ],
   "2025-05-02": [
     {
+      "Series": "NASCAR",
       "location": "TEXAS",
       "day_of_week": "SUN",
       "date": "2025-05-04",
@@ -235,6 +265,7 @@
       "channel": "FS1"
     },
     {
+      "Series": "NASCAR",
       "location": "TEXAS",
       "day_of_week": "SAT",
       "date": "2025-05-03",
@@ -242,6 +273,7 @@
       "channel": "CW"
     },
     {
+      "Series": "NASCAR",
       "location": "TEXAS",
       "day_of_week": "FRI",
       "date": "2025-05-02",
@@ -251,6 +283,7 @@
   ],
   "2025-05-09": [
     {
+      "Series": "NASCAR",
       "location": "KANSAS",
       "day_of_week": "SUN",
       "date": "2025-05-11",
@@ -258,6 +291,7 @@
       "channel": "FS1"
     },
     {
+      "Series": "NASCAR",
       "location": "KANSAS",
       "day_of_week": "SAT",
       "date": "2025-05-10",
@@ -267,6 +301,7 @@
   ],
   "2025-05-16": [
     {
+      "Series": "NASCAR",
       "location": "N. WILKESBORO",
       "day_of_week": "SUN",
       "date": "2025-05-18",
@@ -274,6 +309,7 @@
       "channel": "FS1"
     },
     {
+      "Series": "NASCAR",
       "location": "N. WILKESBORO",
       "day_of_week": "SAT",
       "date": "2025-05-17",
@@ -283,6 +319,7 @@
   ],
   "2025-05-23": [
     {
+      "Series": "NASCAR",
       "location": "CHARLOTTE",
       "day_of_week": "SUN",
       "date": "2025-05-25",
@@ -290,6 +327,7 @@
       "channel": "PRIME"
     },
     {
+      "Series": "NASCAR",
       "location": "CHARLOTTE",
       "day_of_week": "SAT",
       "date": "2025-05-24",
@@ -297,6 +335,7 @@
       "channel": "CW"
     },
     {
+      "Series": "NASCAR",
       "location": "CHARLOTTE",
       "day_of_week": "FRI",
       "date": "2025-05-23",
@@ -306,6 +345,7 @@
   ],
   "2025-05-30": [
     {
+      "Series": "NASCAR",
       "location": "NASHVILLE",
       "day_of_week": "SUN",
       "date": "2025-06-01",
@@ -313,6 +353,7 @@
       "channel": "PRIME"
     },
     {
+      "Series": "NASCAR",
       "location": "NASHVILLE",
       "day_of_week": "SAT",
       "date": "2025-05-31",
@@ -320,6 +361,7 @@
       "channel": "CW"
     },
     {
+      "Series": "NASCAR",
       "location": "NASHVILLE",
       "day_of_week": "FRI",
       "date": "2025-05-30",
@@ -329,6 +371,7 @@
   ],
   "2025-06-06": [
     {
+      "Series": "NASCAR",
       "location": "MICHIGAN",
       "day_of_week": "SUN",
       "date": "2025-06-08",
@@ -336,6 +379,7 @@
       "channel": "PRIME"
     },
     {
+      "Series": "NASCAR",
       "location": "MICHIGAN",
       "day_of_week": "SAT",
       "date": "2025-06-07",
@@ -345,6 +389,7 @@
   ],
   "2025-06-13": [
     {
+      "Series": "NASCAR",
       "location": "MEXICO CITY",
       "day_of_week": "SUN",
       "date": "2025-06-15",
@@ -352,6 +397,7 @@
       "channel": "PRIME"
     },
     {
+      "Series": "NASCAR",
       "location": "MEXICO CITY",
       "day_of_week": "SAT",
       "date": "2025-06-14",
@@ -361,6 +407,7 @@
   ],
   "2025-06-20": [
     {
+      "Series": "NASCAR",
       "location": "POCONO",
       "day_of_week": "SUN",
       "date": "2025-06-22",
@@ -368,6 +415,7 @@
       "channel": "PRIME"
     },
     {
+      "Series": "NASCAR",
       "location": "POCONO",
       "day_of_week": "SAT",
       "date": "2025-06-21",
@@ -375,6 +423,7 @@
       "channel": "CW"
     },
     {
+      "Series": "NASCAR",
       "location": "POCONO",
       "day_of_week": "FRI",
       "date": "2025-06-20",
@@ -384,6 +433,7 @@
   ],
   "2025-06-27": [
     {
+      "Series": "NASCAR",
       "location": "ATLANTA",
       "day_of_week": "SAT",
       "date": "2025-06-28",
@@ -391,6 +441,7 @@
       "channel": "TNT"
     },
     {
+      "Series": "NASCAR",
       "location": "ATLANTA",
       "day_of_week": "FRI",
       "date": "2025-06-27",
@@ -398,6 +449,7 @@
       "channel": "CW"
     },
     {
+      "Series": "NASCAR",
       "location": "LIME ROCK",
       "day_of_week": "SAT",
       "date": "2025-06-28",
@@ -407,6 +459,7 @@
   ],
   "2025-07-04": [
     {
+      "Series": "NASCAR",
       "location": "CHICAGO",
       "day_of_week": "SUN",
       "date": "2025-07-06",
@@ -414,6 +467,7 @@
       "channel": "TNT"
     },
     {
+      "Series": "NASCAR",
       "location": "CHICAGO",
       "day_of_week": "SAT",
       "date": "2025-07-05",
@@ -423,6 +477,7 @@
   ],
   "2025-07-11": [
     {
+      "Series": "NASCAR",
       "location": "SONOMA",
       "day_of_week": "SUN",
       "date": "2025-07-13",
@@ -430,6 +485,7 @@
       "channel": "TNT"
     },
     {
+      "Series": "NASCAR",
       "location": "SONOMA",
       "day_of_week": "SAT",
       "date": "2025-07-12",
@@ -439,6 +495,7 @@
   ],
   "2025-07-18": [
     {
+      "Series": "NASCAR",
       "location": "DOVER",
       "day_of_week": "SUN",
       "date": "2025-07-20",
@@ -446,6 +503,7 @@
       "channel": "TNT"
     },
     {
+      "Series": "NASCAR",
       "location": "DOVER",
       "day_of_week": "SAT",
       "date": "2025-07-19",
@@ -455,6 +513,7 @@
   ],
   "2025-07-25": [
     {
+      "Series": "NASCAR",
       "location": "INDIANAPOLIS",
       "day_of_week": "SUN",
       "date": "2025-07-27",
@@ -462,6 +521,7 @@
       "channel": "TNT"
     },
     {
+      "Series": "NASCAR",
       "location": "INDIANAPOLIS",
       "day_of_week": "SAT",
       "date": "2025-07-26",
@@ -469,6 +529,7 @@
       "channel": "CW"
     },
     {
+      "Series": "NASCAR",
       "location": "LUCAS OIL IRP",
       "day_of_week": "FRI",
       "date": "2025-07-25",
@@ -478,6 +539,7 @@
   ],
   "2025-08-01": [
     {
+      "Series": "NASCAR",
       "location": "IOWA",
       "day_of_week": "SUN",
       "date": "2025-08-03",
@@ -485,6 +547,7 @@
       "channel": "USA"
     },
     {
+      "Series": "NASCAR",
       "location": "IOWA",
       "day_of_week": "SAT",
       "date": "2025-08-02",
@@ -494,6 +557,7 @@
   ],
   "2025-08-08": [
     {
+      "Series": "NASCAR",
       "location": "WATKINS GLEN",
       "day_of_week": "SUN",
       "date": "2025-08-10",
@@ -501,6 +565,7 @@
       "channel": "USA"
     },
     {
+      "Series": "NASCAR",
       "location": "WATKINS GLEN",
       "day_of_week": "SAT",
       "date": "2025-08-09",
@@ -508,6 +573,7 @@
       "channel": "CW"
     },
     {
+      "Series": "NASCAR",
       "location": "WATKINS GLEN",
       "day_of_week": "FRI",
       "date": "2025-08-08",
@@ -517,6 +583,7 @@
   ],
   "2025-08-15": [
     {
+      "Series": "NASCAR",
       "location": "RICHMOND",
       "day_of_week": "SAT",
       "date": "2025-08-16",
@@ -524,6 +591,7 @@
       "channel": "USA"
     },
     {
+      "Series": "NASCAR",
       "location": "RICHMOND",
       "day_of_week": "FRI",
       "date": "2025-08-15",
@@ -533,6 +601,7 @@
   ],
   "2025-08-22": [
     {
+      "Series": "NASCAR",
       "location": "DAYTONA",
       "day_of_week": "SAT",
       "date": "2025-08-23",
@@ -540,6 +609,7 @@
       "channel": "NBC"
     },
     {
+      "Series": "NASCAR",
       "location": "DAYTONA",
       "day_of_week": "FRI",
       "date": "2025-08-22",
@@ -549,6 +619,7 @@
   ],
   "2025-08-29": [
     {
+      "Series": "NASCAR",
       "location": "DARLINGTON",
       "day_of_week": "SUN",
       "date": "2025-08-31",
@@ -556,6 +627,7 @@
       "channel": "USA"
     },
     {
+      "Series": "NASCAR",
       "location": "PORTLAND",
       "day_of_week": "SAT",
       "date": "2025-08-30",
@@ -563,6 +635,7 @@
       "channel": "CW"
     },
     {
+      "Series": "NASCAR",
       "location": "DARLINGTON",
       "day_of_week": "SAT",
       "date": "2025-08-30",
@@ -572,6 +645,7 @@
   ],
   "2025-09-05": [
     {
+      "Series": "NASCAR",
       "location": "WWTR",
       "day_of_week": "SUN",
       "date": "2025-09-07",
@@ -579,6 +653,7 @@
       "channel": "USA"
     },
     {
+      "Series": "NASCAR",
       "location": "WWTR",
       "day_of_week": "SAT",
       "date": "2025-09-06",
@@ -588,6 +663,7 @@
   ],
   "2025-09-12": [
     {
+      "Series": "NASCAR",
       "location": "BRISTOL",
       "day_of_week": "SAT",
       "date": "2025-09-13",
@@ -595,6 +671,7 @@
       "channel": "USA"
     },
     {
+      "Series": "NASCAR",
       "location": "BRISTOL",
       "day_of_week": "FRI",
       "date": "2025-09-12",
@@ -604,6 +681,7 @@
   ],
   "2025-09-19": [
     {
+      "Series": "NASCAR",
       "location": "NEW HAMPSHIRE",
       "day_of_week": "SUN",
       "date": "2025-09-21",
@@ -611,6 +689,7 @@
       "channel": "USA"
     },
     {
+      "Series": "NASCAR",
       "location": "NEW HAMPSHIRE",
       "day_of_week": "SAT",
       "date": "2025-09-20",
@@ -620,6 +699,7 @@
   ],
   "2025-09-26": [
     {
+      "Series": "NASCAR",
       "location": "KANSAS",
       "day_of_week": "SUN",
       "date": "2025-09-28",
@@ -627,6 +707,7 @@
       "channel": "USA"
     },
     {
+      "Series": "NASCAR",
       "location": "KANSAS",
       "day_of_week": "SAT",
       "date": "2025-09-27",
@@ -636,6 +717,7 @@
   ],
   "2025-10-03": [
     {
+      "Series": "NASCAR",
       "location": "ROVAL",
       "day_of_week": "SUN",
       "date": "2025-10-05",
@@ -643,6 +725,7 @@
       "channel": "USA"
     },
     {
+      "Series": "NASCAR",
       "location": "ROVAL",
       "day_of_week": "SAT",
       "date": "2025-10-04",
@@ -650,6 +733,7 @@
       "channel": "CW"
     },
     {
+      "Series": "NASCAR",
       "location": "ROVAL",
       "day_of_week": "FRI",
       "date": "2025-10-03",
@@ -659,6 +743,7 @@
   ],
   "2025-10-10": [
     {
+      "Series": "NASCAR",
       "location": "LAS VEGAS",
       "day_of_week": "SUN",
       "date": "2025-10-12",
@@ -666,6 +751,7 @@
       "channel": "USA"
     },
     {
+      "Series": "NASCAR",
       "location": "LAS VEGAS",
       "day_of_week": "SAT",
       "date": "2025-10-11",
@@ -675,6 +761,7 @@
   ],
   "2025-10-17": [
     {
+      "Series": "NASCAR",
       "location": "TALLADEGA",
       "day_of_week": "SUN",
       "date": "2025-10-19",
@@ -682,6 +769,7 @@
       "channel": "NBC"
     },
     {
+      "Series": "NASCAR",
       "location": "TALLADEGA",
       "day_of_week": "SAT",
       "date": "2025-10-18",
@@ -689,6 +777,7 @@
       "channel": "CW"
     },
     {
+      "Series": "NASCAR",
       "location": "TALLADEGA",
       "day_of_week": "FRI",
       "date": "2025-10-17",
@@ -698,6 +787,7 @@
   ],
   "2025-10-24": [
     {
+      "Series": "NASCAR",
       "location": "MARTINSVILLE",
       "day_of_week": "SUN",
       "date": "2025-10-26",
@@ -705,6 +795,7 @@
       "channel": "NBC"
     },
     {
+      "Series": "NASCAR",
       "location": "MARTINSVILLE",
       "day_of_week": "SAT",
       "date": "2025-10-25",
@@ -712,6 +803,7 @@
       "channel": "CW"
     },
     {
+      "Series": "NASCAR",
       "location": "MARTINSVILLE",
       "day_of_week": "FRI",
       "date": "2025-10-24",
@@ -721,6 +813,7 @@
   ],
   "2025-10-31": [
     {
+      "Series": "NASCAR",
       "location": "PHOENIX",
       "day_of_week": "SUN",
       "date": "2025-11-02",
@@ -728,6 +821,7 @@
       "channel": "NBC"
     },
     {
+      "Series": "NASCAR",
       "location": "PHOENIX",
       "day_of_week": "SAT",
       "date": "2025-11-01",
@@ -735,6 +829,7 @@
       "channel": "CW"
     },
     {
+      "Series": "NASCAR",
       "location": "PHOENIX",
       "day_of_week": "FRI",
       "date": "2025-10-31",
