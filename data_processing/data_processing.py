@@ -88,8 +88,8 @@ def get_current_weekend_events(schedule_file=DEFAULT_SCHEDULE_FILE, use_cached=T
     # Store as a dictionary with the weekend date as the key
     weekend_events = {friday_str: filtered_events}
     save_events_with_weather(weekend_events)
-    
-    return filtered_events
+
+    return True
 
 
 def get_weather_for_event(event: str):

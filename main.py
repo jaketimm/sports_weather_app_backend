@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 def main():
 
     # Fetch new data from API (this will save to file)
-    events = get_current_weekend_events(use_cached=True)
+    get_current_weekend_events(use_cached=False)
 
 if __name__ == "__main__":
     main()
