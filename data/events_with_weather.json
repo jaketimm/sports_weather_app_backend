@@ -60,6 +60,19 @@
             "wind_speed": 5.0,
             "wind_speed_unit": "MPH",
             "wind_speed_direction": "NORTHEAST"
+          },
+          {
+            "time": "03:00 PM",
+            "temperature": 75.6,
+            "temperature_unit": "FAHRENHEIT",
+            "feels_like": 77.0,
+            "feels_like_unit": "FAHRENHEIT",
+            "condition": "Mostly cloudy",
+            "precipitation_type": "RAIN",
+            "precipitation_prob": 10,
+            "wind_speed": 5.0,
+            "wind_speed_unit": "MPH",
+            "wind_speed_direction": "NORTH_NORTHEAST"
           }
         ],
         "daily_high": 75.6,
@@ -127,6 +140,19 @@
             "wind_speed": 6.8,
             "wind_speed_unit": "MPH",
             "wind_speed_direction": "SOUTH_SOUTHWEST"
+          },
+          {
+            "time": "05:00 PM",
+            "temperature": 73.9,
+            "temperature_unit": "FAHRENHEIT",
+            "feels_like": 76.8,
+            "feels_like_unit": "FAHRENHEIT",
+            "condition": "Partly sunny",
+            "precipitation_type": "RAIN",
+            "precipitation_prob": 5,
+            "wind_speed": 8.1,
+            "wind_speed_unit": "MPH",
+            "wind_speed_direction": "SOUTHWEST"
           }
         ],
         "daily_high": 73.9,

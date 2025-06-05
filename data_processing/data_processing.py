@@ -93,7 +93,7 @@ def get_current_weekend_events(schedule_file=DEFAULT_SCHEDULE_FILE, use_cached=T
 
 
 def get_weather_for_event(event: str):
-    """Get 4 hours of weather forecast for an event starting from event time, plus daily high/low temperatures."""
+    """Get 5 hours of weather forecast for an event starting from event time, plus daily high/low temperatures."""
     try:
         location = event.get('location', '')
         event_date_str = event.get('date', '')
@@ -133,9 +133,9 @@ def get_weather_for_event(event: str):
                 minute=display_time.get('minutes', 0)
             )
 
-            # Check if this forecast is within 4 hours of event start
+            # Check if this forecast is within 5 hours of event start (1 hour before, 4 hours after)
             time_diff = forecast_dt - event_datetime
-            if timedelta(hours=-1) <= time_diff <= timedelta(hours=4):
+            if timedelta(hours=-1) <= time_diff <= timedelta(hours=5):
                 # Get original values and convert units
                 temp_fahrenheit = celsius_to_fahrenheit(forecast_hour.get('temperature', {}).get('degrees'))
                 feels_like_fahrenheit = celsius_to_fahrenheit(
@@ -161,7 +161,7 @@ def get_weather_for_event(event: str):
 
         # Return both hourly forecasts and daily temperatures
         return {
-            'hourly_forecast': relevant_forecasts[:4],  # Limit to 4 hours
+            'hourly_forecast': relevant_forecasts[:5],  # Limit to 5 hours
             'daily_high': daily_temps['high'],
             'daily_low': daily_temps['low'],
             'temperature_unit': daily_temps['unit']
