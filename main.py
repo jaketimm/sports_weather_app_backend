@@ -190,6 +190,15 @@ def internal_error(error):
     return jsonify({"error": "Internal server error"}), 500
 
 
+def create_app():
+    """Application factory for production deployment."""
+    # Start the scheduler in a separate thread when app starts
+    if not scheduler_running:
+        scheduler_thread = threading.Thread(target=run_scheduler, daemon=True)
+        scheduler_thread.start()
+    
+    return app
+
 if __name__ == "__main__":
     # Start the scheduler in a separate thread
     scheduler_thread = threading.Thread(target=run_scheduler, daemon=True)
@@ -201,3 +210,6 @@ if __name__ == "__main__":
     
     logger.info(f"Starting Flask app on port {port}")
     app.run(host='0.0.0.0', port=port, debug=debug)
+
+# For Gunicorn
+application = create_app()
