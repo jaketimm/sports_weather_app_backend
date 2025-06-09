@@ -7,62 +7,7 @@
       "date": "2025-06-14",
       "time": "4:30 PM",
       "channel": "CW",
-      "weather": {
-        "hourly_forecast": [
-          {
-            "time": "04:00 PM",
-            "temperature": 73.8,
-            "feels_like": 76.5,
-            "condition": "Light rain",
-            "precipitation_type": "RAIN",
-            "precipitation_prob": 20,
-            "wind_speed": 3.7,
-            "wind_speed_direction": "EAST_SOUTHEAST"
-          },
-          {
-            "time": "05:00 PM",
-            "temperature": 72.0,
-            "feels_like": 75.9,
-            "condition": "Light rain",
-            "precipitation_type": "RAIN",
-            "precipitation_prob": 20,
-            "wind_speed": 5.0,
-            "wind_speed_direction": "EAST"
-          },
-          {
-            "time": "06:00 PM",
-            "temperature": 69.8,
-            "feels_like": 75.9,
-            "condition": "Light rain",
-            "precipitation_type": "RAIN",
-            "precipitation_prob": 20,
-            "wind_speed": 5.0,
-            "wind_speed_direction": "EAST"
-          },
-          {
-            "time": "07:00 PM",
-            "temperature": 68.2,
-            "feels_like": 76.1,
-            "condition": "Cloudy",
-            "precipitation_type": "RAIN",
-            "precipitation_prob": 10,
-            "wind_speed": 3.7,
-            "wind_speed_direction": "EAST"
-          },
-          {
-            "time": "08:00 PM",
-            "temperature": 66.9,
-            "feels_like": 76.5,
-            "condition": "Cloudy",
-            "precipitation_type": "RAIN",
-            "precipitation_prob": 10,
-            "wind_speed": 3.7,
-            "wind_speed_direction": "EAST"
-          }
-        ],
-        "daily_high": 74.8,
-        "daily_low": 59.4
-      }
+      "weather": {}
     },
     {
       "Series": "NASCAR",
@@ -71,62 +16,7 @@
       "date": "2025-06-15",
       "time": "3 PM",
       "channel": "PRIME",
-      "weather": {
-        "hourly_forecast": [
-          {
-            "time": "02:00 PM",
-            "temperature": 73.2,
-            "feels_like": 76.3,
-            "condition": "Light rain",
-            "precipitation_type": "RAIN",
-            "precipitation_prob": 35,
-            "wind_speed": 3.1,
-            "wind_speed_direction": "NORTHEAST"
-          },
-          {
-            "time": "03:00 PM",
-            "temperature": 72.9,
-            "feels_like": 76.3,
-            "condition": "Light rain",
-            "precipitation_type": "RAIN",
-            "precipitation_prob": 35,
-            "wind_speed": 3.1,
-            "wind_speed_direction": "NORTHEAST"
-          },
-          {
-            "time": "04:00 PM",
-            "temperature": 71.4,
-            "feels_like": 76.1,
-            "condition": "Light rain",
-            "precipitation_type": "RAIN",
-            "precipitation_prob": 35,
-            "wind_speed": 3.7,
-            "wind_speed_direction": "NORTHEAST"
-          },
-          {
-            "time": "05:00 PM",
-            "temperature": 69.3,
-            "feels_like": 75.9,
-            "condition": "Light rain",
-            "precipitation_type": "RAIN",
-            "precipitation_prob": 35,
-            "wind_speed": 3.7,
-            "wind_speed_direction": "NORTH"
-          },
-          {
-            "time": "06:00 PM",
-            "temperature": 67.3,
-            "feels_like": 76.3,
-            "condition": "Light rain",
-            "precipitation_type": "RAIN",
-            "precipitation_prob": 35,
-            "wind_speed": 5.0,
-            "wind_speed_direction": "NORTH"
-          }
-        ],
-        "daily_high": 73.2,
-        "daily_low": 59.7
-      }
+      "weather": {}
     }
   ]
 }
