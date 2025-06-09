@@ -83,3 +83,26 @@
 2025-06-05 17:10:51,718 - data_processing.data_processing - INFO - Using cached forecast for MICHIGAN
 2025-06-05 17:10:51,718 - data_processing.data_processing - INFO - Forecast cache has data for 1 locations
 2025-06-05 17:10:51,719 - data_processing.data_processing - INFO - Saved events with weather data to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\data\events_with_weather.json
+2025-06-09 11:41:00,944 - api.weather_api - INFO - Forecast cache cleared
+2025-06-09 11:41:00,947 - api.weather_api - INFO - Downloading data from Google Weather API...
+2025-06-09 11:41:03,027 - api.weather_api - INFO - Forecast saved to C:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\data\track_forecast.json
+2025-06-09 11:41:03,028 - api.weather_api - INFO - Downloaded and cached forecast for MEXICO CITY
+2025-06-09 11:41:03,028 - api.weather_api - INFO - Using cached forecast for MEXICO CITY
+2025-06-09 11:41:03,030 - utils.file_utils - INFO - Saved data to C:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\data\events_with_weather.json
+2025-06-09 11:41:03,030 - __main__ - INFO - Retrieved 2 events for the current weekend
+2025-06-09 11:42:02,978 - data_processing.event_processing - INFO - Using cached events with weather data for 2025-06-13
+2025-06-09 11:42:02,978 - __main__ - INFO - Retrieved 2 events for the current weekend
+2025-06-09 11:42:22,095 - api.weather_api - INFO - Forecast cache cleared
+2025-06-09 11:42:22,098 - api.weather_api - INFO - Downloading data from Google Weather API...
+2025-06-09 11:42:24,418 - api.weather_api - INFO - Forecast saved to C:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\data\track_forecast.json
+2025-06-09 11:42:24,418 - api.weather_api - INFO - Downloaded and cached forecast for MEXICO CITY
+2025-06-09 11:42:24,419 - api.weather_api - INFO - Using cached forecast for MEXICO CITY
+2025-06-09 11:42:24,420 - utils.file_utils - INFO - Saved data to C:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\data\events_with_weather.json
+2025-06-09 11:42:24,420 - __main__ - INFO - Retrieved 2 events for the current weekend
+2025-06-09 12:59:52,209 - api.weather_api - INFO - Forecast cache cleared
+2025-06-09 12:59:52,212 - api.weather_api - INFO - Downloading data from Google Weather API...
+2025-06-09 12:59:54,336 - api.weather_api - INFO - Forecast saved to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\data\track_forecast.json
+2025-06-09 12:59:54,337 - api.weather_api - INFO - Downloaded and cached forecast for MEXICO CITY
+2025-06-09 12:59:54,338 - api.weather_api - INFO - Using cached forecast for MEXICO CITY
+2025-06-09 12:59:54,339 - utils.file_utils - INFO - Saved data to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\data\events_with_weather.json
+2025-06-09 12:59:54,340 - __main__ - INFO - Retrieved 2 events for the current weekend

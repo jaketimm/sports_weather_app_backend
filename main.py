@@ -1,8 +1,8 @@
 # main.py
 import sys
-from data_processing.data_processing import get_current_weekend_events
 import logging
 from config import LOG_FILE, LOG_LEVEL, LOG_FORMAT, USE_CACHED_DATA_BY_DEFAULT
+from data_processing.event_processing import get_current_weekend_events
 
 # Configure logging
 logging.basicConfig(
@@ -15,10 +15,17 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-def main():
 
+def main():
+    """Main entry point for the racing weather application."""
     # Fetch new data from API (this will save to file)
-    get_current_weekend_events(use_cached=USE_CACHED_DATA_BY_DEFAULT)
+    events = get_current_weekend_events(use_cached=USE_CACHED_DATA_BY_DEFAULT)
+    
+    if events:
+        logger.info(f"Retrieved {len(events)} events for the current weekend")
+    else:
+        logger.warning("No events found for the current weekend")
+
 
 if __name__ == "__main__":
     main()

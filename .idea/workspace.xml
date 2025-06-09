@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8728e6ee-2c7b-49d8-b137-3740f36197ac" name="Changes" comment="remove units" />
+    <list default="true" id="8728e6ee-2c7b-49d8-b137-3740f36197ac" name="Changes" comment="remove units">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/events_with_weather.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/events_with_weather.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/track_forecast.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/track_forecast.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_processing/data_processing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_processing/racing_schedule_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_processing/racing_schedule_parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log_file.log" beforeDir="false" afterPath="$PROJECT_DIR$/log_file.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps_API/maps_API_data_processing.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,15 +46,24 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.main.executor": "Debug",
+    "Python.main.executor": "Run",
     "Python.weather_gui.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true"
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/jacob/Python/Python_Projects/sports_weather_app_backend"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\data_processing" />
+      <recent name="C:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\api" />
+      <recent name="C:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\utils" />
+      <recent name="C:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\data" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
