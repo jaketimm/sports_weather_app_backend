@@ -70,8 +70,8 @@ def get_forecast(maps_api_url, output_file=TRACK_FORECAST_FILE):
             else:
                 next_url = None  # Done
         else:
-            logger.error(f"API request failed with status code {response.status_code}: {response.text}")
-            raise Exception(f"API request failed with status code {response.status_code}: {response.text}")
+            logger.error(f"API request failed with status code {response.status_code}")
+            raise Exception(f"API request failed with status code {response.status_code}")
 
     # Save to file
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
