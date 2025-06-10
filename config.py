@@ -12,10 +12,10 @@ API_TIMEOUT = 30  # seconds
 
 # File Paths
 DATA_DIR = os.path.join(BASE_DIR, 'data')
-DATA_OUPUT_DIR = os.path.join('/', 'var', 'www', 'html', 'data')
+DATA_OUTPUT_DIR = os.path.join('/', 'var', 'www', 'html', 'data')
 TRACKS_FILE = os.path.join(DATA_DIR, 'tracks.json')
 SCHEDULE_FILE = os.path.join(DATA_DIR, 'schedule.json')
-EVENTS_WITH_WEATHER_FILE = os.path.join(DATA_OUPUT_DIR, 'events_with_weather.json')
+EVENTS_WITH_WEATHER_FILE = os.path.join(DATA_OUTPUT_DIR, 'events_with_weather.json')
 TRACK_FORECAST_FILE = os.path.join(DATA_DIR, 'track_forecast.json')
 LOG_FILE = os.path.join(BASE_DIR, 'log_file.log')
 
