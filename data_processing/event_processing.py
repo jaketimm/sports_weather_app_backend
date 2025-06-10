@@ -11,7 +11,6 @@ from api.weather_api import get_weather_for_event, clear_forecast_cache
 logger = logging.getLogger(__name__)
 
 # Constants for data files
-EVENTS_DATA_FILE = EVENTS_WITH_WEATHER_FILE
 DEFAULT_SCHEDULE_FILE = SCHEDULE_FILE
 
 
@@ -95,11 +94,11 @@ def filter_future_events(events):
     return filtered_events
 
 
-def save_events_with_weather(events_with_weather, file_path=EVENTS_DATA_FILE):
+def save_events_with_weather(events_with_weather, file_path=EVENTS_WITH_WEATHER_FILE):
     """Save events with weather data to a JSON file."""
     return save_json(events_with_weather, file_path)
 
 
-def load_events_with_weather(file_path=EVENTS_DATA_FILE):
+def load_events_with_weather(file_path=EVENTS_WITH_WEATHER_FILE):
     """Load events with weather data from a JSON file."""
     return load_json(file_path)

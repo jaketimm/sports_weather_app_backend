@@ -2,98 +2,6 @@
   "forecastHours": [
     {
       "interval": {
-        "startTime": "2025-06-10T16:00:00Z",
-        "endTime": "2025-06-10T17:00:00Z"
-      },
-      "displayDateTime": {
-        "year": 2025,
-        "month": 6,
-        "day": 10,
-        "hours": 10,
-        "minutes": 0,
-        "seconds": 0,
-        "nanos": 0,
-        "utcOffset": "-21600s"
-      },
-      "weatherCondition": {
-        "iconBaseUri": "https://maps.gstatic.com/weather/v1/party_cloudy",
-        "description": {
-          "text": "Partly sunny",
-          "languageCode": "en"
-        },
-        "type": "PARTLY_CLOUDY"
-      },
-      "temperature": {
-        "unit": "CELSIUS",
-        "degrees": 22
-      },
-      "feelsLikeTemperature": {
-        "unit": "CELSIUS",
-        "degrees": 24.5
-      },
-      "dewPoint": {
-        "unit": "CELSIUS",
-        "degrees": 11.9
-      },
-      "heatIndex": {
-        "unit": "CELSIUS",
-        "degrees": 24.5
-      },
-      "windChill": {
-        "unit": "CELSIUS",
-        "degrees": 22
-      },
-      "wetBulbTemperature": {
-        "unit": "CELSIUS",
-        "degrees": 15.1
-      },
-      "precipitation": {
-        "probability": {
-          "type": "RAIN",
-          "percent": 5
-        },
-        "snowQpf": {
-          "unit": "MILLIMETERS",
-          "quantity": 0
-        },
-        "qpf": {
-          "unit": "MILLIMETERS",
-          "quantity": 0
-        }
-      },
-      "airPressure": {
-        "meanSeaLevelMillibars": 1018.06
-      },
-      "wind": {
-        "direction": {
-          "cardinal": "NORTHWEST",
-          "degrees": 315
-        },
-        "speed": {
-          "unit": "KILOMETERS_PER_HOUR",
-          "value": 5
-        },
-        "gust": {
-          "unit": "KILOMETERS_PER_HOUR",
-          "value": 10
-        }
-      },
-      "visibility": {
-        "unit": "KILOMETERS",
-        "distance": 16
-      },
-      "iceThickness": {
-        "unit": "MILLIMETERS",
-        "thickness": 0
-      },
-      "isDaytime": true,
-      "relativeHumidity": 53,
-      "uvIndex": 6,
-      "thunderstormProbability": 0,
-      "cloudCover": 63
-    },
-    {
-      "interval": {
         "startTime": "2025-06-10T17:00:00Z",
         "endTime": "2025-06-10T18:00:00Z"
       },
@@ -22077,6 +21985,98 @@
       "isDaytime": true,
       "relativeHumidity": 81,
       "uvIndex": 1,
+      "thunderstormProbability": 0,
+      "cloudCover": 100
+    },
+    {
+      "interval": {
+        "startTime": "2025-06-20T16:00:00Z",
+        "endTime": "2025-06-20T17:00:00Z"
+      },
+      "displayDateTime": {
+        "year": 2025,
+        "month": 6,
+        "day": 20,
+        "hours": 10,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "-21600s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/cloudy",
+        "description": {
+          "text": "Cloudy",
+          "languageCode": "en"
+        },
+        "type": "CLOUDY"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 19.1
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 24.7
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 14.6
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 24.7
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 19.1
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 15.9
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 10
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0.0457
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1017.6
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "WEST",
+          "degrees": 270
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 2
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 3
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": true,
+      "relativeHumidity": 76,
+      "uvIndex": 2,
       "thunderstormProbability": 0,
       "cloudCover": 100
     }
