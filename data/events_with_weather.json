@@ -11,56 +11,56 @@
         "hourly_forecast": [
           {
             "time": "04:00 PM",
-            "temperature": 73.8,
-            "feels_like": 76.5,
-            "condition": "Light rain",
+            "temperature": 73.2,
+            "feels_like": 76.3,
+            "condition": "Rain showers",
             "precipitation_type": "RAIN",
-            "precipitation_prob": 20,
-            "wind_speed": 3.7,
-            "wind_speed_direction": "EAST_SOUTHEAST"
+            "precipitation_prob": 75,
+            "wind_speed": 5.0,
+            "wind_speed_direction": "EAST"
           },
           {
             "time": "05:00 PM",
-            "temperature": 72.0,
+            "temperature": 70.5,
             "feels_like": 75.9,
-            "condition": "Light rain",
+            "condition": "Rain",
             "precipitation_type": "RAIN",
-            "precipitation_prob": 20,
-            "wind_speed": 5.0,
-            "wind_speed_direction": "EAST"
+            "precipitation_prob": 75,
+            "wind_speed": 3.7,
+            "wind_speed_direction": "NORTH"
           },
           {
             "time": "06:00 PM",
-            "temperature": 69.8,
-            "feels_like": 75.9,
-            "condition": "Light rain",
+            "temperature": 68.2,
+            "feels_like": 76.1,
+            "condition": "Rain showers",
             "precipitation_type": "RAIN",
-            "precipitation_prob": 20,
-            "wind_speed": 5.0,
-            "wind_speed_direction": "EAST"
+            "precipitation_prob": 75,
+            "wind_speed": 3.7,
+            "wind_speed_direction": "NORTH_NORTHWEST"
           },
           {
             "time": "07:00 PM",
-            "temperature": 68.2,
-            "feels_like": 76.1,
-            "condition": "Cloudy",
+            "temperature": 66.7,
+            "feels_like": 76.5,
+            "condition": "Light rain",
             "precipitation_type": "RAIN",
-            "precipitation_prob": 10,
-            "wind_speed": 3.7,
-            "wind_speed_direction": "EAST"
+            "precipitation_prob": 35,
+            "wind_speed": 3.1,
+            "wind_speed_direction": "NORTH_NORTHWEST"
           },
           {
             "time": "08:00 PM",
-            "temperature": 66.9,
-            "feels_like": 76.5,
+            "temperature": 66.0,
+            "feels_like": 76.6,
             "condition": "Cloudy",
             "precipitation_type": "RAIN",
             "precipitation_prob": 10,
-            "wind_speed": 3.7,
-            "wind_speed_direction": "EAST"
+            "wind_speed": 1.9,
+            "wind_speed_direction": "NORTH_NORTHWEST"
           }
         ],
-        "daily_high": 74.8,
+        "daily_high": 75.0,
         "daily_low": 59.4
       }
     },
@@ -75,56 +75,56 @@
         "hourly_forecast": [
           {
             "time": "02:00 PM",
-            "temperature": 73.2,
-            "feels_like": 76.3,
-            "condition": "Light rain",
+            "temperature": 73.6,
+            "feels_like": 76.5,
+            "condition": "Rain showers",
             "precipitation_type": "RAIN",
-            "precipitation_prob": 35,
-            "wind_speed": 3.1,
-            "wind_speed_direction": "NORTHEAST"
+            "precipitation_prob": 65,
+            "wind_speed": 1.9,
+            "wind_speed_direction": "EAST"
           },
           {
             "time": "03:00 PM",
-            "temperature": 72.9,
-            "feels_like": 76.3,
-            "condition": "Light rain",
+            "temperature": 73.4,
+            "feels_like": 76.5,
+            "condition": "Rain showers",
             "precipitation_type": "RAIN",
-            "precipitation_prob": 35,
+            "precipitation_prob": 45,
             "wind_speed": 3.1,
-            "wind_speed_direction": "NORTHEAST"
+            "wind_speed_direction": "EAST"
           },
           {
             "time": "04:00 PM",
-            "temperature": 71.4,
+            "temperature": 72.0,
             "feels_like": 76.1,
             "condition": "Light rain",
             "precipitation_type": "RAIN",
-            "precipitation_prob": 35,
-            "wind_speed": 3.7,
-            "wind_speed_direction": "NORTHEAST"
+            "precipitation_prob": 40,
+            "wind_speed": 1.9,
+            "wind_speed_direction": "SOUTHEAST"
           },
           {
             "time": "05:00 PM",
-            "temperature": 69.3,
+            "temperature": 70.2,
             "feels_like": 75.9,
             "condition": "Light rain",
             "precipitation_type": "RAIN",
-            "precipitation_prob": 35,
-            "wind_speed": 3.7,
-            "wind_speed_direction": "NORTH"
+            "precipitation_prob": 40,
+            "wind_speed": 3.1,
+            "wind_speed_direction": "SOUTH"
           },
           {
             "time": "06:00 PM",
-            "temperature": 67.3,
-            "feels_like": 76.3,
+            "temperature": 68.2,
+            "feels_like": 76.1,
             "condition": "Light rain",
             "precipitation_type": "RAIN",
-            "precipitation_prob": 35,
-            "wind_speed": 5.0,
-            "wind_speed_direction": "NORTH"
+            "precipitation_prob": 40,
+            "wind_speed": 1.9,
+            "wind_speed_direction": "SOUTH"
           }
         ],
-        "daily_high": 73.2,
+        "daily_high": 73.6,
         "daily_low": 59.7
       }
     }
