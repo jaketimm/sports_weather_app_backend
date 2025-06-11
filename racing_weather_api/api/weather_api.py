@@ -8,9 +8,9 @@ import os
 import logging
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
-from config import (TRACKS_FILE, TRACK_FORECAST_FILE, MAPSAPI_BASE_URL, 
-                   API_TIMEOUT, FORECAST_HOURS_BEFORE_EVENT, FORECAST_HOURS_AFTER_EVENT)
-from utils.conversion_utils import celsius_to_fahrenheit, kph_to_mph, parse_event_time
+from racing_weather_api.config import (TRACKS_FILE, TRACK_FORECAST_FILE, MAPSAPI_BASE_URL,
+                                       API_TIMEOUT, FORECAST_HOURS_BEFORE_EVENT, FORECAST_HOURS_AFTER_EVENT)
+from racing_weather_api.utils.conversion_utils import celsius_to_fahrenheit, kph_to_mph, parse_event_time
 
 logger = logging.getLogger(__name__)
 

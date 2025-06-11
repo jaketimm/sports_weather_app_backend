@@ -6,8 +6,8 @@ from datetime import datetime
 from flask import Flask, jsonify, request
 import os
 
-from config import LOG_FILE, LOG_LEVEL, LOG_FORMAT, USE_CACHED_DATA_BY_DEFAULT
-from data_processing.event_processing import get_current_weekend_events
+from racing_weather_api.config import LOG_FILE, LOG_LEVEL, LOG_FORMAT, USE_CACHED_DATA_BY_DEFAULT
+from racing_weather_api.data_processing.event_processing import get_current_weekend_events
 
 # Configure logging
 logging.basicConfig(

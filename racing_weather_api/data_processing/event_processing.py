@@ -3,10 +3,10 @@ Module for handling event data processing and management.
 """
 import logging
 from datetime import datetime, timedelta
-from config import EVENTS_WITH_WEATHER_FILE, SCHEDULE_FILE
-from utils.file_utils import load_json, save_json
-from utils.conversion_utils import parse_event_time
-from api.weather_api import get_weather_for_event, clear_forecast_cache
+from racing_weather_api.config import EVENTS_WITH_WEATHER_FILE, SCHEDULE_FILE
+from racing_weather_api.utils.file_utils import load_json, save_json
+from racing_weather_api.utils.conversion_utils import parse_event_time
+from racing_weather_api.api.weather_api import get_weather_for_event, clear_forecast_cache
 
 logger = logging.getLogger(__name__)
 

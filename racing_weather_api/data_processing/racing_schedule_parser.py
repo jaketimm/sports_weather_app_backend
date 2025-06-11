@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 from collections import defaultdict
 import json
 import os
-from config import DATA_DIR, SCHEDULE_FILE
+from racing_weather_api.config import DATA_DIR, SCHEDULE_FILE
 
 # Extract text from Nascar Schedule PDF
 def extract_text_from_pdf(pdf_path=None):
