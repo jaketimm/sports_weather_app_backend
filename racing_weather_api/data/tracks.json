@@ -1,32 +1,188 @@
 [
-  {"name": "ATLANTA", "location": "Hampton, GA", "latitude": 33.3498, "longitude": -84.2807},
-  {"name": "BRISTOL", "location": "Bristol, TN", "latitude": 36.5951, "longitude": -82.1888},
-  {"name": "ROVAL", "location": "Concord, NC", "latitude": 35.3495, "longitude": -80.6817},
-  {"name": "CHARLOTTE", "location": "Concord, NC", "latitude": 35.2271, "longitude": -80.8431},
-  {"name": "CHICAGO", "location": "Chicago, IL", "latitude": 41.8781, "longitude": -87.6298},
-  {"name": "COTA", "location": "Austin, TX", "latitude": 30.2672, "longitude": -97.7431},
-  {"name": "DARLINGTON", "location": "Darlington, SC", "latitude": 34.3013, "longitude": -79.8831},
-  {"name": "DAYTONA", "location": "Daytona Beach, FL", "latitude": 29.2108, "longitude": -81.0228},
-  {"name": "DOVER", "location": "Dover, DE", "latitude": 39.1582, "longitude": -75.5244},
-  {"name": "WWTR", "location": "Madison, IL", "latitude": 38.6270, "longitude": -90.1994},
-  {"name": "INDIANAPOLIS", "location": "Speedway, IN", "latitude": 39.7950, "longitude": -86.2353},
-  {"name": "IOWA", "location": "Newton, IA", "latitude": 41.7000, "longitude": -93.0333},
-  {"name": "KANSAS", "location": "Kansas City, KS", "latitude": 39.1141, "longitude": -94.6275},
-  {"name": "LAS VEGAS", "location": "Las Vegas, NV", "latitude": 36.1699, "longitude": -115.1398},
-  {"name": "LUCAS OIL IRP", "location": "Brownsburg, Indiana", "latitude": 39.8354, "longitude": -86.3793},
-  {"name": "MARTINSVILLE", "location": "Ridgeway, VA", "latitude": 36.6985, "longitude": -79.8667},
-  {"name": "MEXICO CITY", "location": "Mexico City", "latitude": 19.4326, "longitude": -99.1332},
-  {"name": "MIAMI", "location": "Miami, FL", "latitude": 25.7617, "longitude": -80.1918},
-  {"name": "MICHIGAN", "location": "Brooklyn, MI", "latitude": 42.0783, "longitude": -84.2839},
-  {"name": "NASHVILLE", "location": "Lebanon, TN", "latitude": 36.1627, "longitude": -86.7816},
-  {"name": "NEW HAMPSHIRE", "location": "Loudon, NH", "latitude": 43.3194, "longitude": -71.5365},
-  {"name": "N. WILKESBORO", "location": "North Wilkesboro, NC", "latitude": 36.1583, "longitude": -81.1592},
-  {"name": "PHOENIX", "location": "Avondale, AZ", "latitude": 33.4356, "longitude": -112.3496},
-  {"name": "POCONO", "location": "Long Pond, PA", "latitude": 41.1353, "longitude": -75.5958},
-  {"name": "RICHMOND", "location": "Richmond, VA", "latitude": 37.5407, "longitude": -77.4360},
-  {"name": "ROCKINGHAM", "location": "Rockingham, NC", "latitude": 34.9353, "longitude": -79.7745},
-  {"name": "SONOMA", "location": "Sonoma, CA", "latitude": 38.2919, "longitude": -122.4586},
-  {"name": "TALLADEGA", "location": "Lincoln, AL", "latitude": 33.5726, "longitude": -86.0841},
-  {"name": "TEXAS", "location": "Fort Worth, TX", "latitude": 32.7555, "longitude": -97.3308},
-  {"name": "WATKINS GLEN", "location": "Watkins Glen, NY", "latitude": 42.3803, "longitude": -76.8743}
+  {
+    "name": "ATLANTA",
+    "location": "Hampton, GA",
+    "latitude": 33.3851098,
+    "longitude": -84.2829063
+  },
+  {
+    "name": "BRISTOL",
+    "location": "Bristol, TN",
+    "latitude": 36.5951059,
+    "longitude": -82.18874439999999
+  },
+  {
+    "name": "ROVAL",
+    "location": "Concord, NC",
+    "latitude": 35.4100756,
+    "longitude": -80.5819527
+  },
+  {
+    "name": "CHARLOTTE",
+    "location": "Concord, NC",
+    "latitude": 35.4100756,
+    "longitude": -80.5819527
+  },
+  {
+    "name": "CHICAGO",
+    "location": "Chicago, IL",
+    "latitude": 41.8781136,
+    "longitude": -87.6297982
+  },
+  {
+    "name": "COTA",
+    "location": "Austin, TX",
+    "latitude": 30.267153,
+    "longitude": -97.7430608
+  },
+  {
+    "name": "DARLINGTON",
+    "location": "Darlington, SC",
+    "latitude": 34.3003526,
+    "longitude": -79.8757116
+  },
+  {
+    "name": "DAYTONA",
+    "location": "Daytona Beach, FL",
+    "latitude": 29.2071029,
+    "longitude": -81.01967959999999
+  },
+  {
+    "name": "DOVER",
+    "location": "Dover, DE",
+    "latitude": 39.158168,
+    "longitude": -75.5243682
+  },
+  {
+    "name": "WWTR",
+    "location": "Madison, IL",
+    "latitude": 38.6825502,
+    "longitude": -90.1570536
+  },
+  {
+    "name": "INDIANAPOLIS",
+    "location": "Speedway, IN",
+    "latitude": 39.792738,
+    "longitude": -86.250822
+  },
+  {
+    "name": "IOWA",
+    "location": "Newton, IA",
+    "latitude": 41.7033177,
+    "longitude": -93.05735330000002
+  },
+  {
+    "name": "KANSAS",
+    "location": "Kansas City, KS",
+    "latitude": 39.11553139999999,
+    "longitude": -94.62678729999999
+  },
+  {
+    "name": "LAS VEGAS",
+    "location": "Las Vegas, NV",
+    "latitude": 36.171563,
+    "longitude": -115.1391009
+  },
+  {
+    "name": "LUCAS OIL IRP",
+    "location": "Brownsburg, Indiana",
+    "latitude": 39.8433163,
+    "longitude": -86.397956
+  },
+  {
+    "name": "MARTINSVILLE",
+    "location": "Ridgeway, VA",
+    "latitude": 36.5768046,
+    "longitude": -79.8583721
+  },
+  {
+    "name": "MEXICO CITY",
+    "location": "Mexico City",
+    "latitude": 19.4326077,
+    "longitude": -99.133208
+  },
+  {
+    "name": "MIAMI",
+    "location": "Miami, FL",
+    "latitude": 25.7616798,
+    "longitude": -80.1917902
+  },
+  {
+    "name": "MICHIGAN",
+    "location": "Brooklyn, MI",
+    "latitude": 42.105874,
+    "longitude": -84.2482819
+  },
+  {
+    "name": "NASHVILLE",
+    "location": "Lebanon, TN",
+    "latitude": 36.2081098,
+    "longitude": -86.2911024
+  },
+  {
+    "name": "NEW HAMPSHIRE",
+    "location": "Loudon, NH",
+    "latitude": 43.2856337,
+    "longitude": -71.46726509999999
+  },
+  {
+    "name": "N. WILKESBORO",
+    "location": "North Wilkesboro, NC",
+    "latitude": 36.1584651,
+    "longitude": -81.1475841
+  },
+  {
+    "name": "PHOENIX",
+    "location": "Avondale, AZ",
+    "latitude": 33.4355977,
+    "longitude": -112.3496021
+  },
+  {
+    "name": "POCONO",
+    "location": "Long Pond, PA",
+    "latitude": 41.053422,
+    "longitude": -75.4629636
+  },
+  {
+    "name": "RICHMOND",
+    "location": "Richmond, VA",
+    "latitude": 37.5407246,
+    "longitude": -77.4360481
+  },
+  {
+    "name": "ROCKINGHAM",
+    "location": "Rockingham, NC",
+    "latitude": 34.9393201,
+    "longitude": -79.7739457
+  },
+  {
+    "name": "SONOMA",
+    "location": "Sonoma, CA",
+    "latitude": 38.291859,
+    "longitude": -122.4580356
+  },
+  {
+    "name": "TALLADEGA",
+    "location": "Lincoln, AL",
+    "latitude": 33.6131588,
+    "longitude": -86.1183061
+  },
+  {
+    "name": "TEXAS",
+    "location": "Fort Worth, TX",
+    "latitude": 32.7554883,
+    "longitude": -97.3307658
+  },
+  {
+    "name": "WATKINS GLEN",
+    "location": "Watkins Glen, NY",
+    "latitude": 42.3806287,
+    "longitude": -76.8732921
+  },
+  {
+    "name": "LIME ROCK",
+    "location": "Salisbury, Connecticut",
+    "latitude": 41.983426,
+    "longitude": -73.4212318
+  }
 ]

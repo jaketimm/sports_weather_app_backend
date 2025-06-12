@@ -1,7 +1,7 @@
 {
   "2025-01-31": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "CLASH BOWMAN GRAY",
       "day_of_week": "SUN",
       "date": "2025-02-02",
@@ -11,7 +11,7 @@
   ],
   "2025-02-14": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "DAYTONA",
       "day_of_week": "SUN",
       "date": "2025-02-16",
@@ -19,7 +19,7 @@
       "channel": "FOX"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "DAYTONA",
       "day_of_week": "SAT",
       "date": "2025-02-15",
@@ -27,7 +27,7 @@
       "channel": "CW"
     },
     {
-      "Series": "NASCAR",
+      "Series": "CRAFTSMAN TRUCKS",
       "location": "DAYTONA",
       "day_of_week": "FRI",
       "date": "2025-02-14",
@@ -37,7 +37,7 @@
   ],
   "2025-02-21": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "ATLANTA",
       "day_of_week": "SUN",
       "date": "2025-02-23",
@@ -45,7 +45,7 @@
       "channel": "FOX"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "ATLANTA",
       "day_of_week": "SAT",
       "date": "2025-02-22",
@@ -53,7 +53,7 @@
       "channel": "CW"
     },
     {
-      "Series": "NASCAR",
+      "Series": "CRAFTSMAN TRUCKS",
       "location": "ATLANTA",
       "day_of_week": "SAT",
       "date": "2025-02-22",
@@ -63,7 +63,7 @@
   ],
   "2025-02-28": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "COTA",
       "day_of_week": "SUN",
       "date": "2025-03-02",
@@ -71,7 +71,7 @@
       "channel": "FOX"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "COTA",
       "day_of_week": "SAT",
       "date": "2025-03-01",
@@ -81,7 +81,7 @@
   ],
   "2025-03-07": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "PHOENIX",
       "day_of_week": "SUN",
       "date": "2025-03-09",
@@ -89,7 +89,7 @@
       "channel": "FS1"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "PHOENIX",
       "day_of_week": "SAT",
       "date": "2025-03-08",
@@ -99,7 +99,7 @@
   ],
   "2025-03-14": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "LAS VEGAS",
       "day_of_week": "SUN",
       "date": "2025-03-16",
@@ -107,7 +107,7 @@
       "channel": "FS1"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "LAS VEGAS",
       "day_of_week": "SAT",
       "date": "2025-03-15",
@@ -115,7 +115,7 @@
       "channel": "CW"
     },
     {
-      "Series": "NASCAR",
+      "Series": "CRAFTSMAN TRUCKS",
       "location": "LAS VEGAS",
       "day_of_week": "FRI",
       "date": "2025-03-14",
@@ -125,7 +125,7 @@
   ],
   "2025-03-21": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "MIAMI",
       "day_of_week": "SUN",
       "date": "2025-03-23",
@@ -133,7 +133,7 @@
       "channel": "FS1"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "MIAMI",
       "day_of_week": "SAT",
       "date": "2025-03-22",
@@ -141,7 +141,7 @@
       "channel": "CW"
     },
     {
-      "Series": "NASCAR",
+      "Series": "CRAFTSMAN TRUCKS",
       "location": "MIAMI",
       "day_of_week": "FRI",
       "date": "2025-03-21",
@@ -151,7 +151,7 @@
   ],
   "2025-03-28": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "MARTINSVILLE",
       "day_of_week": "SUN",
       "date": "2025-03-30",
@@ -159,7 +159,7 @@
       "channel": "FS1"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "MARTINSVILLE",
       "day_of_week": "SAT",
       "date": "2025-03-29",
@@ -167,7 +167,7 @@
       "channel": "CW"
     },
     {
-      "Series": "NASCAR",
+      "Series": "CRAFTSMAN TRUCKS",
       "location": "MARTINSVILLE",
       "day_of_week": "FRI",
       "date": "2025-03-28",
@@ -177,7 +177,7 @@
   ],
   "2025-04-04": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "DARLINGTON",
       "day_of_week": "SUN",
       "date": "2025-04-06",
@@ -185,7 +185,7 @@
       "channel": "FS1"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "DARLINGTON",
       "day_of_week": "SAT",
       "date": "2025-04-05",
@@ -389,7 +389,7 @@
   ],
   "2025-06-13": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "MEXICO CITY",
       "day_of_week": "SUN",
       "date": "2025-06-15",
@@ -397,7 +397,7 @@
       "channel": "PRIME"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "MEXICO CITY",
       "day_of_week": "SAT",
       "date": "2025-06-14",
@@ -407,7 +407,7 @@
   ],
   "2025-06-20": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "POCONO",
       "day_of_week": "SUN",
       "date": "2025-06-22",
@@ -415,7 +415,7 @@
       "channel": "PRIME"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "POCONO",
       "day_of_week": "SAT",
       "date": "2025-06-21",
@@ -423,7 +423,7 @@
       "channel": "CW"
     },
     {
-      "Series": "NASCAR",
+      "Series": "CRAFTSMAN TRUCKS",
       "location": "POCONO",
       "day_of_week": "FRI",
       "date": "2025-06-20",
@@ -433,7 +433,7 @@
   ],
   "2025-06-27": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "ATLANTA",
       "day_of_week": "SAT",
       "date": "2025-06-28",
@@ -441,7 +441,7 @@
       "channel": "TNT"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "ATLANTA",
       "day_of_week": "FRI",
       "date": "2025-06-27",
@@ -449,7 +449,7 @@
       "channel": "CW"
     },
     {
-      "Series": "NASCAR",
+      "Series": "CRAFTSMAN TRUCKS",
       "location": "LIME ROCK",
       "day_of_week": "SAT",
       "date": "2025-06-28",
@@ -459,7 +459,7 @@
   ],
   "2025-07-04": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "CHICAGO",
       "day_of_week": "SUN",
       "date": "2025-07-06",
@@ -467,7 +467,7 @@
       "channel": "TNT"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "CHICAGO",
       "day_of_week": "SAT",
       "date": "2025-07-05",
@@ -477,7 +477,7 @@
   ],
   "2025-07-11": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "SONOMA",
       "day_of_week": "SUN",
       "date": "2025-07-13",
@@ -485,7 +485,7 @@
       "channel": "TNT"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "SONOMA",
       "day_of_week": "SAT",
       "date": "2025-07-12",
@@ -495,7 +495,7 @@
   ],
   "2025-07-18": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "DOVER",
       "day_of_week": "SUN",
       "date": "2025-07-20",
@@ -503,7 +503,7 @@
       "channel": "TNT"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "DOVER",
       "day_of_week": "SAT",
       "date": "2025-07-19",
@@ -513,7 +513,7 @@
   ],
   "2025-07-25": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "INDIANAPOLIS",
       "day_of_week": "SUN",
       "date": "2025-07-27",
@@ -521,7 +521,7 @@
       "channel": "TNT"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "INDIANAPOLIS",
       "day_of_week": "SAT",
       "date": "2025-07-26",
@@ -529,7 +529,7 @@
       "channel": "CW"
     },
     {
-      "Series": "NASCAR",
+      "Series": "CRAFTSMAN TRUCKS",
       "location": "LUCAS OIL IRP",
       "day_of_week": "FRI",
       "date": "2025-07-25",
@@ -539,7 +539,7 @@
   ],
   "2025-08-01": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "IOWA",
       "day_of_week": "SUN",
       "date": "2025-08-03",
@@ -547,7 +547,7 @@
       "channel": "USA"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "IOWA",
       "day_of_week": "SAT",
       "date": "2025-08-02",
@@ -557,7 +557,7 @@
   ],
   "2025-08-08": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "WATKINS GLEN",
       "day_of_week": "SUN",
       "date": "2025-08-10",
@@ -565,7 +565,7 @@
       "channel": "USA"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "WATKINS GLEN",
       "day_of_week": "SAT",
       "date": "2025-08-09",
@@ -573,7 +573,7 @@
       "channel": "CW"
     },
     {
-      "Series": "NASCAR",
+      "Series": "CRAFTSMAN TRUCKS",
       "location": "WATKINS GLEN",
       "day_of_week": "FRI",
       "date": "2025-08-08",
@@ -583,7 +583,7 @@
   ],
   "2025-08-15": [
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "RICHMOND",
       "day_of_week": "SAT",
       "date": "2025-08-16",
@@ -591,7 +591,7 @@
       "channel": "USA"
     },
     {
-      "Series": "NASCAR",
+      "Series": "CRAFTSMAN TRUCKS",
       "location": "RICHMOND",
       "day_of_week": "FRI",
       "date": "2025-08-15",
@@ -601,7 +601,7 @@
   ],
   "2025-08-22": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "DAYTONA",
       "day_of_week": "SAT",
       "date": "2025-08-23",
@@ -609,7 +609,7 @@
       "channel": "NBC"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "DAYTONA",
       "day_of_week": "FRI",
       "date": "2025-08-22",
@@ -619,7 +619,7 @@
   ],
   "2025-08-29": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "DARLINGTON",
       "day_of_week": "SUN",
       "date": "2025-08-31",
@@ -627,7 +627,7 @@
       "channel": "USA"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "PORTLAND",
       "day_of_week": "SAT",
       "date": "2025-08-30",
@@ -635,7 +635,7 @@
       "channel": "CW"
     },
     {
-      "Series": "NASCAR",
+      "Series": "CRAFTSMAN TRUCKS",
       "location": "DARLINGTON",
       "day_of_week": "SAT",
       "date": "2025-08-30",
@@ -645,7 +645,7 @@
   ],
   "2025-09-05": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "WWTR",
       "day_of_week": "SUN",
       "date": "2025-09-07",
@@ -653,7 +653,7 @@
       "channel": "USA"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "WWTR",
       "day_of_week": "SAT",
       "date": "2025-09-06",
@@ -663,7 +663,7 @@
   ],
   "2025-09-12": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "BRISTOL",
       "day_of_week": "SAT",
       "date": "2025-09-13",
@@ -671,7 +671,7 @@
       "channel": "USA"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "BRISTOL",
       "day_of_week": "FRI",
       "date": "2025-09-12",
@@ -681,7 +681,7 @@
   ],
   "2025-09-19": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "NEW HAMPSHIRE",
       "day_of_week": "SUN",
       "date": "2025-09-21",
@@ -689,7 +689,7 @@
       "channel": "USA"
     },
     {
-      "Series": "NASCAR",
+      "Series": "CRAFTSMAN TRUCKS",
       "location": "NEW HAMPSHIRE",
       "day_of_week": "SAT",
       "date": "2025-09-20",
@@ -699,7 +699,7 @@
   ],
   "2025-09-26": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "KANSAS",
       "day_of_week": "SUN",
       "date": "2025-09-28",
@@ -707,7 +707,7 @@
       "channel": "USA"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "KANSAS",
       "day_of_week": "SAT",
       "date": "2025-09-27",
@@ -717,7 +717,7 @@
   ],
   "2025-10-03": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "ROVAL",
       "day_of_week": "SUN",
       "date": "2025-10-05",
@@ -725,7 +725,7 @@
       "channel": "USA"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "ROVAL",
       "day_of_week": "SAT",
       "date": "2025-10-04",
@@ -733,7 +733,7 @@
       "channel": "CW"
     },
     {
-      "Series": "NASCAR",
+      "Series": "CRAFTSMAN TRUCKS",
       "location": "ROVAL",
       "day_of_week": "FRI",
       "date": "2025-10-03",
@@ -743,7 +743,7 @@
   ],
   "2025-10-10": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "LAS VEGAS",
       "day_of_week": "SUN",
       "date": "2025-10-12",
@@ -751,7 +751,7 @@
       "channel": "USA"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "LAS VEGAS",
       "day_of_week": "SAT",
       "date": "2025-10-11",
@@ -761,7 +761,7 @@
   ],
   "2025-10-17": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "TALLADEGA",
       "day_of_week": "SUN",
       "date": "2025-10-19",
@@ -769,7 +769,7 @@
       "channel": "NBC"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "TALLADEGA",
       "day_of_week": "SAT",
       "date": "2025-10-18",
@@ -777,7 +777,7 @@
       "channel": "CW"
     },
     {
-      "Series": "NASCAR",
+      "Series": "CRAFTSMAN TRUCKS",
       "location": "TALLADEGA",
       "day_of_week": "FRI",
       "date": "2025-10-17",
@@ -787,7 +787,7 @@
   ],
   "2025-10-24": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "MARTINSVILLE",
       "day_of_week": "SUN",
       "date": "2025-10-26",
@@ -795,7 +795,7 @@
       "channel": "NBC"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "MARTINSVILLE",
       "day_of_week": "SAT",
       "date": "2025-10-25",
@@ -803,7 +803,7 @@
       "channel": "CW"
     },
     {
-      "Series": "NASCAR",
+      "Series": "CRAFTSMAN TRUCKS",
       "location": "MARTINSVILLE",
       "day_of_week": "FRI",
       "date": "2025-10-24",
@@ -813,7 +813,7 @@
   ],
   "2025-10-31": [
     {
-      "Series": "NASCAR",
+      "Series": "CUP",
       "location": "PHOENIX",
       "day_of_week": "SUN",
       "date": "2025-11-02",
@@ -821,7 +821,7 @@
       "channel": "NBC"
     },
     {
-      "Series": "NASCAR",
+      "Series": "XFINITY",
       "location": "PHOENIX",
       "day_of_week": "SAT",
       "date": "2025-11-01",
@@ -829,7 +829,7 @@
       "channel": "CW"
     },
     {
-      "Series": "NASCAR",
+      "Series": "CRAFTSMAN TRUCKS",
       "location": "PHOENIX",
       "day_of_week": "FRI",
       "date": "2025-10-31",
