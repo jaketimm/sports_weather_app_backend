@@ -6,8 +6,8 @@ from datetime import datetime
 from flask import Flask, jsonify, request
 import os
 
-from racing_weather_api.config import LOG_FILE, LOG_LEVEL, LOG_FORMAT, USE_CACHED_DATA_BY_DEFAULT
-from racing_weather_api.data_processing.event_processing import get_current_weekend_events
+from racing_weather_api.config import LOG_FILE, LOG_LEVEL, LOG_FORMAT
+from racing_weather_api.data_processing.event_processing import get_events_with_weather
 
 # Configure logging
 logging.basicConfig(
@@ -29,12 +29,16 @@ last_update = None
 scheduler_running = False
 
 
+##########################################################################
+##                           Scheduler Logic                            ##
+##########################################################################
+
 def scheduled_job():
-    """Main job function for processing racing weather data."""
+    """Main job function for refreshing racing weather data."""
     global latest_events, last_update
     
     try:
-        events = get_current_weekend_events(use_cached=USE_CACHED_DATA_BY_DEFAULT)
+        events = get_events_with_weather(use_cached=False)
         
         if events:
             latest_events = events
@@ -48,7 +52,7 @@ def scheduled_job():
 
 
 def run_scheduler():
-    """Run the scheduler in a separate thread."""
+    """Run the scheduler in a separate thread. Update data once per hour"""
     global scheduler_running
     scheduler_running = True
     logger.info("Scheduler started, running job every 60 minutes")
@@ -64,7 +68,10 @@ def run_scheduler():
         time.sleep(1)
 
 
-# Flask Routes
+##########################################################################
+##                             Flask Routes                             ##
+##########################################################################
+
 @app.route('/')
 def home():
     """Health check endpoint."""
@@ -72,7 +79,8 @@ def home():
         "message": "Racing Weather API is running!",
         "status": "healthy",
         "last_update": last_update.isoformat() if last_update else None,
-        "events_count": len(latest_events)
+        "events_count": len(latest_events),
+        "scheduler_running": scheduler_running
     })
 
 
@@ -86,32 +94,6 @@ def health_check():
         "events_available": len(latest_events) > 0,
         "timestamp": datetime.now().isoformat()
     })
-
-
-@app.route('/api/events')
-def get_events():
-    """Get current weekend events."""
-    try:
-        # Option to force refresh
-        force_refresh = request.args.get('refresh', 'false').lower() == 'true'
-        
-        if force_refresh:
-            logger.info("Force refresh requested")
-            scheduled_job()
-        
-        return jsonify({
-            "events": latest_events,
-            "count": len(latest_events),
-            "last_update": last_update.isoformat() if last_update else None,
-            "cached": not force_refresh
-        })
-        
-    except Exception as e:
-        logger.error(f"Error retrieving events: {str(e)}")
-        return jsonify({
-            "error": "Failed to retrieve events",
-            "message": str(e)
-        }), 500
 
 
 @app.route('/api/events/refresh', methods=['POST'])
@@ -177,8 +159,10 @@ def start_scheduler():
             "scheduler_running": scheduler_running
         })
 
+##########################################################################
+##                           Error Handlers                             ##
+##########################################################################
 
-# Error handlers
 @app.errorhandler(404)
 def not_found(error):
     return jsonify({"error": "Endpoint not found"}), 404
@@ -189,6 +173,10 @@ def internal_error(error):
     logger.error(f"Internal server error: {str(error)}")
     return jsonify({"error": "Internal server error"}), 500
 
+
+##########################################################################
+##                         Initialize/Run App                           ##
+##########################################################################
 
 def create_app():
     """Application factory for production deployment."""

@@ -17,8 +17,119 @@ logger = logging.getLogger(__name__)
 # Cache to store forecasts by location
 forecast_cache = {}
 
+def get_weather_for_event(event: dict):
+    """Get weather forecast for an event including hourly forecasts and daily high/low temperatures."""
+    try:
+        location = event.get('location', '')
+        event_date_str = event.get('date', '')
+        event_time_str = event.get('time', '')
 
-def build_weather_url(track_name, api_key, json_file=TRACKS_FILE):
+        if not all([location, event_date_str, event_time_str]):
+            return {}
+
+        # Get forecast data for this location
+        forecast_data = get_location_forecast(location)
+        if not forecast_data:
+            return {}
+
+        # Parse event time
+        event_time_str = parse_event_time(event_time_str)
+
+        # Convert to datetime
+        event_date = datetime.strptime(event_date_str, '%Y-%m-%d')
+        event_time = datetime.strptime(event_time_str, '%I:%M %p')
+        event_datetime = event_date.replace(hour=event_time.hour, minute=event_time.minute)
+
+        # Extract daily high and low temperatures for the event date
+        daily_max_min = extract_daily_high_low_temps(forecast_data, event_date)
+
+        # Extract hours from weather file
+        forecast_hours = forecast_data.get('forecastHours', [])
+        relevant_forecasts = []
+
+        # Save forecast data starting 1 hr before, 4 hours after event start time
+        for forecast_hour in forecast_hours:
+            # Parse the forecast time
+            display_time = forecast_hour.get('displayDateTime', {})
+            forecast_dt = datetime(
+                year=display_time.get('year', 0),
+                month=display_time.get('month', 0),
+                day=display_time.get('day', 0),
+                hour=display_time.get('hours', 0),
+                minute=display_time.get('minutes', 0)
+            )
+
+            # Check if this forecast is within configured hours of event start
+            time_diff = forecast_dt - event_datetime
+            if timedelta(hours=-FORECAST_HOURS_BEFORE_EVENT) <= time_diff <= timedelta(hours=FORECAST_HOURS_AFTER_EVENT):
+                # Get original values and convert units
+                temp_fahrenheit = celsius_to_fahrenheit(forecast_hour.get('temperature', {}).get('degrees'))
+                feels_like_fahrenheit = celsius_to_fahrenheit(
+                    forecast_hour.get('feelsLikeTemperature', {}).get('degrees'))
+                wind_speed_mph = kph_to_mph(forecast_hour.get('wind', {}).get('speed', {}).get('value'))
+
+                # Save hourly weather conditions
+                weather_info = {
+                    'time': forecast_dt.strftime('%I:%M %p'),
+                    'temperature': temp_fahrenheit,
+                    'feels_like': feels_like_fahrenheit,
+                    'condition': forecast_hour.get('weatherCondition', {}).get('description', {}).get('text', 'N/A'),
+                    'precipitation_type': forecast_hour.get('precipitation', {}).get('probability', {}).get('type',
+                                                                                                        'N/A'),
+                    'precipitation_prob': forecast_hour.get('precipitation', {}).get('probability', {}).get('percent',
+                                                                                                        'N/A'),
+                    'wind_speed': wind_speed_mph,
+                    'wind_speed_direction': forecast_hour.get('wind', {}).get('direction', {}).get('cardinal', 'N/A')
+                }
+                relevant_forecasts.append(weather_info)
+
+        # Return both hourly forecasts and daily high/low temperatures
+        return {
+            'hourly_forecast': relevant_forecasts[:5],  # Limit to 5 hours
+            'daily_high': daily_max_min['high'],
+            'daily_low': daily_max_min['low']
+        }
+
+    except Exception as e:
+        logger.error(f"Error processing weather for {event.get('location', 'unknown')}: {e}")
+        return {}
+
+
+def get_location_forecast(location: str):
+    """Get forecast data for a location, using cache if available."""
+
+    # Check if we already have forecast data for this location (avoid redundant 10-day weather downloads)
+    if location in forecast_cache:
+        logger.info(f"Using cached forecast for {location}, data already downloaded")
+        return forecast_cache[location]
+
+    try:
+        # Load variables from .env into environment
+        load_dotenv()
+        # Access the API key
+        api_key = os.getenv("MAPSAPI_KEY")
+        if not api_key:
+            logger.warning("Warning: MAPSAPI_KEY environment variable not set. Please check your .env file.")
+            return None
+
+        # Build weather URL
+        weather_url = build_weather_api_url(location, api_key)
+
+        logger.info("Downloading data from Google Weather API...")
+        # Get forecast data
+        forecast_data = download_maps_api_data(weather_url)
+
+        # Cache the result
+        forecast_cache[location] = forecast_data
+        logger.info(f"Downloaded and cached forecast for {location}")
+
+        return forecast_data
+    except Exception as e:
+        logger.error(f"Error getting forecast for {location}: {e}")
+        return None
+
+
+def build_weather_api_url(track_name, api_key, json_file=TRACKS_FILE):
     '''Builds a weather forecast URL for a given track name using the Google Maps API.'''
     # Load the track data from JSON
     with open(json_file, 'r') as file:
@@ -32,7 +143,7 @@ def build_weather_url(track_name, api_key, json_file=TRACKS_FILE):
         if track['name'].upper() == track_name:
             latitude = track['latitude']
             longitude = track['longitude']
-            # Build the URL
+            # Build the URL, MAPS API uses latitude and longitude for location
             params = {
                 "key": api_key,
                 "location.latitude": latitude,
@@ -44,7 +155,7 @@ def build_weather_url(track_name, api_key, json_file=TRACKS_FILE):
     raise ValueError(f"Track '{track_name}' not found in the data.")
 
 
-def get_forecast(maps_api_url, output_file=TRACK_FORECAST_FILE):
+def download_maps_api_data(maps_api_url, output_file=TRACK_FORECAST_FILE):
     '''Fetches weather forecast data from the Google Maps API and saves it to a JSON file.'''
     all_forecast_data = {
         "forecastHours": []
@@ -82,38 +193,6 @@ def get_forecast(maps_api_url, output_file=TRACK_FORECAST_FILE):
     return all_forecast_data
 
 
-def get_location_forecast(location: str):
-    """Get forecast data for a location, using cache if available."""
-    # Check if we already have forecast data for this location
-    if location in forecast_cache:
-        logger.info(f"Using cached forecast for {location}")
-        return forecast_cache[location]
-
-    try:
-        # Load variables from .env into environment
-        load_dotenv()
-        # Access the API key
-        api_key = os.getenv("MAPSAPI_KEY")
-        if not api_key:
-            logger.warning("Warning: MAPSAPI_KEY environment variable not set. Please check your .env file.")
-            return None
-
-        # Build weather URL
-        weather_url = build_weather_url(location, api_key)
-
-        logger.info("Downloading data from Google Weather API...")
-        # Get forecast data
-        forecast_data = get_forecast(weather_url)
-
-        # Cache the result
-        forecast_cache[location] = forecast_data
-        logger.info(f"Downloaded and cached forecast for {location}")
-
-        return forecast_data
-    except Exception as e:
-        logger.error(f"Error getting forecast for {location}: {e}")
-        return None
-
 
 def clear_forecast_cache():
     """Clear the forecast cache."""
@@ -121,7 +200,7 @@ def clear_forecast_cache():
     logger.info("Forecast cache cleared")
 
 
-def get_daily_temperatures(forecast_data, event_date):
+def extract_daily_high_low_temps(forecast_data, event_date):
     """Extract daily high and low temperatures for the given date from forecast data."""
     try:
         # Get hourly forecast data
@@ -169,77 +248,3 @@ def get_daily_temperatures(forecast_data, event_date):
         }
 
 
-def get_weather_for_event(event: dict):
-    """Get weather forecast for an event including hourly forecasts and daily high/low temperatures."""
-    try:
-        location = event.get('location', '')
-        event_date_str = event.get('date', '')
-        event_time_str = event.get('time', '')
-
-        if not all([location, event_date_str, event_time_str]):
-            return {}
-
-        # Get forecast data for this location
-        forecast_data = get_location_forecast(location)
-        if not forecast_data:
-            return {}
-
-        # Parse event time
-        event_time_str = parse_event_time(event_time_str)
-
-        # Convert to datetime
-        event_date = datetime.strptime(event_date_str, '%Y-%m-%d')
-        event_time = datetime.strptime(event_time_str, '%I:%M %p')
-        event_datetime = event_date.replace(hour=event_time.hour, minute=event_time.minute)
-
-        # Extract daily high and low temperatures for the event date
-        daily_temps = get_daily_temperatures(forecast_data, event_date)
-
-        # Extract forecasts for the event window
-        forecast_hours = forecast_data.get('forecastHours', [])
-        relevant_forecasts = []
-
-        for forecast_hour in forecast_hours:
-            # Parse the forecast time
-            display_time = forecast_hour.get('displayDateTime', {})
-            forecast_dt = datetime(
-                year=display_time.get('year', 0),
-                month=display_time.get('month', 0),
-                day=display_time.get('day', 0),
-                hour=display_time.get('hours', 0),
-                minute=display_time.get('minutes', 0)
-            )
-
-            # Check if this forecast is within configured hours of event start
-            time_diff = forecast_dt - event_datetime
-            if timedelta(hours=-FORECAST_HOURS_BEFORE_EVENT) <= time_diff <= timedelta(hours=FORECAST_HOURS_AFTER_EVENT):
-                # Get original values and convert units
-                temp_fahrenheit = celsius_to_fahrenheit(forecast_hour.get('temperature', {}).get('degrees'))
-                feels_like_fahrenheit = celsius_to_fahrenheit(
-                    forecast_hour.get('feelsLikeTemperature', {}).get('degrees'))
-                wind_speed_mph = kph_to_mph(forecast_hour.get('wind', {}).get('speed', {}).get('value'))
-
-                weather_info = {
-                    'time': forecast_dt.strftime('%I:%M %p'),
-                    'temperature': temp_fahrenheit,
-                    'feels_like': feels_like_fahrenheit,
-                    'condition': forecast_hour.get('weatherCondition', {}).get('description', {}).get('text', 'N/A'),
-                    'precipitation_type': forecast_hour.get('precipitation', {}).get('probability', {}).get('type',
-                                                                                                        'N/A'),
-                    'precipitation_prob': forecast_hour.get('precipitation', {}).get('probability', {}).get('percent',
-                                                                                                        'N/A'),
-                    'wind_speed': wind_speed_mph,
-                    'wind_speed_direction': forecast_hour.get('wind', {}).get('direction', {}).get('cardinal', 'N/A')
-                }
-                relevant_forecasts.append(weather_info)
-
-        # Return both hourly forecasts and daily temperatures
-        return {
-            'hourly_forecast': relevant_forecasts[:5],  # Limit to 5 hours 
-            'daily_high': daily_temps['high'],
-            'daily_low': daily_temps['low']
-        }
-
-    except Exception as e:
-        logger.error(f"Error processing weather for {event.get('location', 'unknown')}: {e}")
-        return {}
