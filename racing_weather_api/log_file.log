@@ -27,3 +27,11 @@
 2025-06-13 12:32:38,638 - racing_weather_api.data_processing.event_processing - INFO - Forecast data successfully download and processed
 2025-06-13 12:32:38,639 - racing_weather_api.utils.file_utils - INFO - Saved data to /var\www\html\data\events_with_weather.json
 2025-06-13 12:32:38,639 - __main__ - INFO - Retrieved 2 events for the current weekend
+2025-06-13 13:15:41,964 - racing_weather_api.api.weather_api - INFO - Forecast cache cleared
+2025-06-13 13:15:41,968 - racing_weather_api.api.weather_api - INFO - Downloading data from Google Weather API...
+2025-06-13 13:15:43,900 - racing_weather_api.api.weather_api - INFO - Forecast saved to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\racing_weather_api\data\track_forecast.json
+2025-06-13 13:15:43,901 - racing_weather_api.api.weather_api - INFO - Downloaded and cached forecast for MEXICO CITY
+2025-06-13 13:15:43,902 - racing_weather_api.api.weather_api - INFO - Using cached forecast for MEXICO CITY, data already downloaded
+2025-06-13 13:15:43,903 - racing_weather_api.data_processing.event_processing - INFO - Forecast data successfully download and processed
+2025-06-13 13:15:43,904 - racing_weather_api.utils.file_utils - INFO - Saved data to /var\www\html\data\events_with_weather.json
+2025-06-13 13:15:43,904 - __main__ - INFO - Retrieved 2 events for the current weekend
