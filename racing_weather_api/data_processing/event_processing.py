@@ -3,9 +3,9 @@ Module for handling event data processing and management.
 """
 import logging
 from datetime import datetime, timedelta
-from racing_weather_api.config import EVENTS_WITH_WEATHER_FILE, SCHEDULE_FILE
+from racing_weather_api.config import EVENTS_WITH_WEATHER_FILE, SCHEDULE_FILE, TRACKS_FILE
 from racing_weather_api.utils.file_utils import load_json, save_json
-from racing_weather_api.utils.conversion_utils import parse_event_time
+from racing_weather_api.utils.conversion_utils import parse_event_time, normalize_text_case, normalize_wind_directions
 from racing_weather_api.api.weather_api import get_weather_for_event, clear_forecast_cache
 
 logger = logging.getLogger(__name__)
@@ -42,12 +42,25 @@ def get_events_with_weather(schedule_file=DEFAULT_SCHEDULE_FILE, use_cached=True
 
         # Load JSON schedule data
         schedule_data = load_json(schedule_file)
+        track_info_file = load_json(TRACKS_FILE)
 
         # Get any events for the current weekend (Fri - Sun)
         events = schedule_data.get(friday_str, []) if schedule_data else []
 
         # Remove events that have already happened
         filtered_events = exclude_past_events(events)
+
+        # Loop through each event and add matched track location e.g. MICHIGAN => Brooklyn, MI
+        for event in events:
+            matching_track = next(
+                (track for track in track_info_file if track['name'] == event['location']),
+                None
+            )
+            if matching_track:
+                # Add specific location
+                event['track_location'] = matching_track['location']
+            else:
+                logger.warning(f"No match found for event location: {event['location']}")
 
         # Get weather data for filtered events
         for event in filtered_events:
@@ -58,6 +71,10 @@ def get_events_with_weather(schedule_file=DEFAULT_SCHEDULE_FILE, use_cached=True
 
         # Sort events by date for consistent display
         filtered_events.sort(key=lambda e: e.get('date', ''))
+
+        # Clean up text case, convert wind dir. to N,E,S,W
+        filtered_events = normalize_text_case(filtered_events)
+        filtered_events = normalize_wind_directions(filtered_events)
 
         # Save the events with weather to JSON file
         weekend_events = {friday_str: filtered_events}
