@@ -3,186 +3,217 @@
     "name": "ATLANTA",
     "location": "Hampton, GA",
     "latitude": 33.3851098,
-    "longitude": -84.2829063
+    "longitude": -84.2829063,
+    "trackName": "Atlanta Motor Speedway"
   },
   {
     "name": "BRISTOL",
     "location": "Bristol, TN",
     "latitude": 36.5951059,
-    "longitude": -82.18874439999999
+    "longitude": -82.18874439999999,
+    "trackName": "Bristol Motor Speedway"
   },
   {
     "name": "ROVAL",
     "location": "Concord, NC",
     "latitude": 35.4100756,
-    "longitude": -80.5819527
+    "longitude": -80.5819527,
+    "trackName": "Charlotte Roval"
   },
   {
     "name": "CHARLOTTE",
     "location": "Concord, NC",
     "latitude": 35.4100756,
-    "longitude": -80.5819527
+    "longitude": -80.5819527,
+    "trackName": "Charlotte Motor Speedway"
   },
   {
     "name": "CHICAGO",
     "location": "Chicago, IL",
     "latitude": 41.8781136,
-    "longitude": -87.6297982
+    "longitude": -87.6297982,
+    "trackName": "Chicago Street Course"
   },
   {
     "name": "COTA",
     "location": "Austin, TX",
     "latitude": 30.267153,
-    "longitude": -97.7430608
+    "longitude": -97.7430608,
+    "trackName": "Circuit of The Americas"
   },
   {
     "name": "DARLINGTON",
     "location": "Darlington, SC",
     "latitude": 34.3003526,
-    "longitude": -79.8757116
+    "longitude": -79.8757116,
+    "trackName": "Darlington Raceway"
   },
   {
     "name": "DAYTONA",
     "location": "Daytona Beach, FL",
     "latitude": 29.2071029,
-    "longitude": -81.01967959999999
+    "longitude": -81.01967959999999,
+    "trackName": "Daytona International Speedway"
   },
   {
     "name": "DOVER",
     "location": "Dover, DE",
     "latitude": 39.158168,
-    "longitude": -75.5243682
+    "longitude": -75.5243682,
+    "trackName": "Dover Motor Speedway"
   },
   {
     "name": "WWTR",
     "location": "Madison, IL",
     "latitude": 38.6825502,
-    "longitude": -90.1570536
+    "longitude": -90.1570536,
+    "trackName": "World Wide Technology Raceway"
   },
   {
     "name": "INDIANAPOLIS",
     "location": "Speedway, IN",
     "latitude": 39.792738,
-    "longitude": -86.250822
+    "longitude": -86.250822,
+    "trackName": "Indianapolis Motor Speedway"
   },
   {
     "name": "IOWA",
     "location": "Newton, IA",
     "latitude": 41.7033177,
-    "longitude": -93.05735330000002
+    "longitude": -93.05735330000002,
+    "trackName": "Iowa Speedway"
   },
   {
     "name": "KANSAS",
     "location": "Kansas City, KS",
     "latitude": 39.11553139999999,
-    "longitude": -94.62678729999999
+    "longitude": -94.62678729999999,
+    "trackName": "Kansas Speedway"
   },
   {
     "name": "LAS VEGAS",
     "location": "Las Vegas, NV",
     "latitude": 36.171563,
-    "longitude": -115.1391009
+    "longitude": -115.1391009,
+    "trackName": "Las Vegas Motor Speedway"
   },
   {
     "name": "LUCAS OIL IRP",
     "location": "Brownsburg, Indiana",
     "latitude": 39.8433163,
-    "longitude": -86.397956
+    "longitude": -86.397956,
+    "trackName": "Lucas Oil Indianapolis Raceway Park"
   },
   {
     "name": "MARTINSVILLE",
     "location": "Ridgeway, VA",
     "latitude": 36.5768046,
-    "longitude": -79.8583721
+    "longitude": -79.8583721,
+    "trackName": "Martinsville Speedway"
   },
   {
     "name": "MEXICO CITY",
     "location": "Mexico City",
     "latitude": 19.4326077,
-    "longitude": -99.133208
+    "longitude": -99.133208,
+    "trackName": "Aut\u00c3\u00b3dromo Hermanos Rodr\u00c3\u00adguez"
   },
   {
     "name": "MIAMI",
     "location": "Miami, FL",
     "latitude": 25.7616798,
-    "longitude": -80.1917902
+    "longitude": -80.1917902,
+    "trackName": "Miami Speedway"
   },
   {
     "name": "MICHIGAN",
     "location": "Brooklyn, MI",
     "latitude": 42.105874,
-    "longitude": -84.2482819
+    "longitude": -84.2482819,
+    "trackName": "Michigan International Speedway"
   },
   {
     "name": "NASHVILLE",
     "location": "Lebanon, TN",
     "latitude": 36.2081098,
-    "longitude": -86.2911024
+    "longitude": -86.2911024,
+    "trackName": "Nashville Superspeedway"
   },
   {
     "name": "NEW HAMPSHIRE",
     "location": "Loudon, NH",
     "latitude": 43.2856337,
-    "longitude": -71.46726509999999
+    "longitude": -71.46726509999999,
+    "trackName": "New Hampshire Motor Speedway"
   },
   {
     "name": "N. WILKESBORO",
     "location": "North Wilkesboro, NC",
     "latitude": 36.1584651,
-    "longitude": -81.1475841
+    "longitude": -81.1475841,
+    "trackName": "North Wilkesboro Speedway"
   },
   {
     "name": "PHOENIX",
     "location": "Avondale, AZ",
     "latitude": 33.4355977,
-    "longitude": -112.3496021
+    "longitude": -112.3496021,
+    "trackName": "Phoenix Raceway"
   },
   {
     "name": "POCONO",
     "location": "Long Pond, PA",
     "latitude": 41.053422,
-    "longitude": -75.4629636
+    "longitude": -75.4629636,
+    "trackName": "Pocono Raceway"
   },
   {
     "name": "RICHMOND",
     "location": "Richmond, VA",
     "latitude": 37.5407246,
-    "longitude": -77.4360481
+    "longitude": -77.4360481,
+    "trackName": "Richmond Raceway"
   },
   {
     "name": "ROCKINGHAM",
     "location": "Rockingham, NC",
     "latitude": 34.9393201,
-    "longitude": -79.7739457
+    "longitude": -79.7739457,
+    "trackName": "Rockingham Speedway"
   },
   {
     "name": "SONOMA",
     "location": "Sonoma, CA",
     "latitude": 38.291859,
-    "longitude": -122.4580356
+    "longitude": -122.4580356,
+    "trackName": "Sonoma Raceway"
   },
   {
     "name": "TALLADEGA",
     "location": "Lincoln, AL",
     "latitude": 33.6131588,
-    "longitude": -86.1183061
+    "longitude": -86.1183061,
+    "trackName": "Talladega Superspeedway"
   },
   {
     "name": "TEXAS",
     "location": "Fort Worth, TX",
     "latitude": 32.7554883,
-    "longitude": -97.3307658
+    "longitude": -97.3307658,
+    "trackName": "Texas Motor Speedway"
   },
   {
     "name": "WATKINS GLEN",
     "location": "Watkins Glen, NY",
     "latitude": 42.3806287,
-    "longitude": -76.8732921
+    "longitude": -76.8732921,
+    "trackName": "Watkins Glen International"
   },
   {
     "name": "LIME ROCK",
     "location": "Salisbury, Connecticut",
     "latitude": 41.983426,
-    "longitude": -73.4212318
+    "longitude": -73.4212318,
+    "trackName": "Lime Rock Park"
   }
 ]

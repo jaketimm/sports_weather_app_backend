@@ -57,8 +57,9 @@ def get_events_with_weather(schedule_file=DEFAULT_SCHEDULE_FILE, use_cached=True
                 None
             )
             if matching_track:
-                # Add specific location
-                event['track_location'] = matching_track['location']
+                # Add specific location and speedway name
+                event['track_location'] = matching_track['location'],
+                event['track_name'] = matching_track['trackName']
             else:
                 logger.warning(f"No match found for event location: {event['location']}")
 
