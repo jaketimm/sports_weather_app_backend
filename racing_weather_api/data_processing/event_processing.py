@@ -50,7 +50,7 @@ def get_events_with_weather(schedule_file=DEFAULT_SCHEDULE_FILE, use_cached=True
         # Remove events that have already happened
         filtered_events = exclude_past_events(events)
 
-        # Loop through each event and add matched track location e.g. MICHIGAN => Brooklyn, MI
+        # Loop through each event and add matched track location e.g. MICHIGAN => Brooklyn, MI and Michigan International Speedway
         for event in events:
             matching_track = next(
                 (track for track in track_info_file if track['name'] == event['location']),
