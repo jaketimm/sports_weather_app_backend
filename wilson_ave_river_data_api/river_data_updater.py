@@ -192,7 +192,7 @@ def update_wilson_ave_river_data():
     # Constants for this script
     STATION_ID = "04119070"
     CSV_FILE = DATA_OUTPUT_FILE
-    HOURS = 3
+    HOURS = 6
 
     logger.info(f"Starting data append for station {STATION_ID} (last {HOURS} hour(s)) to {CSV_FILE}")
 
