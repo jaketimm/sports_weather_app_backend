@@ -13,7 +13,8 @@ from config import (
     TIMEZONE_OFFSET,
     API_TIMEOUT,
     RIVER_DATA_FILE,
-    LOG_FILE
+    LOG_FILE,
+    DATA_OUTPUT_FILE
 )
 
 
@@ -73,14 +74,14 @@ def create_url(start_dt: datetime, end_dt: datetime, site: str, parameter: str =
             f"&startDT={start_str}&endDT={end_str}&format=rdb")
 
 
-def fetch_and_save_recent_data(station_id: str, minutes: int = 45) -> bool:
+def fetch_and_save_recent_data(station_id: str, hours: int = 1) -> bool:
     """
-    Fetch the last 'minutes' of data from the USGS API, check if it's not empty,
+    Fetch the last hour of data from the USGS API, check if it's not empty,
     and save to RIVER_DATA_FILE if valid. Returns True if data was saved successfully.
     Adapted from download_data_single_block in your codebase.
     """
     current_time = datetime.now()
-    start_time = current_time - timedelta(minutes=minutes)
+    start_time = current_time - timedelta(hours=hours)
     url = create_url(start_time, current_time, station_id)
 
     try:
@@ -174,13 +175,13 @@ def append_to_csv(csv_file: str):
 if __name__ == "__main__":
     # Constants for this script
     STATION_ID = "04119070"
-    CSV_FILE = "river_data_m-11.csv"
-    MINUTES = 45
+    CSV_FILE = DATA_OUTPUT_FILE
+    HOURS = 1
 
-    logger.info(f"Starting data append for station {STATION_ID} (last {MINUTES} minutes) to {CSV_FILE}")
+    logger.info(f"Starting data append for station {STATION_ID} (last {HOURS} hour(s)) to {CSV_FILE}")
 
     # Fetch and save recent data to RIVER_DATA_FILE
-    data_saved = fetch_and_save_recent_data(STATION_ID, MINUTES)
+    data_saved = fetch_and_save_recent_data(STATION_ID, HOURS)
 
     # If data was saved successfully, proceed to append
     if data_saved:

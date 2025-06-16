@@ -18,3 +18,16 @@
 2025-06-16 14:48:21,091 - __main__ - WARNING - API response is empty or contains no valid data lines. Skipping save.
 2025-06-16 14:48:21,092 - __main__ - WARNING - No valid data was saved to RIVER_DATA_FILE. Skipping append.
 2025-06-16 14:48:21,092 - __main__ - INFO - Script completed.
+2025-06-16 14:52:18,908 - __main__ - INFO - Starting data append for station 04119070 (last 45 minutes) to river_data_m-11.csv
+2025-06-16 14:52:19,241 - __main__ - WARNING - API response is empty or contains no valid data lines. Skipping save.
+2025-06-16 14:52:19,241 - __main__ - WARNING - No valid data was saved to RIVER_DATA_FILE. Skipping append.
+2025-06-16 14:52:19,241 - __main__ - INFO - Script completed.
+2025-06-16 14:54:56,707 - __main__ - INFO - Starting data append for station 04119070 (last 45 minutes) to river_data_m-11.csv
+2025-06-16 14:54:56,875 - __main__ - INFO - Successfully fetched and saved data to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\wilson_ave_river_data_api\data\river_level_data.rdb from https://waterservices.usgs.gov/nwis/iv/?sites=04119070&agencyCd=USGS&parameterCd=00065&startDT=2025-06-14T17:54:56.000-04:00&endDT=2025-06-16T14:54:56.000-04:00&format=rdb
+2025-06-16 14:54:56,882 - __main__ - INFO - Loaded 176 rows from c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\wilson_ave_river_data_api\data\river_level_data.rdb
+2025-06-16 14:54:56,882 - __main__ - INFO - CSV file does not exist: river_data_m-11.csv. Creating new file from RDB data.
+2025-06-16 14:54:56,884 - __main__ - INFO - Script completed.
+2025-06-16 14:59:21,909 - __main__ - INFO - Starting data append for station 04119070 (last 1 hour(s)) to /var\www\html\data\river_data_m-11.csv
+2025-06-16 14:59:22,067 - __main__ - WARNING - API response is empty or contains no valid data lines. Skipping save.
+2025-06-16 14:59:22,068 - __main__ - WARNING - No valid data was saved to RIVER_DATA_FILE. Skipping append.
+2025-06-16 14:59:22,068 - __main__ - INFO - Script completed.

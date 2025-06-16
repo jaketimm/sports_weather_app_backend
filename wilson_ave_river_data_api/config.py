@@ -14,6 +14,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATION_LIST_FILE = os.path.join(BASE_DIR, 'data', 'station_list_mi.csv')
 RIVER_DATA_FILE = os.path.join(BASE_DIR, 'data', 'river_level_data.rdb')
 LOG_FILE = os.path.join(BASE_DIR, 'log_file.log')
+DATA_OUTPUT_DIR = os.path.join('/', 'var', 'www', 'html', 'data')
+DATA_OUTPUT_FILE = os.path.join(DATA_OUTPUT_DIR, 'river_data_m-11.csv')
 
 ###########################################
 # USGS API Settings
