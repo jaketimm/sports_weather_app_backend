@@ -31,3 +31,14 @@
 2025-06-16 14:59:22,067 - __main__ - WARNING - API response is empty or contains no valid data lines. Skipping save.
 2025-06-16 14:59:22,068 - __main__ - WARNING - No valid data was saved to RIVER_DATA_FILE. Skipping append.
 2025-06-16 14:59:22,068 - __main__ - INFO - Script completed.
+2025-06-16 15:01:16,405 - __main__ - INFO - Starting data append for station 04119070 (last 2 hour(s)) to /var\www\html\data\river_data_m-11.csv
+2025-06-16 15:01:16,749 - __main__ - INFO - Successfully fetched and saved data to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\wilson_ave_river_data_api\data\river_level_data.rdb from https://waterservices.usgs.gov/nwis/iv/?sites=04119070&agencyCd=USGS&parameterCd=00065&startDT=2025-06-16T13:01:16.000-04:00&endDT=2025-06-16T15:01:16.000-04:00&format=rdb
+2025-06-16 15:01:16,756 - __main__ - INFO - Loaded 3 rows from c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\wilson_ave_river_data_api\data\river_level_data.rdb
+2025-06-16 15:01:16,756 - __main__ - INFO - CSV file does not exist: /var\www\html\data\river_data_m-11.csv. Creating new file from RDB data.
+2025-06-16 15:01:16,758 - __main__ - INFO - Script completed.
+2025-06-16 15:02:04,032 - __main__ - INFO - Starting data append for station 04119070 (last 3 hour(s)) to /var\www\html\data\river_data_m-11.csv
+2025-06-16 15:02:04,209 - __main__ - INFO - Successfully fetched and saved data to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\wilson_ave_river_data_api\data\river_level_data.rdb from https://waterservices.usgs.gov/nwis/iv/?sites=04119070&agencyCd=USGS&parameterCd=00065&startDT=2025-06-16T12:02:04.000-04:00&endDT=2025-06-16T15:02:04.000-04:00&format=rdb
+2025-06-16 15:02:04,216 - __main__ - INFO - Loaded 11 rows from c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\wilson_ave_river_data_api\data\river_level_data.rdb
+2025-06-16 15:02:04,225 - __main__ - INFO - Loaded 3 rows from existing /var\www\html\data\river_data_m-11.csv
+2025-06-16 15:02:04,229 - __main__ - INFO - Appended 11 new rows to /var\www\html\data\river_data_m-11.csv. Total rows after update: 14
+2025-06-16 15:02:04,229 - __main__ - INFO - Script completed.

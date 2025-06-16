@@ -176,7 +176,7 @@ if __name__ == "__main__":
     # Constants for this script
     STATION_ID = "04119070"
     CSV_FILE = DATA_OUTPUT_FILE
-    HOURS = 1
+    HOURS = 3
 
     logger.info(f"Starting data append for station {STATION_ID} (last {HOURS} hour(s)) to {CSV_FILE}")
 
