@@ -172,7 +172,7 @@ def append_to_csv(csv_file: str):
     logger.info(f"Appended {len(new_df)} new rows to {csv_file}. Total rows after update: {len(combined_df)}")
 
 
-if __name__ == "__main__":
+def update_wilson_ave_river_data():
     # Constants for this script
     STATION_ID = "04119070"
     CSV_FILE = DATA_OUTPUT_FILE
