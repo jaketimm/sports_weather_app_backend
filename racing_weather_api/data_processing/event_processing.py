@@ -48,16 +48,18 @@ def get_events_with_weather(schedule_file=DEFAULT_SCHEDULE_FILE, use_cached=True
         # Remove events that have already happened
         filtered_events = exclude_past_events(current_week_events)
 
-        # Loop through each event and add matched track location
+        # Loop through each event and add matched track details
         for event in filtered_events:
             matching_track = next(
                 (track for track in track_info_file if track['name'] == event['location']),
                 None
             )
             if matching_track:
-                # Add specific location and speedway name
+                # Add specific location details and speedway name
                 event['track_location'] = matching_track['location']
                 event['track_name'] = matching_track['trackName']
+                event['track_latitude'] = matching_track['latitude']
+                event['track_longitude'] = matching_track['longitude']
             else:
                 logger.warning(f"No match found for event location: {event['location']}")
 
