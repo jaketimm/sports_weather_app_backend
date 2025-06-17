@@ -17,7 +17,8 @@ TRACKS_FILE = os.path.join(DATA_DIR, 'tracks.json')
 SCHEDULE_FILE = os.path.join(DATA_DIR, 'schedule.json')
 EVENTS_WITH_WEATHER_FILE = os.path.join(DATA_OUTPUT_DIR, 'events_with_weather.json')
 TRACK_FORECAST_FILE = os.path.join(DATA_DIR, 'track_forecast.json')
-LOG_FILE = os.path.join(BASE_DIR, 'log_file.log')
+LOG_FILE = os.path.join(BASE_DIR, 'log_file.log'),
+ALL_LOCATIONS_FORECAST_FILE = os.path.join(DATA_OUTPUT_DIR, 'all_10_day_forecasts.json')
 
 # Logging
 LOG_LEVEL = 'INFO'

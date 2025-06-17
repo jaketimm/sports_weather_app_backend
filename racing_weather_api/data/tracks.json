@@ -215,5 +215,111 @@
     "latitude": 41.983426,
     "longitude": -73.4212318,
     "trackName": "Lime Rock Park"
+  },
+  {
+    "name": "DAYTONA BEACH",
+    "location": "Daytona Beach, FL",
+    "latitude": 29.1851,
+    "longitude": -81.0705,
+    "trackName": "Daytona International Speedway"
+  },
+  {
+    "name": "AVONDALE",
+    "location": "Avondale, AZ",
+    "latitude": 33.3792,
+    "longitude": -112.3135,
+    "trackName": "Phoenix Raceway"
+  },
+  {
+    "name": "KANSAS CITY",
+    "location": "Kansas City, KS",
+    "latitude": 39.1166,
+    "longitude": -94.8317,
+    "trackName": "Kansas Speedway"
+  },
+  {
+    "name": "CONCORD",
+    "location": "Concord, NC",
+    "latitude": 35.3518,
+    "longitude": -80.6852,
+    "trackName": "Charlotte Motor Speedway"
+  },
+  {
+    "name": "BROOKLYN",
+    "location": "Brooklyn, MI",
+    "latitude": 42.0833,
+    "longitude": -84.2444,
+    "trackName": "Michigan International Speedway"
+  },
+  {
+    "name": "MARNE",
+    "location": "Marne, MI",
+    "latitude": 43.0376,
+    "longitude": -85.8894,
+    "trackName": "Berlin Raceway"
+  },
+  {
+    "name": "ELKO NEW MARKET",
+    "location": "Elko New Market, MN",
+    "latitude": 44.5787,
+    "longitude": -93.3274,
+    "trackName": "Elko Speedway"
+  },
+  {
+    "name": "LAKEVILLE",
+    "location": "Lakeville, MN",
+    "latitude": 44.6497,
+    "longitude": -93.2427,
+    "trackName": "New Hampshire Motor Speedway (assumed mistake, corrected as MN)"
+  },
+  {
+    "name": "BROWNSBURG",
+    "location": "Brownsburg, IN",
+    "latitude": 39.8327,
+    "longitude": -86.3483,
+    "trackName": "Lucas Oil Indianapolis Raceway Park"
+  },
+  {
+    "name": "NEWTON",
+    "location": "Newton, IA",
+    "latitude": 41.6842,
+    "longitude": -93.0036,
+    "trackName": "Iowa Speedway"
+  },
+  {
+    "name": "SPRINGFIELD",
+    "location": "Springfield, IL",
+    "latitude": 39.8017,
+    "longitude": -89.6501,
+    "trackName": "Illinois State Fairgrounds Racetrack"
+  },
+  {
+    "name": "MADISON",
+    "location": "Oregon, WI",
+    "latitude": 42.9242,
+    "longitude": -89.3783,
+    "trackName": "Madison International Speedway"
+  },
+  {
+    "name": "DU QUOIN",
+    "location": "Du Quoin, IL",
+    "latitude": 38.0106,
+    "longitude": -89.2376,
+    "trackName": "Du Quoin State Fairgrounds Racetrack"
+  },
+  {
+    "name": "SALEM",
+    "location": "Salem, IN",
+    "latitude": 38.6056,
+    "longitude": -86.0965,
+    "trackName": "Salem Speedway"
+  },
+  {
+    "name": "TOLEDO",
+    "location": "Toledo, OH",
+    "latitude": 41.6639,
+    "longitude": -83.5822,
+    "trackName": "Toledo Speedway"
   }
+
 ]
