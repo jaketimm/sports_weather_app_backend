@@ -22,43 +22,41 @@ def get_events_with_weather(schedule_file=DEFAULT_SCHEDULE_FILE, use_cached=True
         use_cached: Whether to use cached event data with weather if available
     """
     try:
-
         if not use_cached:
             clear_forecast_cache()  # Clear old cached forecasts on refresh
 
-        # Calculate the Friday of the current week
+        # Calculate the Monday of the current week for caching key
         today = datetime.now()
         weekday = today.weekday()  # 0 = Monday, 6 = Sunday
         monday = today - timedelta(days=weekday)  # Start of the week
-        friday = monday + timedelta(days=4)
-        friday_str = friday.strftime("%Y-%m-%d")  # Format as YYYY-MM-DD
+        monday_str = monday.strftime("%Y-%m-%d")  # Format as YYYY-MM-DD
 
         # Check if we have cached data and should use it
         if use_cached:
             cached_events = load_events_with_weather()
-            if cached_events and friday_str in cached_events:
-                logger.info(f"Using cached events with weather data for {friday_str}")
-                return cached_events[friday_str]
+            if cached_events and monday_str in cached_events:
+                logger.info(f"Using cached events with weather data for week of {monday_str}")
+                return cached_events[monday_str]
 
-        # Load JSON schedule data
+        # Load JSON schedule data (now a flat list)
         schedule_data = load_json(schedule_file)
         track_info_file = load_json(TRACKS_FILE)
 
-        # Get any events for the current weekend (Fri - Sun)
-        events = schedule_data.get(friday_str, []) if schedule_data else []
+        # Filter events for the current week (Monday to Sunday)
+        current_week_events = get_current_week_events(schedule_data)
 
         # Remove events that have already happened
-        filtered_events = exclude_past_events(events)
+        filtered_events = exclude_past_events(current_week_events)
 
-        # Loop through each event and add matched track location e.g. MICHIGAN => Brooklyn, MI and Michigan International Speedway
-        for event in events:
+        # Loop through each event and add matched track location
+        for event in filtered_events:
             matching_track = next(
                 (track for track in track_info_file if track['name'] == event['location']),
                 None
             )
             if matching_track:
                 # Add specific location and speedway name
-                event['track_location'] = matching_track['location'],
+                event['track_location'] = matching_track['location']
                 event['track_name'] = matching_track['trackName']
             else:
                 logger.warning(f"No match found for event location: {event['location']}")
@@ -68,7 +66,7 @@ def get_events_with_weather(schedule_file=DEFAULT_SCHEDULE_FILE, use_cached=True
             weather_data = get_weather_for_event(event)
             event['weather'] = weather_data
 
-        logger.info("Forecast data successfully download and processed")
+        logger.info("Forecast data successfully downloaded and processed")
 
         # Sort events by date for consistent display
         filtered_events.sort(key=lambda e: e.get('date', ''))
@@ -77,15 +75,46 @@ def get_events_with_weather(schedule_file=DEFAULT_SCHEDULE_FILE, use_cached=True
         filtered_events = normalize_text_case(filtered_events)
         filtered_events = normalize_wind_directions(filtered_events)
 
-        # Save the events with weather to JSON file
-        weekend_events = {friday_str: filtered_events}
+        # Save the events with weather to JSON file using Monday as key
+        weekend_events = {monday_str: filtered_events}
         save_events_with_weather(weekend_events)
 
         return filtered_events
 
     except Exception as e:
-        logger.error(f"Error processing weather data{e}")
-        return {}
+        logger.error(f"Error processing weather data: {e}")
+        return []
+
+
+def get_current_week_events(schedule_data):
+    """Filter events to only include those in the current week (Monday to Sunday)."""
+    try:
+        if not schedule_data:
+            return []
+
+        # Calculate the current week's date range
+        today = datetime.now()
+        weekday = today.weekday()  # 0 = Monday, 6 = Sunday
+        monday = today - timedelta(days=weekday)
+        sunday = monday + timedelta(days=6)
+        
+        # Convert to date strings for comparison
+        monday_str = monday.strftime("%Y-%m-%d")
+        sunday_str = sunday.strftime("%Y-%m-%d")
+
+        current_week_events = []
+        
+        for event in schedule_data:
+            event_date = event.get('date', '')
+            if event_date and monday_str <= event_date <= sunday_str:
+                current_week_events.append(event)
+
+        logger.info(f"Found {len(current_week_events)} events for week {monday_str} to {sunday_str}")
+        return current_week_events
+
+    except Exception as e:
+        logger.error(f"Error filtering current week events: {e}")
+        return []
 
 
 def exclude_past_events(events):
@@ -121,8 +150,8 @@ def exclude_past_events(events):
         return filtered_events
 
     except Exception as e:
-        logger.error(f"Error processing weather data{e}")
-        return {}
+        logger.error(f"Error filtering past events: {e}")
+        return []
 
 
 def save_events_with_weather(events_with_weather, file_path=EVENTS_WITH_WEATHER_FILE):

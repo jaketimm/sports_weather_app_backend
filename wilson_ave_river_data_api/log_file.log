@@ -42,3 +42,13 @@
 2025-06-16 15:02:04,225 - __main__ - INFO - Loaded 3 rows from existing /var\www\html\data\river_data_m-11.csv
 2025-06-16 15:02:04,229 - __main__ - INFO - Appended 11 new rows to /var\www\html\data\river_data_m-11.csv. Total rows after update: 14
 2025-06-16 15:02:04,229 - __main__ - INFO - Script completed.
+2025-06-17 10:31:51,091 - racing_weather_api.api.weather_api - INFO - Forecast cache cleared
+2025-06-17 10:31:51,092 - racing_weather_api.data_processing.event_processing - INFO - Found 3 events for week 2025-06-16 to 2025-06-22
+2025-06-17 10:31:51,093 - racing_weather_api.api.weather_api - INFO - Downloading data from Google Weather API...
+2025-06-17 10:31:53,406 - racing_weather_api.api.weather_api - INFO - Forecast saved to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\racing_weather_api\data\track_forecast.json
+2025-06-17 10:31:53,406 - racing_weather_api.api.weather_api - INFO - Downloaded and cached forecast for POCONO
+2025-06-17 10:31:53,407 - racing_weather_api.api.weather_api - INFO - Using cached forecast for POCONO, data already downloaded
+2025-06-17 10:31:53,408 - racing_weather_api.api.weather_api - INFO - Using cached forecast for POCONO, data already downloaded
+2025-06-17 10:31:53,409 - racing_weather_api.data_processing.event_processing - INFO - Forecast data successfully downloaded and processed
+2025-06-17 10:31:53,410 - racing_weather_api.utils.file_utils - INFO - Saved data to /var\www\html\data\events_with_weather.json
+2025-06-17 10:31:53,410 - __main__ - INFO - Retrieved 3 events for the current weekend

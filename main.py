@@ -17,12 +17,12 @@ logger = logging.getLogger(__name__)
 
 try:
     update_wilson_ave_river_data()
-    #events = get_events_with_weather(use_cached=False)
+    events = get_events_with_weather(use_cached=False)
 
-    #if events:
-    #    logger.info(f"Retrieved {len(events)} events for the current weekend")
-    #else:
-    #    logger.warning("No events found for the current weekend")
+    if events:
+        logger.info(f"Retrieved {len(events)} events for the current weekend")
+    else:
+        logger.warning("No events found for the current weekend")
     
 except Exception as e:
     logger.error(f"Error in scheduled job: {str(e)}")
