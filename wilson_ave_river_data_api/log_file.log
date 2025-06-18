@@ -52,3 +52,14 @@
 2025-06-17 10:31:53,409 - racing_weather_api.data_processing.event_processing - INFO - Forecast data successfully downloaded and processed
 2025-06-17 10:31:53,410 - racing_weather_api.utils.file_utils - INFO - Saved data to /var\www\html\data\events_with_weather.json
 2025-06-17 10:31:53,410 - __main__ - INFO - Retrieved 3 events for the current weekend
+2025-06-18 15:00:45,822 - wilson_ave_river_data_api.river_data_updater - INFO - Starting data append for station 04119070 (last 6 hour(s)) to /var\www\html\data\river_data_m-11.csv
+2025-06-18 15:00:46,064 - wilson_ave_river_data_api.river_data_updater - INFO - Successfully fetched and saved data to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\wilson_ave_river_data_api\data\river_level_data.rdb from https://waterservices.usgs.gov/nwis/iv/?sites=04119070&agencyCd=USGS&parameterCd=00065&startDT=2025-06-18T09:00:45.000-04:00&endDT=2025-06-18T15:00:45.000-04:00&format=rdb
+2025-06-18 15:00:46,085 - wilson_ave_river_data_api.river_data_updater - INFO - Loaded 19 rows from c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\wilson_ave_river_data_api\data\river_level_data.rdb
+2025-06-18 15:00:46,095 - wilson_ave_river_data_api.river_data_updater - INFO - Loaded 14 rows from existing /var\www\html\data\river_data_m-11.csv
+2025-06-18 15:00:46,106 - wilson_ave_river_data_api.river_data_updater - INFO - Appended 19 new rows to /var\www\html\data\river_data_m-11.csv. Total rows after update: 30
+2025-06-18 15:00:46,106 - wilson_ave_river_data_api.river_data_updater - INFO - Script completed.
+2025-06-18 15:00:46,106 - racing_weather_api.api.weather_api - INFO - Forecast cache cleared
+2025-06-18 15:00:46,107 - racing_weather_api.utils.file_utils - ERROR - Error loading JSON: Expecting value: line 1 column 1 (char 0)
+2025-06-18 15:00:46,107 - racing_weather_api.data_processing.event_processing - INFO - Forecast data successfully downloaded and processed
+2025-06-18 15:00:46,108 - racing_weather_api.utils.file_utils - INFO - Saved data to /var\www\html\data\events_with_weather.json
+2025-06-18 15:00:46,108 - __main__ - WARNING - No events found for the current weekend
