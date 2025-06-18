@@ -1,0 +1,922 @@
+[
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "CLASH BOWMAN GRAY",
+    "day_of_week": "SUN",
+    "date": "2025-02-02",
+    "time": "8 PM",
+    "channel": "FOX"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "DAYTONA",
+    "day_of_week": "FRI",
+    "date": "2025-02-14",
+    "time": "7:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "DAYTONA",
+    "day_of_week": "SAT",
+    "date": "2025-02-15",
+    "time": "5 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "DAYTONA",
+    "day_of_week": "SUN",
+    "date": "2025-02-16",
+    "time": "2:30 PM",
+    "channel": "FOX"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "ATLANTA",
+    "day_of_week": "SAT",
+    "date": "2025-02-22",
+    "time": "2 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "ATLANTA",
+    "day_of_week": "SAT",
+    "date": "2025-02-22",
+    "time": "5 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "ATLANTA",
+    "day_of_week": "SUN",
+    "date": "2025-02-23",
+    "time": "3 PM",
+    "channel": "FOX"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "COTA",
+    "day_of_week": "SAT",
+    "date": "2025-03-01",
+    "time": "2:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "COTA",
+    "day_of_week": "SUN",
+    "date": "2025-03-02",
+    "time": "3:30 PM",
+    "channel": "FOX"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "PHOENIX",
+    "day_of_week": "SAT",
+    "date": "2025-03-08",
+    "time": "5 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "PHOENIX",
+    "day_of_week": "SUN",
+    "date": "2025-03-09",
+    "time": "3:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "LAS VEGAS",
+    "day_of_week": "FRI",
+    "date": "2025-03-14",
+    "time": "9 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "LAS VEGAS",
+    "day_of_week": "SAT",
+    "date": "2025-03-15",
+    "time": "4:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "LAS VEGAS",
+    "day_of_week": "SUN",
+    "date": "2025-03-16",
+    "time": "3:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "MIAMI",
+    "day_of_week": "FRI",
+    "date": "2025-03-21",
+    "time": "8 PM",
+    "channel": "FOX"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "MIAMI",
+    "day_of_week": "SAT",
+    "date": "2025-03-22",
+    "time": "4 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "MIAMI",
+    "day_of_week": "SUN",
+    "date": "2025-03-23",
+    "time": "3 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "MARTINSVILLE",
+    "day_of_week": "FRI",
+    "date": "2025-03-28",
+    "time": "7:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "MARTINSVILLE",
+    "day_of_week": "SAT",
+    "date": "2025-03-29",
+    "time": "5 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "MARTINSVILLE",
+    "day_of_week": "SUN",
+    "date": "2025-03-30",
+    "time": "3 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "DARLINGTON",
+    "day_of_week": "SAT",
+    "date": "2025-04-05",
+    "time": "3:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "DARLINGTON",
+    "day_of_week": "SUN",
+    "date": "2025-04-06",
+    "time": "3 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "BRISTOL",
+    "day_of_week": "FRI",
+    "date": "2025-04-11",
+    "time": "7:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "BRISTOL",
+    "day_of_week": "SAT",
+    "date": "2025-04-12",
+    "time": "5 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "BRISTOL",
+    "day_of_week": "SUN",
+    "date": "2025-04-13",
+    "time": "3 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "ROCKINGHAM",
+    "day_of_week": "FRI",
+    "date": "2025-04-18",
+    "time": "5 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "ROCKINGHAM",
+    "day_of_week": "SAT",
+    "date": "2025-04-19",
+    "time": "4 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "TALLADEGA",
+    "day_of_week": "SAT",
+    "date": "2025-04-26",
+    "time": "4 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "TALLADEGA",
+    "day_of_week": "SUN",
+    "date": "2025-04-27",
+    "time": "3 PM",
+    "channel": "FOX"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "TEXAS",
+    "day_of_week": "FRI",
+    "date": "2025-05-02",
+    "time": "8 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "TEXAS",
+    "day_of_week": "SAT",
+    "date": "2025-05-03",
+    "time": "2 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "TEXAS",
+    "day_of_week": "SUN",
+    "date": "2025-05-04",
+    "time": "3:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "KANSAS",
+    "day_of_week": "SAT",
+    "date": "2025-05-10",
+    "time": "7:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "KANSAS",
+    "day_of_week": "SUN",
+    "date": "2025-05-11",
+    "time": "3 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "N. WILKESBORO",
+    "day_of_week": "SAT",
+    "date": "2025-05-17",
+    "time": "1:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "N. WILKESBORO",
+    "day_of_week": "SUN",
+    "date": "2025-05-18",
+    "time": "8 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "CHARLOTTE",
+    "day_of_week": "FRI",
+    "date": "2025-05-23",
+    "time": "8:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "CHARLOTTE",
+    "day_of_week": "SAT",
+    "date": "2025-05-24",
+    "time": "4:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "CHARLOTTE",
+    "day_of_week": "SUN",
+    "date": "2025-05-25",
+    "time": "6 PM",
+    "channel": "PRIME"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "NASHVILLE",
+    "day_of_week": "FRI",
+    "date": "2025-05-30",
+    "time": "8 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "NASHVILLE",
+    "day_of_week": "SAT",
+    "date": "2025-05-31",
+    "time": "7:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "NASHVILLE",
+    "day_of_week": "SUN",
+    "date": "2025-06-01",
+    "time": "7 PM",
+    "channel": "PRIME"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "MICHIGAN",
+    "day_of_week": "SAT",
+    "date": "2025-06-07",
+    "time": "12 PM",
+    "channel": "FOX"
+  },
+  {
+    "Series": "NASCAR",
+    "location": "MICHIGAN",
+    "day_of_week": "SUN",
+    "date": "2025-06-08",
+    "time": "2 PM",
+    "channel": "PRIME"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "MEXICO CITY",
+    "day_of_week": "SAT",
+    "date": "2025-06-14",
+    "time": "4:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "MEXICO CITY",
+    "day_of_week": "SUN",
+    "date": "2025-06-15",
+    "time": "3 PM",
+    "channel": "PRIME"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "POCONO",
+    "day_of_week": "FRI",
+    "date": "2025-06-20",
+    "time": "5 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "POCONO",
+    "day_of_week": "SAT",
+    "date": "2025-06-21",
+    "time": "3:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "POCONO",
+    "day_of_week": "SUN",
+    "date": "2025-06-22",
+    "time": "2 PM",
+    "channel": "PRIME"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "ATLANTA",
+    "day_of_week": "FRI",
+    "date": "2025-06-27",
+    "time": "7:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "ATLANTA",
+    "day_of_week": "SAT",
+    "date": "2025-06-28",
+    "time": "7 PM",
+    "channel": "TNT"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "LIME ROCK",
+    "day_of_week": "SAT",
+    "date": "2025-06-28",
+    "time": "1 PM",
+    "channel": "FOX"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "CHICAGO",
+    "day_of_week": "SAT",
+    "date": "2025-07-05",
+    "time": "4:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "CHICAGO",
+    "day_of_week": "SUN",
+    "date": "2025-07-06",
+    "time": "2 PM",
+    "channel": "TNT"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "SONOMA",
+    "day_of_week": "SAT",
+    "date": "2025-07-12",
+    "time": "4:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "SONOMA",
+    "day_of_week": "SUN",
+    "date": "2025-07-13",
+    "time": "3:30 PM",
+    "channel": "TNT"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "DOVER",
+    "day_of_week": "SAT",
+    "date": "2025-07-19",
+    "time": "4:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "DOVER",
+    "day_of_week": "SUN",
+    "date": "2025-07-20",
+    "time": "2 PM",
+    "channel": "TNT"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "LUCAS OIL IRP",
+    "day_of_week": "FRI",
+    "date": "2025-07-25",
+    "time": "8 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "INDIANAPOLIS",
+    "day_of_week": "SAT",
+    "date": "2025-07-26",
+    "time": "4:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "INDIANAPOLIS",
+    "day_of_week": "SUN",
+    "date": "2025-07-27",
+    "time": "2 PM",
+    "channel": "TNT"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "IOWA",
+    "day_of_week": "SAT",
+    "date": "2025-08-02",
+    "time": "4:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "IOWA",
+    "day_of_week": "SUN",
+    "date": "2025-08-03",
+    "time": "3:30 PM",
+    "channel": "USA"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "WATKINS GLEN",
+    "day_of_week": "FRI",
+    "date": "2025-08-08",
+    "time": "5 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "WATKINS GLEN",
+    "day_of_week": "SAT",
+    "date": "2025-08-09",
+    "time": "3 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "WATKINS GLEN",
+    "day_of_week": "SUN",
+    "date": "2025-08-10",
+    "time": "2 PM",
+    "channel": "USA"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "RICHMOND",
+    "day_of_week": "FRI",
+    "date": "2025-08-15",
+    "time": "7:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "RICHMOND",
+    "day_of_week": "SAT",
+    "date": "2025-08-16",
+    "time": "7:30 PM",
+    "channel": "USA"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "DAYTONA",
+    "day_of_week": "FRI",
+    "date": "2025-08-22",
+    "time": "7:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "DAYTONA",
+    "day_of_week": "SAT",
+    "date": "2025-08-23",
+    "time": "7:30 PM",
+    "channel": "NBC"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "DARLINGTON",
+    "day_of_week": "SAT",
+    "date": "2025-08-30",
+    "time": "12 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "PORTLAND",
+    "day_of_week": "SAT",
+    "date": "2025-08-30",
+    "time": "7:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "DARLINGTON",
+    "day_of_week": "SUN",
+    "date": "2025-08-31",
+    "time": "6 PM",
+    "channel": "USA"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "WWTR",
+    "day_of_week": "SAT",
+    "date": "2025-09-06",
+    "time": "7:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "WWTR",
+    "day_of_week": "SUN",
+    "date": "2025-09-07",
+    "time": "3 PM",
+    "channel": "USA"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "BRISTOL",
+    "day_of_week": "FRI",
+    "date": "2025-09-12",
+    "time": "7:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "BRISTOL",
+    "day_of_week": "SAT",
+    "date": "2025-09-13",
+    "time": "7:30 PM",
+    "channel": "USA"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "NEW HAMPSHIRE",
+    "day_of_week": "SAT",
+    "date": "2025-09-20",
+    "time": "12 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "NEW HAMPSHIRE",
+    "day_of_week": "SUN",
+    "date": "2025-09-21",
+    "time": "2 PM",
+    "channel": "USA"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "KANSAS",
+    "day_of_week": "SAT",
+    "date": "2025-09-27",
+    "time": "4 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "KANSAS",
+    "day_of_week": "SUN",
+    "date": "2025-09-28",
+    "time": "3 PM",
+    "channel": "USA"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "ROVAL",
+    "day_of_week": "FRI",
+    "date": "2025-10-03",
+    "time": "3:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "ROVAL",
+    "day_of_week": "SAT",
+    "date": "2025-10-04",
+    "time": "4 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "ROVAL",
+    "day_of_week": "SUN",
+    "date": "2025-10-05",
+    "time": "3 PM",
+    "channel": "USA"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "LAS VEGAS",
+    "day_of_week": "SAT",
+    "date": "2025-10-11",
+    "time": "7:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "LAS VEGAS",
+    "day_of_week": "SUN",
+    "date": "2025-10-12",
+    "time": "5:30 PM",
+    "channel": "USA"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "TALLADEGA",
+    "day_of_week": "FRI",
+    "date": "2025-10-17",
+    "time": "3:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "TALLADEGA",
+    "day_of_week": "SAT",
+    "date": "2025-10-18",
+    "time": "4 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "TALLADEGA",
+    "day_of_week": "SUN",
+    "date": "2025-10-19",
+    "time": "2 PM",
+    "channel": "NBC"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "MARTINSVILLE",
+    "day_of_week": "FRI",
+    "date": "2025-10-24",
+    "time": "6 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "MARTINSVILLE",
+    "day_of_week": "SAT",
+    "date": "2025-10-25",
+    "time": "7:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "MARTINSVILLE",
+    "day_of_week": "SUN",
+    "date": "2025-10-26",
+    "time": "2 PM",
+    "channel": "NBC"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "PHOENIX",
+    "day_of_week": "FRI",
+    "date": "2025-10-31",
+    "time": "7:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR XFINITY SERIES",
+    "location": "PHOENIX",
+    "day_of_week": "SAT",
+    "date": "2025-11-01",
+    "time": "7:30 PM",
+    "channel": "CW"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "PHOENIX",
+    "day_of_week": "SUN",
+    "date": "2025-11-02",
+    "time": "3 PM",
+    "channel": "NBC"
+  },
+    {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "DAYTONA BEACH",
+    "day_of_week": "SAT",
+    "date": "2025-02-15",
+    "time": "12 PM",
+    "channel": "FOX"
+  },
+  {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "AVONDALE",
+    "day_of_week": "FRI",
+    "date": "2025-03-07",
+    "time": "8 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "TALLADEGA",
+    "day_of_week": "SAT",
+    "date": "2025-04-26",
+    "time": "12:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "KANSAS CITY",
+    "day_of_week": "FRI",
+    "date": "2025-05-09",
+    "time": "8 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "CONCORD",
+    "day_of_week": "FRI",
+    "date": "2025-05-23",
+    "time": "6 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "BROOKLYN",
+    "day_of_week": "FRI",
+    "date": "2025-06-06",
+    "time": "5 PM",
+    "channel": "FS2"
+  },
+  {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "MARNE",
+    "day_of_week": "SAT",
+    "date": "2025-06-14",
+    "time": "7 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "ELKO NEW MARKET",
+    "day_of_week": "SAT",
+    "date": "2025-06-21",
+    "time": "9 PM",
+    "channel": "FS2"
+  },
+  {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "LAKEVILLE",
+    "day_of_week": "SAT",
+    "date": "2025-06-28",
+    "time": "4 PM",
+    "channel": "FS2"
+  },
+  {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "DOVER",
+    "day_of_week": "FRI",
+    "date": "2025-07-18",
+    "time": "5 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "BROWNSBURG",
+    "day_of_week": "FRI",
+    "date": "2025-07-25",
+    "time": "5:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "NEWTON",
+    "day_of_week": "FRI",
+    "date": "2025-08-01",
+    "time": "7 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "WATKINS GLEN",
+    "day_of_week": "FRI",
+    "date": "2025-08-08",
+    "time": "2 PM",
+    "channel": "FS2"
+  },
+  {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "SPRINGFIELD",
+    "day_of_week": "SUN",
+    "date": "2025-08-17",
+    "time": "2 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "MADISON",
+    "day_of_week": "FRI",
+    "date": "2025-08-22",
+    "time": "9 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "DU QUOIN",
+    "day_of_week": "SUN",
+    "date": "2025-08-31",
+    "time": "8:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "BRISTOL",
+    "day_of_week": "FRI",
+    "date": "2025-09-11",
+    "time": "5:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "SALEM",
+    "day_of_week": "SAT",
+    "date": "2025-09-20",
+    "time": "8 PM",
+    "channel": "FS2"
+  },
+  {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "KANSAS CITY",
+    "day_of_week": "FRI",
+    "date": "2025-09-26",
+    "time": "8 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "ARCA MENARDS SERIES",
+    "location": "TOLEDO",
+    "day_of_week": "SAT",
+    "date": "2025-10-04",
+    "time": "4 PM",
+    "channel": "FS2"
+  }
+]
