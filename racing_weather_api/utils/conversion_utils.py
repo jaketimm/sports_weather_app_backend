@@ -43,6 +43,9 @@ def normalize_text_case(data):
     known_acronyms = {"NASCAR", "CARS", "ARCA"}  # add more acronyms here as needed
     
     def normalize_string(s):
+        if s.strip().upper() == "INDYCAR":
+            return "IndyCar"
+        
         words = s.split()
         normalized_words = []
         for word in words:
