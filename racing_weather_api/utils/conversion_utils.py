@@ -37,9 +37,24 @@ def parse_event_time(event_time_str: str):
     return event_time_str
 
 def normalize_text_case(data):
-    """Convert text case in a JSON structure, e.g. TEXT => Text"""
+    """Normalize text case in JSON structure, preserve known acronyms in uppercase"""
+    
     skip_keys = {"time", "channel", "track_location"}
-
+    known_acronyms = {"NASCAR", "CARS"}  # add more acronyms here as needed
+    
+    def normalize_string(s):
+        if s.strip().upper() == "CARS TOUR":
+            return "CARS Tour"
+        
+        words = s.split()
+        normalized_words = []
+        for word in words:
+            if word.upper() in known_acronyms:
+                normalized_words.append(word.upper())
+            else:
+                normalized_words.append(word.title())
+        return " ".join(normalized_words)
+    
     if isinstance(data, dict):
         return {
             key: value if key in skip_keys else normalize_text_case(value)
@@ -48,9 +63,10 @@ def normalize_text_case(data):
     elif isinstance(data, list):
         return [normalize_text_case(item) for item in data]
     elif isinstance(data, str):
-        return data.title()
+        return normalize_string(data)
     else:
         return data  # Leave numbers, bools, None unchanged
+
 
 
 def convert_wind_direction(direction):

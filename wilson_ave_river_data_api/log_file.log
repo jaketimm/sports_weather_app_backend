@@ -85,3 +85,25 @@
 2025-06-19 13:18:46,325 - racing_weather_api.data_processing.event_processing - INFO - Forecast data successfully downloaded and processed
 2025-06-19 13:18:46,326 - racing_weather_api.utils.file_utils - INFO - Saved data to /var\www\html\data\events_with_weather.json
 2025-06-19 13:18:46,327 - __main__ - INFO - Retrieved 5 events for the current weekend
+2025-06-19 13:37:32,550 - wilson_ave_river_data_api.river_data_updater - INFO - Starting data append for station 04119070 (last 6 hour(s)) to /var\www\html\data\river_data_m-11.csv
+2025-06-19 13:37:32,860 - wilson_ave_river_data_api.river_data_updater - INFO - Successfully fetched and saved data to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\wilson_ave_river_data_api\data\river_level_data.rdb from https://waterservices.usgs.gov/nwis/iv/?sites=04119070&agencyCd=USGS&parameterCd=00065&startDT=2025-06-19T07:37:32.000-04:00&endDT=2025-06-19T13:37:32.000-04:00&format=rdb
+2025-06-19 13:37:32,866 - wilson_ave_river_data_api.river_data_updater - INFO - Loaded 21 rows from c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\wilson_ave_river_data_api\data\river_level_data.rdb
+2025-06-19 13:37:32,876 - wilson_ave_river_data_api.river_data_updater - INFO - Loaded 52 rows from existing /var\www\html\data\river_data_m-11.csv
+2025-06-19 13:37:32,880 - wilson_ave_river_data_api.river_data_updater - INFO - Appended 21 new rows to /var\www\html\data\river_data_m-11.csv. Total rows after update: 73
+2025-06-19 13:37:32,880 - wilson_ave_river_data_api.river_data_updater - INFO - Script completed.
+2025-06-19 13:37:32,880 - racing_weather_api.api.weather_api - INFO - Forecast cache cleared
+2025-06-19 13:37:32,881 - racing_weather_api.data_processing.event_processing - INFO - Found 5 events for week 2025-06-16 to 2025-06-22
+2025-06-19 13:37:32,882 - racing_weather_api.api.weather_api - INFO - Downloading data from Google Weather API...
+2025-06-19 13:37:34,893 - racing_weather_api.api.weather_api - INFO - Forecast saved to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\racing_weather_api\data\track_forecast.json
+2025-06-19 13:37:34,893 - racing_weather_api.api.weather_api - INFO - Downloaded and cached forecast for POCONO
+2025-06-19 13:37:34,894 - racing_weather_api.api.weather_api - INFO - Using cached forecast for POCONO, data already downloaded
+2025-06-19 13:37:34,895 - racing_weather_api.api.weather_api - INFO - Using cached forecast for POCONO, data already downloaded
+2025-06-19 13:37:34,897 - racing_weather_api.api.weather_api - INFO - Downloading data from Google Weather API...
+2025-06-19 13:37:36,724 - racing_weather_api.api.weather_api - INFO - Forecast saved to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\racing_weather_api\data\track_forecast.json
+2025-06-19 13:37:36,724 - racing_weather_api.api.weather_api - INFO - Downloaded and cached forecast for ELKO NEW MARKET
+2025-06-19 13:37:36,726 - racing_weather_api.api.weather_api - INFO - Downloading data from Google Weather API...
+2025-06-19 13:37:38,595 - racing_weather_api.api.weather_api - INFO - Forecast saved to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\racing_weather_api\data\track_forecast.json
+2025-06-19 13:37:38,595 - racing_weather_api.api.weather_api - INFO - Downloaded and cached forecast for ELKHART LAKE
+2025-06-19 13:37:38,596 - racing_weather_api.data_processing.event_processing - INFO - Forecast data successfully downloaded and processed
+2025-06-19 13:37:38,598 - racing_weather_api.utils.file_utils - INFO - Saved data to /var\www\html\data\events_with_weather.json
+2025-06-19 13:37:38,598 - __main__ - INFO - Retrieved 5 events for the current weekend
