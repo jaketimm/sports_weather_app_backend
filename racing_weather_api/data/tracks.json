@@ -219,107 +219,295 @@
   {
     "name": "DAYTONA BEACH",
     "location": "Daytona Beach, FL",
-    "latitude": 29.1851,
-    "longitude": -81.0705,
+    "latitude": 29.2071029,
+    "longitude": -81.01967959999999,
     "trackName": "Daytona International Speedway"
   },
   {
     "name": "AVONDALE",
     "location": "Avondale, AZ",
-    "latitude": 33.3792,
-    "longitude": -112.3135,
+    "latitude": 33.4355977,
+    "longitude": -112.3496021,
     "trackName": "Phoenix Raceway"
   },
   {
     "name": "KANSAS CITY",
     "location": "Kansas City, KS",
-    "latitude": 39.1166,
-    "longitude": -94.8317,
+    "latitude": 39.11553139999999,
+    "longitude": -94.62678729999999,
     "trackName": "Kansas Speedway"
   },
   {
     "name": "CONCORD",
     "location": "Concord, NC",
-    "latitude": 35.3518,
-    "longitude": -80.6852,
+    "latitude": 35.4100756,
+    "longitude": -80.5819527,
     "trackName": "Charlotte Motor Speedway"
   },
   {
     "name": "BROOKLYN",
     "location": "Brooklyn, MI",
-    "latitude": 42.0833,
-    "longitude": -84.2444,
+    "latitude": 42.105874,
+    "longitude": -84.2482819,
     "trackName": "Michigan International Speedway"
   },
   {
     "name": "MARNE",
     "location": "Marne, MI",
-    "latitude": 43.0376,
-    "longitude": -85.8894,
+    "latitude": 43.0355531,
+    "longitude": -85.8278002,
     "trackName": "Berlin Raceway"
   },
   {
     "name": "ELKO NEW MARKET",
     "location": "Elko New Market, MN",
-    "latitude": 44.5787,
-    "longitude": -93.3274,
+    "latitude": 44.5647222,
+    "longitude": -93.3269444,
     "trackName": "Elko Speedway"
   },
   {
     "name": "LAKEVILLE",
     "location": "Lakeville, MN",
-    "latitude": 44.6497,
-    "longitude": -93.2427,
+    "latitude": 44.6496868,
+    "longitude": -93.24271999999999,
     "trackName": "New Hampshire Motor Speedway (assumed mistake, corrected as MN)"
   },
   {
     "name": "BROWNSBURG",
     "location": "Brownsburg, IN",
-    "latitude": 39.8327,
-    "longitude": -86.3483,
+    "latitude": 39.8433163,
+    "longitude": -86.397956,
     "trackName": "Lucas Oil Indianapolis Raceway Park"
   },
   {
     "name": "NEWTON",
     "location": "Newton, IA",
-    "latitude": 41.6842,
-    "longitude": -93.0036,
+    "latitude": 41.7033177,
+    "longitude": -93.05735330000002,
     "trackName": "Iowa Speedway"
   },
   {
     "name": "SPRINGFIELD",
     "location": "Springfield, IL",
-    "latitude": 39.8017,
-    "longitude": -89.6501,
+    "latitude": 39.8006593,
+    "longitude": -89.64493449999999,
     "trackName": "Illinois State Fairgrounds Racetrack"
   },
   {
     "name": "MADISON",
     "location": "Oregon, WI",
-    "latitude": 42.9242,
-    "longitude": -89.3783,
+    "latitude": 42.9261116,
+    "longitude": -89.38456339999999,
     "trackName": "Madison International Speedway"
   },
   {
     "name": "DU QUOIN",
     "location": "Du Quoin, IL",
-    "latitude": 38.0106,
-    "longitude": -89.2376,
+    "latitude": 38.0114393,
+    "longitude": -89.2361935,
     "trackName": "Du Quoin State Fairgrounds Racetrack"
   },
   {
     "name": "SALEM",
     "location": "Salem, IN",
-    "latitude": 38.6056,
-    "longitude": -86.0965,
+    "latitude": 38.6056131,
+    "longitude": -86.101089,
     "trackName": "Salem Speedway"
   },
   {
     "name": "TOLEDO",
     "location": "Toledo, OH",
-    "latitude": 41.6639,
-    "longitude": -83.5822,
+    "latitude": 41.6528052,
+    "longitude": -83.5378674,
     "trackName": "Toledo Speedway"
+  },
+  {
+    "name": "ST. PETERSBURG",
+    "location": "St. Petersburg, FL",
+    "latitude": 27.7671271,
+    "longitude": -82.6384451,
+    "trackName": "Streets of St. Petersburg"
+  },
+  {
+    "name": "THERMAL",
+    "location": "Thermal, CA",
+    "latitude": 33.6402638,
+    "longitude": -116.1422353,
+    "trackName": "The Thermal Club"
+  },
+  {
+    "name": "LONG BEACH",
+    "location": "Long Beach, CA",
+    "latitude": 33.7700504,
+    "longitude": -118.1937395,
+    "trackName": "Streets of Long Beach"
+  },
+  {
+    "name": "BIRMINGHAM",
+    "location": "Birmingham, AL",
+    "latitude": 33.5185892,
+    "longitude": -86.8103567,
+    "trackName": "Barber Motorsports Park"
+  },
+  {
+    "name": "DETROIT",
+    "location": "Detroit, MI",
+    "latitude": 42.32971819999999,
+    "longitude": -83.0424533,
+    "trackName": "Streets of Detroit"
+  },
+  {
+    "name": "MADISON",
+    "location": "Madison, IL",
+    "latitude": 38.6825502,
+    "longitude": -90.1570536,
+    "trackName": "World Wide Technology Raceway"
+  },
+  {
+    "name": "ELKHART LAKE",
+    "location": "Elkhart Lake, WI",
+    "latitude": 43.8333269,
+    "longitude": -88.0178729,
+    "trackName": "Road America"
+  },
+  {
+    "name": "LEXINGTON",
+    "location": "Lexington, OH",
+    "latitude": 40.6786691,
+    "longitude": -82.5823931,
+    "trackName": "Mid-Ohio Sports Car Course"
+  },
+  {
+    "name": "IOWA",
+    "location": "Newton, IA",
+    "latitude": 41.7033177,
+    "longitude": -93.05735330000002,
+    "trackName": "Iowa Speedway"
+  },
+  {
+    "name": "TORONTO",
+    "location": "Toronto, ON",
+    "latitude": 43.653226,
+    "longitude": -79.3831843,
+    "trackName": "Exhibition Place"
+  },
+  {
+    "name": "MONTEREY",
+    "location": "Monterey, CA",
+    "latitude": 36.5972925,
+    "longitude": -121.8977688,
+    "trackName": "WeatherTech Raceway Laguna Seca"
+  },
+  {
+    "name": "PORTLAND",
+    "location": "Portland, OR",
+    "latitude": 45.515232,
+    "longitude": -122.6783853,
+    "trackName": "Portland International Raceway"
+  },
+  {
+    "name": "MILWAUKEE",
+    "location": "West Allis, WI",
+    "latitude": 43.0166806,
+    "longitude": -88.0070315,
+    "trackName": "Milwaukee Mile"
+  },
+  {
+    "name": "NASHVILLE",
+    "location": "Lebanon, TN",
+    "latitude": 36.2081098,
+    "longitude": -86.2911024,
+    "trackName": "Nashville Superspeedway"
+  },
+  {
+    "name": "NEW RIVER ALL AMERICAN SPEEDWAY",
+    "location": "Jacksonville, NC",
+    "latitude": 34.7540524,
+    "longitude": -77.4302414,
+    "trackName": "New River All-American Speedway"
+  },
+  {
+    "name": "WAKE COUNTY SPEEDWAY",
+    "location": "Raleigh, NC",
+    "latitude": 35.7795897,
+    "longitude": -78.6381787,
+    "trackName": "Wake County Speedway"
+  },
+  {
+    "name": "CORDELE MOTOR SPEEDWAY",
+    "location": "Cordele, GA",
+    "latitude": 31.9635074,
+    "longitude": -83.7823938,
+    "trackName": "Cordele Motor Speedway"
+  },
+  {
+    "name": "ORANGE COUNTY SPEEDWAY",
+    "location": "Rougemont, NC",
+    "latitude": 36.2184752,
+    "longitude": -78.926397,
+    "trackName": "Orange County Speedway"
+  },
+  {
+    "name": "ACE SPEEDWAY",
+    "location": "Elon, NC",
+    "latitude": 36.1018842,
+    "longitude": -79.5068178,
+    "trackName": "Ace Speedway"
+  },
+  {
+    "name": "LANGLEY SPEEDWAY",
+    "location": "Hampton, VA",
+    "latitude": 37.0298687,
+    "longitude": -76.34522179999999,
+    "trackName": "Langley Speedway"
+  },
+  {
+    "name": "DOMINION RACEWAY",
+    "location": "Thornburg, VA",
+    "latitude": 38.13346629999999,
+    "longitude": -77.5216511,
+    "trackName": "Dominion Raceway"
+  },
+  {
+    "name": "SOUTH BOSTON SPEEDWAY",
+    "location": "South Boston, VA",
+    "latitude": 36.6987493,
+    "longitude": -78.9013987,
+    "trackName": "South Boston Speedway"
+  },
+  {
+    "name": "CARAWAY SPEEDWAY",
+    "location": "Sophia, NC",
+    "latitude": 35.823192,
+    "longitude": -79.8608677,
+    "trackName": "Caraway Speedway"
+  },
+  {
+    "name": "HICKORY MOTOR SPEEDWAY",
+    "location": "Hickory, NC",
+    "latitude": 35.7344538,
+    "longitude": -81.3444573,
+    "trackName": "Hickory Motor Speedway"
+  },
+  {
+    "name": "ANDERSON MOTOR SPEEDWAY",
+    "location": "Williamston, SC",
+    "latitude": 34.6184471,
+    "longitude": -82.4779053,
+    "trackName": "Anderson Motor Speedway"
+  },
+  {
+    "name": "FLORENCE MOTOR SPEEDWAY",
+    "location": "Timmonsville, SC",
+    "latitude": 34.1348782,
+    "longitude": -79.93978849999999,
+    "trackName": "Florence Motor Speedway"
+  },
+  {
+    "name": "TRI COUNTY SPEEDWAY",
+    "location": "Hudson, NC",
+    "latitude": 35.8484645,
+    "longitude": -81.4959267,
+    "trackName": "Tri-County Speedway"
   }
-
 ]

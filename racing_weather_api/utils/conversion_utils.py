@@ -37,8 +37,8 @@ def parse_event_time(event_time_str: str):
     return event_time_str
 
 def normalize_text_case(data):
-    """Convert text case in a JSON structure, e.g. TEXT => Text, but skip 'time' and 'channel' keys"""
-    skip_keys = {"time", "channel"}
+    """Convert text case in a JSON structure, e.g. TEXT => Text"""
+    skip_keys = {"time", "channel", "track_location"}
 
     if isinstance(data, dict):
         return {
