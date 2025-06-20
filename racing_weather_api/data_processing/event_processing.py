@@ -3,7 +3,10 @@ Module for handling event data processing and management.
 """
 import logging
 from datetime import datetime, timedelta
-from racing_weather_api.config import EVENTS_WITH_WEATHER_FILE, SCHEDULE_FILE, TRACKS_FILE
+from racing_weather_api.config import (
+    EVENTS_WITH_WEATHER_FILE, SCHEDULE_FILE, TRACKS_FILE,
+    SERIES_SCHEDULE_FILES, ENABLED_SERIES
+)
 from racing_weather_api.utils.file_utils import load_json, save_json
 from racing_weather_api.utils.conversion_utils import parse_event_time, normalize_text_case, normalize_wind_directions
 from racing_weather_api.api.weather_api import get_weather_for_event, clear_forecast_cache
@@ -14,12 +17,43 @@ logger = logging.getLogger(__name__)
 DEFAULT_SCHEDULE_FILE = SCHEDULE_FILE
 
 
-def get_events_with_weather(schedule_file=DEFAULT_SCHEDULE_FILE, use_cached=True):
+def load_schedules_from_series(series_list=None):
+    """Load and combine schedule data from multiple series files.
+    
+    Args:
+        series_list: List of series names to load. If None, uses ENABLED_SERIES from config.
+    
+    Returns:
+        Combined list of all events from specified series.
+    """
+    if series_list is None:
+        series_list = ENABLED_SERIES
+        
+    combined_schedule = []
+    
+    for series_name in series_list:
+        if series_name in SERIES_SCHEDULE_FILES:
+            schedule_file = SERIES_SCHEDULE_FILES[series_name]
+            try:
+                series_data = load_json(schedule_file)
+                if series_data:
+                    combined_schedule.extend(series_data)
+            except Exception as e:
+                logger.error(f"Error loading schedule for {series_name}: {e}")
+        else:
+            logger.warning(f"No schedule file configured for series: {series_name}")
+    
+    logger.info(f"Total events loaded: {len(combined_schedule)}")
+    return combined_schedule
+
+
+def get_events_with_weather(schedule_file=None, use_cached=True, series_list=None):
     """Get events for the current weekend (Friday to Sunday) with weather data.
 
     Args:
-        schedule_file: Path to the schedule JSON file
+        schedule_file: Path to a single schedule JSON file (for backward compatibility)
         use_cached: Whether to use cached event data with weather if available
+        series_list: List of series names to include. If None, uses ENABLED_SERIES.
     """
     try:
         if not use_cached:
@@ -38,8 +72,16 @@ def get_events_with_weather(schedule_file=DEFAULT_SCHEDULE_FILE, use_cached=True
                 logger.info(f"Using cached events with weather data for week of {monday_str}")
                 return cached_events[monday_str]
 
-        # Load JSON schedule data (now a flat list)
-        schedule_data = load_json(schedule_file)
+        # Load schedule data - either from single file or multiple series files
+        if schedule_file:
+            # Use single file if specified (backward compatibility)
+            logger.info(f"Loading schedule from single file: {schedule_file}")
+            schedule_data = load_json(schedule_file)
+        else:
+            # Load from multiple series files
+            logger.info(f"Loading schedules from series files")
+            schedule_data = load_schedules_from_series(series_list)
+            
         track_info_file = load_json(TRACKS_FILE)
 
         # Filter events for the current week (Monday to Sunday)

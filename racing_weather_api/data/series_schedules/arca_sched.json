@@ -1,0 +1,162 @@
+[
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "DAYTONA BEACH",
+        "day_of_week": "SAT",
+        "date": "2025-02-15",
+        "time": "12 PM",
+        "channel": "FOX"
+    },
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "AVONDALE",
+        "day_of_week": "FRI",
+        "date": "2025-03-07",
+        "time": "8 PM",
+        "channel": "FS1"
+    },
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "TALLADEGA",
+        "day_of_week": "SAT",
+        "date": "2025-04-26",
+        "time": "12:30 PM",
+        "channel": "FS1"
+    },
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "KANSAS CITY",
+        "day_of_week": "FRI",
+        "date": "2025-05-09",
+        "time": "8 PM",
+        "channel": "FS1"
+    },
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "CONCORD",
+        "day_of_week": "FRI",
+        "date": "2025-05-23",
+        "time": "6 PM",
+        "channel": "FS1"
+    },
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "BROOKLYN",
+        "day_of_week": "FRI",
+        "date": "2025-06-06",
+        "time": "5 PM",
+        "channel": "FS2"
+    },
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "MARNE",
+        "day_of_week": "SAT",
+        "date": "2025-06-14",
+        "time": "7 PM",
+        "channel": "FS1"
+    },
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "ELKO NEW MARKET",
+        "day_of_week": "SAT",
+        "date": "2025-06-21",
+        "time": "9 PM",
+        "channel": "FS2"
+    },
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "LIME ROCK",
+        "day_of_week": "SAT",
+        "date": "2025-06-28",
+        "time": "4 PM",
+        "channel": "FS2"
+    },
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "DOVER",
+        "day_of_week": "FRI",
+        "date": "2025-07-18",
+        "time": "5 PM",
+        "channel": "FS1"
+    },
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "BROWNSBURG",
+        "day_of_week": "FRI",
+        "date": "2025-07-25",
+        "time": "5:30 PM",
+        "channel": "FS1"
+    },
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "NEWTON",
+        "day_of_week": "FRI",
+        "date": "2025-08-01",
+        "time": "7 PM",
+        "channel": "FS1"
+    },
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "WATKINS GLEN",
+        "day_of_week": "FRI",
+        "date": "2025-08-08",
+        "time": "2 PM",
+        "channel": "FS2"
+    },
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "SPRINGFIELD",
+        "day_of_week": "SUN",
+        "date": "2025-08-17",
+        "time": "2 PM",
+        "channel": "FS1"
+    },
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "MADISON",
+        "day_of_week": "FRI",
+        "date": "2025-08-22",
+        "time": "9 PM",
+        "channel": "FS1"
+    },
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "DU QUOIN",
+        "day_of_week": "SUN",
+        "date": "2025-08-31",
+        "time": "8:30 PM",
+        "channel": "FS1"
+    },
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "BRISTOL",
+        "day_of_week": "FRI",
+        "date": "2025-09-11",
+        "time": "5:30 PM",
+        "channel": "FS1"
+    },
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "SALEM",
+        "day_of_week": "SAT",
+        "date": "2025-09-20",
+        "time": "8 PM",
+        "channel": "FS2"
+    },
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "KANSAS CITY",
+        "day_of_week": "FRI",
+        "date": "2025-09-26",
+        "time": "8 PM",
+        "channel": "FS1"
+    },
+    {
+        "Series": "ARCA MENARDS SERIES",
+        "location": "TOLEDO",
+        "day_of_week": "SAT",
+        "date": "2025-10-04",
+        "time": "4 PM",
+        "channel": "FS2"
+    }
+]

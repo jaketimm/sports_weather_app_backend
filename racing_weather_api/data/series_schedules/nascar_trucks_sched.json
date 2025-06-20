@@ -1,0 +1,130 @@
+[
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "DAYTONA",
+    "day_of_week": "FRI",
+    "date": "2025-02-14",
+    "time": "7:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "ATLANTA",
+    "day_of_week": "SAT",
+    "date": "2025-02-22",
+    "time": "2 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "LAS VEGAS",
+    "day_of_week": "FRI",
+    "date": "2025-03-14",
+    "time": "9 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "MIAMI",
+    "day_of_week": "FRI",
+    "date": "2025-03-21",
+    "time": "8 PM",
+    "channel": "FOX"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "MARTINSVILLE",
+    "day_of_week": "FRI",
+    "date": "2025-03-28",
+    "time": "7:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "POCONO",
+    "day_of_week": "FRI",
+    "date": "2025-06-20",
+    "time": "5 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "LIME ROCK",
+    "day_of_week": "SAT",
+    "date": "2025-06-28",
+    "time": "1 PM",
+    "channel": "FOX"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "LUCAS OIL IRP",
+    "day_of_week": "FRI",
+    "date": "2025-07-25",
+    "time": "8 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "WATKINS GLEN",
+    "day_of_week": "FRI",
+    "date": "2025-08-08",
+    "time": "5 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "RICHMOND",
+    "day_of_week": "FRI",
+    "date": "2025-08-15",
+    "time": "7:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "DARLINGTON",
+    "day_of_week": "SAT",
+    "date": "2025-08-30",
+    "time": "12 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "NEW HAMPSHIRE",
+    "day_of_week": "SAT",
+    "date": "2025-09-20",
+    "time": "12 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "ROVAL",
+    "day_of_week": "FRI",
+    "date": "2025-10-03",
+    "time": "3:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "TALLADEGA",
+    "day_of_week": "FRI",
+    "date": "2025-10-17",
+    "time": "3:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "MARTINSVILLE",
+    "day_of_week": "FRI",
+    "date": "2025-10-24",
+    "time": "6 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CRAFTSMAN TRUCK SERIES",
+    "location": "PHOENIX",
+    "day_of_week": "FRI",
+    "date": "2025-10-31",
+    "time": "7:30 PM",
+    "channel": "FS1"
+  }
+]

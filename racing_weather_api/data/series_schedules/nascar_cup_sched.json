@@ -1,0 +1,234 @@
+[
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "CLASH BOWMAN GRAY",
+    "day_of_week": "SUN",
+    "date": "2025-02-02",
+    "time": "8 PM",
+    "channel": "FOX"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "DAYTONA",
+    "day_of_week": "SUN",
+    "date": "2025-02-16",
+    "time": "2:30 PM",
+    "channel": "FOX"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "ATLANTA",
+    "day_of_week": "SUN",
+    "date": "2025-02-23",
+    "time": "3 PM",
+    "channel": "FOX"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "COTA",
+    "day_of_week": "SUN",
+    "date": "2025-03-02",
+    "time": "3:30 PM",
+    "channel": "FOX"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "PHOENIX",
+    "day_of_week": "SUN",
+    "date": "2025-03-09",
+    "time": "3:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "LAS VEGAS",
+    "day_of_week": "SUN",
+    "date": "2025-03-16",
+    "time": "3:30 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "MIAMI",
+    "day_of_week": "SUN",
+    "date": "2025-03-23",
+    "time": "3 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "MARTINSVILLE",
+    "day_of_week": "SUN",
+    "date": "2025-03-30",
+    "time": "3 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "DARLINGTON",
+    "day_of_week": "SUN",
+    "date": "2025-04-06",
+    "time": "3 PM",
+    "channel": "FS1"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "MEXICO CITY",
+    "day_of_week": "SUN",
+    "date": "2025-06-15",
+    "time": "3 PM",
+    "channel": "PRIME"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "POCONO",
+    "day_of_week": "SUN",
+    "date": "2025-06-22",
+    "time": "2 PM",
+    "channel": "PRIME"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "ATLANTA",
+    "day_of_week": "SAT",
+    "date": "2025-06-28",
+    "time": "7 PM",
+    "channel": "TNT"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "CHICAGO",
+    "day_of_week": "SUN",
+    "date": "2025-07-06",
+    "time": "2 PM",
+    "channel": "TNT"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "SONOMA",
+    "day_of_week": "SUN",
+    "date": "2025-07-13",
+    "time": "3:30 PM",
+    "channel": "TNT"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "DOVER",
+    "day_of_week": "SUN",
+    "date": "2025-07-20",
+    "time": "2 PM",
+    "channel": "TNT"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "INDIANAPOLIS",
+    "day_of_week": "SUN",
+    "date": "2025-07-27",
+    "time": "2 PM",
+    "channel": "TNT"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "IOWA",
+    "day_of_week": "SUN",
+    "date": "2025-08-03",
+    "time": "3:30 PM",
+    "channel": "USA"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "WATKINS GLEN",
+    "day_of_week": "SUN",
+    "date": "2025-08-10",
+    "time": "2 PM",
+    "channel": "USA"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "DAYTONA",
+    "day_of_week": "SAT",
+    "date": "2025-08-23",
+    "time": "7:30 PM",
+    "channel": "NBC"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "DARLINGTON",
+    "day_of_week": "SUN",
+    "date": "2025-08-31",
+    "time": "6 PM",
+    "channel": "USA"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "WWTR",
+    "day_of_week": "SUN",
+    "date": "2025-09-07",
+    "time": "3 PM",
+    "channel": "USA"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "BRISTOL",
+    "day_of_week": "SAT",
+    "date": "2025-09-13",
+    "time": "7:30 PM",
+    "channel": "USA"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "NEW HAMPSHIRE",
+    "day_of_week": "SUN",
+    "date": "2025-09-21",
+    "time": "2 PM",
+    "channel": "USA"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "KANSAS",
+    "day_of_week": "SUN",
+    "date": "2025-09-28",
+    "time": "3 PM",
+    "channel": "USA"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "ROVAL",
+    "day_of_week": "SUN",
+    "date": "2025-10-05",
+    "time": "3 PM",
+    "channel": "USA"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "LAS VEGAS",
+    "day_of_week": "SUN",
+    "date": "2025-10-12",
+    "time": "5:30 PM",
+    "channel": "USA"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "TALLADEGA",
+    "day_of_week": "SUN",
+    "date": "2025-10-19",
+    "time": "2 PM",
+    "channel": "NBC"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "MARTINSVILLE",
+    "day_of_week": "SUN",
+    "date": "2025-10-26",
+    "time": "2 PM",
+    "channel": "NBC"
+  },
+  {
+    "Series": "NASCAR CUP SERIES",
+    "location": "PHOENIX",
+    "day_of_week": "SUN",
+    "date": "2025-11-02",
+    "time": "3 PM",
+    "channel": "NBC"
+  }
+]
