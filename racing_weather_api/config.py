@@ -39,7 +39,6 @@ SERIES_SCHEDULE_FILES = {
     'CARS TOUR': CARS_TOUR_SCHEDULE_FILE,
 }
 
-EVENTS_WITH_WEATHER_FILE = os.path.join(DATA_DIR, 'events_with_weather.json')
 TRACK_FORECAST_FILE = os.path.join(DATA_DIR, 'track_forecast.json')
 ALL_LOCATIONS_FORECAST_FILE = os.path.join(DATA_DIR, 'all_10_day_forecasts.json')
 LOG_FILE = os.path.join(BASE_DIR, 'log_file.log')
