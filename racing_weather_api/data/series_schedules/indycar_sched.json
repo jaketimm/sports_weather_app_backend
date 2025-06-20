@@ -68,7 +68,7 @@
         "location": "ELKHART LAKE",
         "day_of_week": "SUN",
         "date": "2025-06-22",
-        "time": "3:30 PM",
+        "time": "1:30 PM",
         "channel": "FOX"
     },
     {
@@ -76,7 +76,7 @@
         "location": "LEXINGTON",
         "day_of_week": "SUN",
         "date": "2025-07-06",
-        "time": "2 PM",
+        "time": "1 PM",
         "channel": "FOX"
     },
     {
@@ -92,7 +92,7 @@
         "location": "IOWA",
         "day_of_week": "SUN",
         "date": "2025-07-13",
-        "time": "2 PM",
+        "time": "1 PM",
         "channel": "FOX"
     },
     {
@@ -100,7 +100,7 @@
         "location": "TORONTO",
         "day_of_week": "SUN",
         "date": "2025-07-20",
-        "time": "2 PM",
+        "time": "12 PM",
         "channel": "FOX"
     },
     {
