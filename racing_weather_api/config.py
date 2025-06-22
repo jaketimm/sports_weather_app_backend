@@ -60,8 +60,7 @@ ENABLED_SERIES = [
     'NASCAR XFINITY SERIES', 
     'NASCAR TRUCK SERIES',
     'INDYCAR',
-    'ARCA',
-    'CARS TOUR'
+    'ARCA'
 ]  # Modify to enable/disable specific series
 
 # Ensure data directories exist
