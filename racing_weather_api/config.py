@@ -28,6 +28,7 @@ NASCAR_TRUCKS_SCHEDULE_FILE = os.path.join(SERIES_SCHEDULES_DIR, 'nascar_trucks_
 INDYCAR_SCHEDULE_FILE = os.path.join(SERIES_SCHEDULES_DIR, 'indycar_sched.json')
 ARCA_SCHEDULE_FILE = os.path.join(SERIES_SCHEDULES_DIR, 'arca_sched.json')
 CARS_TOUR_SCHEDULE_FILE = os.path.join(SERIES_SCHEDULES_DIR, 'cars_tour_sched.json')
+F1_SCHEDULE_FILE = os.path.join(SERIES_SCHEDULES_DIR, 'f1_sched.json')
 
 # List of all schedule files for easy iteration
 SERIES_SCHEDULE_FILES = {
@@ -37,6 +38,7 @@ SERIES_SCHEDULE_FILES = {
     'INDYCAR': INDYCAR_SCHEDULE_FILE,
     'ARCA': ARCA_SCHEDULE_FILE,
     'CARS TOUR': CARS_TOUR_SCHEDULE_FILE,
+    'F1': F1_SCHEDULE_FILE
 }
 
 TRACK_FORECAST_FILE = os.path.join(DATA_DIR, 'track_forecast.json')
@@ -60,7 +62,7 @@ ENABLED_SERIES = [
     'INDYCAR',
     'ARCA',
     'CARS TOUR'
-]  # Can be modified to enable/disable specific series
+]  # Modify to enable/disable specific series
 
 # Ensure data directories exist
 os.makedirs(DATA_DIR, exist_ok=True)

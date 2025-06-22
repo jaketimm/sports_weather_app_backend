@@ -1,0 +1,114 @@
+[
+  {
+    "Series": "FORMULA 1",
+    "location": "RED BULL RING",
+    "day_of_week": "SUN",
+    "date": "2025-06-29",
+    "time": "8:55 AM",
+    "channel": "ESPN"
+  },
+  {
+    "Series": "FORMULA 1",
+    "location": "SILVERSTONE CIRCUIT",
+    "day_of_week": "SUN",
+    "date": "2025-07-06",
+    "time": "9:55 AM",
+    "channel": "ESPN"
+  },
+  {
+    "Series": "FORMULA 1",
+    "location": "CIRCUIT DE SPA-FRANCORCHAMPS",
+    "day_of_week": "SUN",
+    "date": "2025-07-27",
+    "time": "8:55 AM",
+    "channel": "ESPN"
+  },
+  {
+    "Series": "FORMULA 1",
+    "location": "HUNGARORING",
+    "day_of_week": "SUN",
+    "date": "2025-08-03",
+    "time": "8:55 AM",
+    "channel": "ESPN"
+  },
+  {
+    "Series": "FORMULA 1",
+    "location": "CIRCUIT ZANDVOORT",
+    "day_of_week": "SUN",
+    "date": "2025-08-31",
+    "time": "8:55 AM",
+    "channel": "ESPN"
+  },
+  {
+    "Series": "FORMULA 1",
+    "location": "AUTODROMO NAZIONALE MONZA",
+    "day_of_week": "SUN",
+    "date": "2025-09-07",
+    "time": "8:55 AM",
+    "channel": "ESPN"
+  },
+  {
+    "Series": "FORMULA 1",
+    "location": "BAKU CITY CIRCUIT",
+    "day_of_week": "SUN",
+    "date": "2025-09-21",
+    "time": "6:55 AM",
+    "channel": "ESPN"
+  },
+  {
+    "Series": "FORMULA 1",
+    "location": "MARINA BAY STREET CIRCUIT",
+    "day_of_week": "SUN",
+    "date": "2025-10-05",
+    "time": "7:55 AM",
+    "channel": "ESPN"
+  },
+  {
+    "Series": "FORMULA 1",
+    "location": "COTA",
+    "day_of_week": "SUN",
+    "date": "2025-10-19",
+    "time": "2:55 PM",
+    "channel": "ABC"
+  },
+  {
+    "Series": "FORMULA 1",
+    "location": "MEXICO CITY",
+    "day_of_week": "SUN",
+    "date": "2025-10-26",
+    "time": "3:55 PM",
+    "channel": "ABC"
+  },
+  {
+    "Series": "FORMULA 1",
+    "location": "AUTODROMO JOSE CARLOS PACE",
+    "day_of_week": "SUN",
+    "date": "2025-11-09",
+    "time": "11:55 AM",
+    "channel": "ESPN2"
+  },
+  {
+    "Series": "FORMULA 1",
+    "location": "LAS VEGAS STRIP CIRCUIT",
+    "day_of_week": "SAT",
+    "date": "2025-11-22",
+    "time": "10:55 PM",
+    "channel": "ESPN"
+  },
+  {
+    "Series": "FORMULA 1",
+    "location": "LOSAIL INTERNATIONAL CIRCUIT",
+    "day_of_week": "SUN",
+    "date": "2025-11-30",
+    "time": "10:55 AM",
+    "channel": "ESPN"
+  },
+  {
+    "Series": "FORMULA 1",
+    "location": "YAS MARINA CIRCUIT",
+    "day_of_week": "SUN",
+    "date": "2025-12-07",
+    "time": "7:55 AM",
+    "channel": "ESPN"
+  }
+]

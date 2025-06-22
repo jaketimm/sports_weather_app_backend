@@ -85,7 +85,7 @@ def get_events_with_weather(schedule_file=None, use_cached=True, series_list=Non
         track_info_file = load_json(TRACKS_FILE)
 
         # Filter events for the current week (Monday to Sunday)
-        current_week_events = get_current_week_events(schedule_data)
+        current_week_events = get_next_7_days_events(schedule_data)
 
         # Remove events that have already happened
         filtered_events = exclude_past_events(current_week_events)
@@ -130,34 +130,33 @@ def get_events_with_weather(schedule_file=None, use_cached=True, series_list=Non
         return []
 
 
-def get_current_week_events(schedule_data):
-    """Filter events to only include those in the current week (Monday to Sunday)."""
+def get_next_7_days_events(schedule_data):
+    """Filter events to only include those in the next 7 days from today."""
     try:
         if not schedule_data:
             return []
 
-        # Calculate the current week's date range
+        # Calculate the next 7 days date range
         today = datetime.now()
-        weekday = today.weekday()  # 0 = Monday, 6 = Sunday
-        monday = today - timedelta(days=weekday)
-        sunday = monday + timedelta(days=6)
+        start_date = today
+        end_date = today + timedelta(days=6)  # Next 6 days + today = 7 days total
         
         # Convert to date strings for comparison
-        monday_str = monday.strftime("%Y-%m-%d")
-        sunday_str = sunday.strftime("%Y-%m-%d")
+        start_date_str = start_date.strftime("%Y-%m-%d")
+        end_date_str = end_date.strftime("%Y-%m-%d")
 
-        current_week_events = []
+        next_7_days_events = []
         
         for event in schedule_data:
             event_date = event.get('date', '')
-            if event_date and monday_str <= event_date <= sunday_str:
-                current_week_events.append(event)
+            if event_date and start_date_str <= event_date <= end_date_str:
+                next_7_days_events.append(event)
 
-        logger.info(f"Found {len(current_week_events)} events for week {monday_str} to {sunday_str}")
-        return current_week_events
+        logger.info(f"Found {len(next_7_days_events)} events for next 7 days {start_date_str} to {end_date_str}")
+        return next_7_days_events
 
     except Exception as e:
-        logger.error(f"Error filtering current week events: {e}")
+        logger.error(f"Error filtering next 7 days events: {e}")
         return []
 
 

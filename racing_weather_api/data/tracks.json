@@ -509,5 +509,89 @@
     "latitude": 35.8484645,
     "longitude": -81.4959267,
     "trackName": "Tri-County Speedway"
+  },
+  {
+    "name": "RED BULL RING",
+    "location": "Spielberg, Austria",
+    "latitude": 47.2085616,
+    "longitude": 14.7996235,
+    "trackName": "Red Bull Ring"
+  },
+  {
+    "name": "SILVERSTONE CIRCUIT",
+    "location": "Silverstone, Great Britain",
+    "latitude": 52.091477,
+    "longitude": -1.0280609,
+    "trackName": "Silverstone Circuit"
+  },
+  {
+    "name": "CIRCUIT DE SPA-FRANCORCHAMPS",
+    "location": "Spa, Belgium",
+    "latitude": 50.49231340000001,
+    "longitude": 5.8622681,
+    "trackName": "Circuit de Spa-Francorchamps"
+  },
+  {
+    "name": "HUNGARORING",
+    "location": "Budapest, Hungary",
+    "latitude": 47.497912,
+    "longitude": 19.040235,
+    "trackName": "Hungaroring"
+  },
+  {
+    "name": "CIRCUIT ZANDVOORT",
+    "location": "Zandvoort, Netherlands",
+    "latitude": 52.3711487,
+    "longitude": 4.533354999999999,
+    "trackName": "Circuit Zandvoort"
+  },
+  {
+    "name": "AUTODROMO NAZIONALE MONZA",
+    "location": "Monza, Italy",
+    "latitude": 45.5845001,
+    "longitude": 9.2744485,
+    "trackName": "Autodromo Nazionale Monza"
+  },
+  {
+    "name": "BAKU CITY CIRCUIT",
+    "location": "Baku, Azerbaijan",
+    "latitude": 40.40926169999999,
+    "longitude": 49.8670924,
+    "trackName": "Baku City Circuit"
+  },
+  {
+    "name": "MARINA BAY STREET CIRCUIT",
+    "location": "Singapore",
+    "latitude": 1.352083,
+    "longitude": 103.819836,
+    "trackName": "Marina Bay Street Circuit"
+  },
+  {
+    "name": "AUTODROMO JOSE CARLOS PACE",
+    "location": "Saeo Paulo, Brazil",
+    "latitude": -21.2922457,
+    "longitude": -50.3428431,
+    "trackName": "Autodromo Jose Carlos Pace (Interlagos)"
+  },
+  {
+    "name": "LAS VEGAS STRIP CIRCUIT",
+    "location": "Las Vegas, NV, United States",
+    "latitude": 36.171563,
+    "longitude": -115.1391009,
+    "trackName": "Las Vegas Strip Circuit"
+  },
+  {
+    "name": "LOSAIL INTERNATIONAL CIRCUIT",
+    "location": "Lusail, Qatar",
+    "latitude": 25.4185383,
+    "longitude": 51.50079179999999,
+    "trackName": "Losail International Circuit"
+  },
+  {
+    "name": "YAS MARINA CIRCUIT",
+    "location": "Abu Dhabi, UAE",
+    "latitude": 24.453884,
+    "longitude": 54.3773438,
+    "trackName": "Yas Marina Circuit"
   }
 ]
