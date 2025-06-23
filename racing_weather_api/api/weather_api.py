@@ -8,7 +8,7 @@ import os
 import logging
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
-from racing_weather_api.config import (TRACKS_FILE, TRACK_FORECAST_FILE, MAPSAPI_BASE_URL,
+from racing_weather_api.config import (TRACKS_FILE, TRACK_FORECAST_FILE, MAPSAPI_BASE_URL, ALL_LOCATIONS_FORECAST_FILE,
                                        API_TIMEOUT, FORECAST_HOURS_BEFORE_EVENT, FORECAST_HOURS_AFTER_EVENT)
 from racing_weather_api.utils.conversion_utils import celsius_to_fahrenheit, kph_to_mph, parse_event_time
 
@@ -121,6 +121,10 @@ def get_location_forecast(location: str):
 
         # Cache the result
         forecast_cache[location] = forecast_data
+
+        # Process and save the forecast data to all locations forecasts file
+        save_10_day_location_forecast(forecast_data, location)
+
         logger.info(f"Downloaded and cached forecast for {location}")
 
         return forecast_data
@@ -195,8 +199,13 @@ def download_maps_api_data(maps_api_url, output_file=TRACK_FORECAST_FILE):
 
 
 def clear_forecast_cache():
-    """Clear the forecast cache."""
+    """Clear the forecast cache and saved all forecasts file."""
     forecast_cache.clear()
+
+    # Clear the forecast file 
+    with open(ALL_LOCATIONS_FORECAST_FILE, 'w') as f:
+        json.dump({}, f)
+
     logger.info("Forecast cache cleared")
 
 
@@ -248,3 +257,49 @@ def extract_daily_high_low_temps(forecast_data, event_date):
         }
 
 
+def format_display_time(display_datetime):
+    """Format the display time to a readable string"""
+    year = display_datetime['year']
+    month = str(display_datetime['month']).zfill(2)
+    day = str(display_datetime['day']).zfill(2)
+    hours = str(display_datetime['hours']).zfill(2)
+    minutes = str(display_datetime['minutes']).zfill(2)
+    
+    return f"{year}-{month}-{day} {hours}:{minutes}"
+
+
+def save_10_day_location_forecast(forecast_data, location):
+    """Save 10 day track temp/precipication forecast to ALL_LOCATIONS_FORECAST_FILE.json"""
+    try:
+        # Load existing data if file exists  
+        try:
+            with open(ALL_LOCATIONS_FORECAST_FILE, 'r') as f:
+                all_locations_data = json.load(f)
+        except FileNotFoundError:
+            all_locations_data = {}
+        
+        # Process the forecast data for this location
+        processed_hours = []
+        
+        if 'forecastHours' in forecast_data:
+            for hour in forecast_data['forecastHours']:
+                processed_hour = {
+                    "time": format_display_time(hour['displayDateTime']),
+                    "tempFahrenheit": round(celsius_to_fahrenheit(hour['temperature']['degrees']), 1),
+                    "precipitationPercent": hour['precipitation']['probability']['percent']
+                }
+                processed_hours.append(processed_hour)
+        
+        # Add this location's data to the all location foreacast file
+        all_locations_data[location] = {
+            "forecastHours": processed_hours
+        }
+        
+        # Save back to file
+        with open(ALL_LOCATIONS_FORECAST_FILE, 'w') as f:
+            json.dump(all_locations_data, f, indent=2)
+        
+        logger.info(f"Processed and saved forecast data for {location} to {ALL_LOCATIONS_FORECAST_FILE}")
+        
+    except Exception as e:
+        logger.error(f"Error processing and saving forecast data for {location}: {e}")

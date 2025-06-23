@@ -149,3 +149,37 @@
 2025-06-22 17:24:59,681 - racing_weather_api.data_processing.event_processing - INFO - Forecast data successfully downloaded and processed
 2025-06-22 17:24:59,683 - racing_weather_api.utils.file_utils - INFO - Saved data to /var\www\html\data\events_with_weather.json
 2025-06-22 17:24:59,683 - __main__ - INFO - Retrieved 7 events for the current weekend
+2025-06-23 10:00:43,080 - racing_weather_api.api.weather_api - INFO - Forecast cache cleared
+2025-06-23 10:00:43,080 - racing_weather_api.data_processing.event_processing - INFO - Loading schedules from series files
+2025-06-23 10:00:43,081 - racing_weather_api.data_processing.event_processing - INFO - Total events loaded: 110
+2025-06-23 10:00:43,082 - racing_weather_api.data_processing.event_processing - INFO - Found 4 events for next 7 days 2025-06-23 to 2025-06-29
+2025-06-23 10:00:43,084 - racing_weather_api.api.weather_api - INFO - Downloading data from Google Weather API...
+2025-06-23 10:00:45,075 - racing_weather_api.api.weather_api - INFO - Forecast saved to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\racing_weather_api\data\track_forecast.json
+2025-06-23 10:00:45,079 - racing_weather_api.api.weather_api - INFO - Processed and saved forecast data for ATLANTA to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\racing_weather_api\data\all_10_day_forecasts.json
+2025-06-23 10:00:45,079 - racing_weather_api.api.weather_api - INFO - Downloaded and cached forecast for ATLANTA
+2025-06-23 10:00:45,079 - racing_weather_api.api.weather_api - INFO - Using cached forecast for ATLANTA, data already downloaded
+2025-06-23 10:00:45,081 - racing_weather_api.api.weather_api - INFO - Downloading data from Google Weather API...
+2025-06-23 10:00:47,015 - racing_weather_api.api.weather_api - INFO - Forecast saved to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\racing_weather_api\data\track_forecast.json
+2025-06-23 10:00:47,021 - racing_weather_api.api.weather_api - INFO - Processed and saved forecast data for LIME ROCK to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\racing_weather_api\data\all_10_day_forecasts.json
+2025-06-23 10:00:47,021 - racing_weather_api.api.weather_api - INFO - Downloaded and cached forecast for LIME ROCK
+2025-06-23 10:00:47,022 - racing_weather_api.api.weather_api - INFO - Using cached forecast for LIME ROCK, data already downloaded
+2025-06-23 10:00:47,023 - racing_weather_api.data_processing.event_processing - INFO - Forecast data successfully downloaded and processed
+2025-06-23 10:00:47,024 - racing_weather_api.utils.file_utils - INFO - Saved data to /var\www\html\data\events_with_weather.json
+2025-06-23 10:00:47,025 - __main__ - INFO - Retrieved 4 events for the current weekend
+2025-06-23 10:05:15,593 - racing_weather_api.api.weather_api - INFO - Forecast cache cleared
+2025-06-23 10:05:15,593 - racing_weather_api.data_processing.event_processing - INFO - Loading schedules from series files
+2025-06-23 10:05:15,594 - racing_weather_api.data_processing.event_processing - INFO - Total events loaded: 110
+2025-06-23 10:05:15,595 - racing_weather_api.data_processing.event_processing - INFO - Found 4 events for next 7 days 2025-06-23 to 2025-06-29
+2025-06-23 10:05:15,597 - racing_weather_api.api.weather_api - INFO - Downloading data from Google Weather API...
+2025-06-23 10:05:17,526 - racing_weather_api.api.weather_api - INFO - Forecast saved to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\racing_weather_api\data\track_forecast.json
+2025-06-23 10:05:17,530 - racing_weather_api.api.weather_api - INFO - Processed and saved forecast data for ATLANTA to /var\www\html\data\all_10_day_forecasts.json
+2025-06-23 10:05:17,530 - racing_weather_api.api.weather_api - INFO - Downloaded and cached forecast for ATLANTA
+2025-06-23 10:05:17,531 - racing_weather_api.api.weather_api - INFO - Using cached forecast for ATLANTA, data already downloaded
+2025-06-23 10:05:17,532 - racing_weather_api.api.weather_api - INFO - Downloading data from Google Weather API...
+2025-06-23 10:05:19,327 - racing_weather_api.api.weather_api - INFO - Forecast saved to c:\Users\jacob\Python\Python_Projects\sports_weather_app_backend\racing_weather_api\data\track_forecast.json
+2025-06-23 10:05:19,343 - racing_weather_api.api.weather_api - INFO - Processed and saved forecast data for LIME ROCK to /var\www\html\data\all_10_day_forecasts.json
+2025-06-23 10:05:19,343 - racing_weather_api.api.weather_api - INFO - Downloaded and cached forecast for LIME ROCK
+2025-06-23 10:05:19,344 - racing_weather_api.api.weather_api - INFO - Using cached forecast for LIME ROCK, data already downloaded
+2025-06-23 10:05:19,345 - racing_weather_api.data_processing.event_processing - INFO - Forecast data successfully downloaded and processed
+2025-06-23 10:05:19,346 - racing_weather_api.utils.file_utils - INFO - Saved data to /var\www\html\data\events_with_weather.json
+2025-06-23 10:05:19,347 - __main__ - INFO - Retrieved 4 events for the current weekend

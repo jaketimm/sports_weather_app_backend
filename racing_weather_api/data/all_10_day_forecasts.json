@@ -1,0 +1,2410 @@
+{
+  "ATLANTA": {
+    "forecastHours": [
+      {
+        "time": "2025-06-23 10:00",
+        "tempFahrenheit": 83.1,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-23 11:00",
+        "tempFahrenheit": 86.0,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-23 12:00",
+        "tempFahrenheit": 88.5,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-23 13:00",
+        "tempFahrenheit": 90.0,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-23 14:00",
+        "tempFahrenheit": 91.0,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-23 15:00",
+        "tempFahrenheit": 92.5,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-23 16:00",
+        "tempFahrenheit": 93.0,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-23 17:00",
+        "tempFahrenheit": 92.7,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-23 18:00",
+        "tempFahrenheit": 91.4,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-23 19:00",
+        "tempFahrenheit": 89.8,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-23 20:00",
+        "tempFahrenheit": 86.5,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-23 21:00",
+        "tempFahrenheit": 81.7,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-23 22:00",
+        "tempFahrenheit": 79.2,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-23 23:00",
+        "tempFahrenheit": 77.5,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 00:00",
+        "tempFahrenheit": 75.9,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 01:00",
+        "tempFahrenheit": 74.8,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 02:00",
+        "tempFahrenheit": 74.1,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 03:00",
+        "tempFahrenheit": 73.9,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 04:00",
+        "tempFahrenheit": 73.8,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 05:00",
+        "tempFahrenheit": 72.9,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 06:00",
+        "tempFahrenheit": 72.3,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 07:00",
+        "tempFahrenheit": 72.0,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 08:00",
+        "tempFahrenheit": 75.6,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 09:00",
+        "tempFahrenheit": 80.4,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 10:00",
+        "tempFahrenheit": 84.7,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 11:00",
+        "tempFahrenheit": 88.3,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 12:00",
+        "tempFahrenheit": 91.9,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 13:00",
+        "tempFahrenheit": 93.7,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 14:00",
+        "tempFahrenheit": 95.2,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-24 15:00",
+        "tempFahrenheit": 96.3,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-24 16:00",
+        "tempFahrenheit": 96.6,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 17:00",
+        "tempFahrenheit": 96.6,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 18:00",
+        "tempFahrenheit": 94.5,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 19:00",
+        "tempFahrenheit": 92.8,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 20:00",
+        "tempFahrenheit": 89.6,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 21:00",
+        "tempFahrenheit": 84.0,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 22:00",
+        "tempFahrenheit": 81.3,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 23:00",
+        "tempFahrenheit": 78.8,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-25 00:00",
+        "tempFahrenheit": 78.4,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-25 01:00",
+        "tempFahrenheit": 78.4,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-25 02:00",
+        "tempFahrenheit": 77.4,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-25 03:00",
+        "tempFahrenheit": 77.0,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-25 04:00",
+        "tempFahrenheit": 77.0,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-25 05:00",
+        "tempFahrenheit": 75.9,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-25 06:00",
+        "tempFahrenheit": 74.5,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-25 07:00",
+        "tempFahrenheit": 74.7,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-25 08:00",
+        "tempFahrenheit": 76.6,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-25 09:00",
+        "tempFahrenheit": 80.1,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-25 10:00",
+        "tempFahrenheit": 83.8,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-25 11:00",
+        "tempFahrenheit": 87.1,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-25 12:00",
+        "tempFahrenheit": 90.3,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-25 13:00",
+        "tempFahrenheit": 91.8,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-25 14:00",
+        "tempFahrenheit": 93.4,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-25 15:00",
+        "tempFahrenheit": 94.3,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-25 16:00",
+        "tempFahrenheit": 94.5,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-25 17:00",
+        "tempFahrenheit": 94.3,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-25 18:00",
+        "tempFahrenheit": 93.9,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-25 19:00",
+        "tempFahrenheit": 86.9,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-25 20:00",
+        "tempFahrenheit": 86.5,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-25 21:00",
+        "tempFahrenheit": 81.7,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-25 22:00",
+        "tempFahrenheit": 79.5,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-25 23:00",
+        "tempFahrenheit": 78.4,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 00:00",
+        "tempFahrenheit": 77.2,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 01:00",
+        "tempFahrenheit": 75.7,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 02:00",
+        "tempFahrenheit": 74.8,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 03:00",
+        "tempFahrenheit": 74.3,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 04:00",
+        "tempFahrenheit": 73.9,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 05:00",
+        "tempFahrenheit": 73.6,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 06:00",
+        "tempFahrenheit": 73.2,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-26 07:00",
+        "tempFahrenheit": 72.9,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-26 08:00",
+        "tempFahrenheit": 74.7,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-26 09:00",
+        "tempFahrenheit": 77.4,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-26 10:00",
+        "tempFahrenheit": 79.0,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-26 11:00",
+        "tempFahrenheit": 81.1,
+        "precipitationPercent": 40
+      },
+      {
+        "time": "2025-06-26 12:00",
+        "tempFahrenheit": 84.0,
+        "precipitationPercent": 50
+      },
+      {
+        "time": "2025-06-26 13:00",
+        "tempFahrenheit": 85.8,
+        "precipitationPercent": 55
+      },
+      {
+        "time": "2025-06-26 14:00",
+        "tempFahrenheit": 86.4,
+        "precipitationPercent": 55
+      },
+      {
+        "time": "2025-06-26 15:00",
+        "tempFahrenheit": 88.0,
+        "precipitationPercent": 45
+      },
+      {
+        "time": "2025-06-26 16:00",
+        "tempFahrenheit": 88.9,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-26 17:00",
+        "tempFahrenheit": 88.2,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-26 18:00",
+        "tempFahrenheit": 85.5,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-26 19:00",
+        "tempFahrenheit": 83.5,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 20:00",
+        "tempFahrenheit": 81.7,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 21:00",
+        "tempFahrenheit": 77.9,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 22:00",
+        "tempFahrenheit": 76.3,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 23:00",
+        "tempFahrenheit": 74.5,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-27 00:00",
+        "tempFahrenheit": 73.0,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-27 01:00",
+        "tempFahrenheit": 72.0,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-27 02:00",
+        "tempFahrenheit": 71.6,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-27 03:00",
+        "tempFahrenheit": 71.4,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-27 04:00",
+        "tempFahrenheit": 71.8,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-27 05:00",
+        "tempFahrenheit": 72.0,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-27 06:00",
+        "tempFahrenheit": 72.1,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-27 07:00",
+        "tempFahrenheit": 72.5,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-27 08:00",
+        "tempFahrenheit": 73.8,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-27 09:00",
+        "tempFahrenheit": 76.1,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-27 10:00",
+        "tempFahrenheit": 79.3,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-27 11:00",
+        "tempFahrenheit": 82.2,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-27 12:00",
+        "tempFahrenheit": 84.6,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-27 13:00",
+        "tempFahrenheit": 86.5,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-27 14:00",
+        "tempFahrenheit": 88.0,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-27 15:00",
+        "tempFahrenheit": 89.2,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-27 16:00",
+        "tempFahrenheit": 90.0,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-27 17:00",
+        "tempFahrenheit": 89.6,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-27 18:00",
+        "tempFahrenheit": 87.4,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-27 19:00",
+        "tempFahrenheit": 84.4,
+        "precipitationPercent": 35
+      },
+      {
+        "time": "2025-06-27 20:00",
+        "tempFahrenheit": 81.3,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-27 21:00",
+        "tempFahrenheit": 78.8,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-27 22:00",
+        "tempFahrenheit": 76.8,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-27 23:00",
+        "tempFahrenheit": 75.4,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-28 00:00",
+        "tempFahrenheit": 74.1,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-28 01:00",
+        "tempFahrenheit": 73.0,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-28 02:00",
+        "tempFahrenheit": 72.1,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-28 03:00",
+        "tempFahrenheit": 71.6,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-28 04:00",
+        "tempFahrenheit": 71.2,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-28 05:00",
+        "tempFahrenheit": 71.1,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-28 06:00",
+        "tempFahrenheit": 71.1,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-28 07:00",
+        "tempFahrenheit": 71.6,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-28 08:00",
+        "tempFahrenheit": 73.0,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-28 09:00",
+        "tempFahrenheit": 75.4,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-28 10:00",
+        "tempFahrenheit": 78.3,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-28 11:00",
+        "tempFahrenheit": 81.3,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-28 12:00",
+        "tempFahrenheit": 84.4,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-28 13:00",
+        "tempFahrenheit": 86.4,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-28 14:00",
+        "tempFahrenheit": 88.0,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-28 15:00",
+        "tempFahrenheit": 88.3,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-28 16:00",
+        "tempFahrenheit": 87.8,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-28 17:00",
+        "tempFahrenheit": 86.7,
+        "precipitationPercent": 40
+      },
+      {
+        "time": "2025-06-28 18:00",
+        "tempFahrenheit": 84.9,
+        "precipitationPercent": 45
+      },
+      {
+        "time": "2025-06-28 19:00",
+        "tempFahrenheit": 82.6,
+        "precipitationPercent": 50
+      },
+      {
+        "time": "2025-06-28 20:00",
+        "tempFahrenheit": 79.9,
+        "precipitationPercent": 45
+      },
+      {
+        "time": "2025-06-28 21:00",
+        "tempFahrenheit": 77.2,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-28 22:00",
+        "tempFahrenheit": 74.8,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-28 23:00",
+        "tempFahrenheit": 73.0,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-29 00:00",
+        "tempFahrenheit": 71.8,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-29 01:00",
+        "tempFahrenheit": 71.6,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-29 02:00",
+        "tempFahrenheit": 71.2,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-29 03:00",
+        "tempFahrenheit": 71.1,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-29 04:00",
+        "tempFahrenheit": 70.7,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-29 05:00",
+        "tempFahrenheit": 70.5,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-29 06:00",
+        "tempFahrenheit": 70.7,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-29 07:00",
+        "tempFahrenheit": 71.2,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-29 08:00",
+        "tempFahrenheit": 72.7,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-29 09:00",
+        "tempFahrenheit": 75.6,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-29 10:00",
+        "tempFahrenheit": 78.4,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 11:00",
+        "tempFahrenheit": 81.1,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 12:00",
+        "tempFahrenheit": 83.3,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 13:00",
+        "tempFahrenheit": 84.7,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 14:00",
+        "tempFahrenheit": 86.0,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 15:00",
+        "tempFahrenheit": 86.7,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 16:00",
+        "tempFahrenheit": 87.3,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 17:00",
+        "tempFahrenheit": 87.1,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 18:00",
+        "tempFahrenheit": 86.2,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 19:00",
+        "tempFahrenheit": 84.4,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 20:00",
+        "tempFahrenheit": 81.9,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-29 21:00",
+        "tempFahrenheit": 79.2,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-29 22:00",
+        "tempFahrenheit": 76.5,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-29 23:00",
+        "tempFahrenheit": 74.1,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-30 00:00",
+        "tempFahrenheit": 72.7,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-30 01:00",
+        "tempFahrenheit": 72.0,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-30 02:00",
+        "tempFahrenheit": 71.6,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-30 03:00",
+        "tempFahrenheit": 71.4,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-30 04:00",
+        "tempFahrenheit": 71.2,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-30 05:00",
+        "tempFahrenheit": 71.1,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-30 06:00",
+        "tempFahrenheit": 71.2,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 07:00",
+        "tempFahrenheit": 71.8,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 08:00",
+        "tempFahrenheit": 73.0,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 09:00",
+        "tempFahrenheit": 75.4,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 10:00",
+        "tempFahrenheit": 78.1,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 11:00",
+        "tempFahrenheit": 80.6,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 12:00",
+        "tempFahrenheit": 82.8,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 13:00",
+        "tempFahrenheit": 84.0,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 14:00",
+        "tempFahrenheit": 85.3,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 15:00",
+        "tempFahrenheit": 86.2,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 16:00",
+        "tempFahrenheit": 86.4,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 17:00",
+        "tempFahrenheit": 86.4,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 18:00",
+        "tempFahrenheit": 85.3,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-30 19:00",
+        "tempFahrenheit": 83.1,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-30 20:00",
+        "tempFahrenheit": 80.8,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-30 21:00",
+        "tempFahrenheit": 78.3,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-30 22:00",
+        "tempFahrenheit": 75.6,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-30 23:00",
+        "tempFahrenheit": 73.8,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 00:00",
+        "tempFahrenheit": 72.7,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 01:00",
+        "tempFahrenheit": 72.3,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 02:00",
+        "tempFahrenheit": 72.1,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 03:00",
+        "tempFahrenheit": 72.0,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 04:00",
+        "tempFahrenheit": 72.0,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 05:00",
+        "tempFahrenheit": 72.0,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 06:00",
+        "tempFahrenheit": 72.1,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 07:00",
+        "tempFahrenheit": 72.7,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 08:00",
+        "tempFahrenheit": 73.8,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 09:00",
+        "tempFahrenheit": 75.7,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 10:00",
+        "tempFahrenheit": 78.4,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 11:00",
+        "tempFahrenheit": 80.8,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 12:00",
+        "tempFahrenheit": 82.6,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 13:00",
+        "tempFahrenheit": 83.8,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 14:00",
+        "tempFahrenheit": 84.7,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-07-01 15:00",
+        "tempFahrenheit": 85.3,
+        "precipitationPercent": 40
+      },
+      {
+        "time": "2025-07-01 16:00",
+        "tempFahrenheit": 85.5,
+        "precipitationPercent": 45
+      },
+      {
+        "time": "2025-07-01 17:00",
+        "tempFahrenheit": 85.1,
+        "precipitationPercent": 45
+      },
+      {
+        "time": "2025-07-01 18:00",
+        "tempFahrenheit": 83.7,
+        "precipitationPercent": 45
+      },
+      {
+        "time": "2025-07-01 19:00",
+        "tempFahrenheit": 82.0,
+        "precipitationPercent": 45
+      },
+      {
+        "time": "2025-07-01 20:00",
+        "tempFahrenheit": 79.7,
+        "precipitationPercent": 40
+      },
+      {
+        "time": "2025-07-01 21:00",
+        "tempFahrenheit": 77.2,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-07-01 22:00",
+        "tempFahrenheit": 75.0,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 23:00",
+        "tempFahrenheit": 73.2,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-02 00:00",
+        "tempFahrenheit": 72.5,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-02 01:00",
+        "tempFahrenheit": 72.3,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-02 02:00",
+        "tempFahrenheit": 72.1,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-02 03:00",
+        "tempFahrenheit": 72.1,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-07-02 04:00",
+        "tempFahrenheit": 72.0,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-07-02 05:00",
+        "tempFahrenheit": 71.6,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-07-02 06:00",
+        "tempFahrenheit": 71.4,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-07-02 07:00",
+        "tempFahrenheit": 71.6,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-07-02 08:00",
+        "tempFahrenheit": 72.9,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-02 09:00",
+        "tempFahrenheit": 75.2,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-02 10:00",
+        "tempFahrenheit": 77.9,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-02 11:00",
+        "tempFahrenheit": 80.6,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-02 12:00",
+        "tempFahrenheit": 82.6,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-02 13:00",
+        "tempFahrenheit": 83.8,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-02 14:00",
+        "tempFahrenheit": 84.9,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-02 15:00",
+        "tempFahrenheit": 85.6,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-02 16:00",
+        "tempFahrenheit": 86.4,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-02 17:00",
+        "tempFahrenheit": 86.2,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-02 18:00",
+        "tempFahrenheit": 85.1,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-02 19:00",
+        "tempFahrenheit": 83.3,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-07-02 20:00",
+        "tempFahrenheit": 81.1,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-07-02 21:00",
+        "tempFahrenheit": 78.6,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-07-02 22:00",
+        "tempFahrenheit": 75.9,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-07-02 23:00",
+        "tempFahrenheit": 73.9,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-07-03 00:00",
+        "tempFahrenheit": 73.0,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-07-03 01:00",
+        "tempFahrenheit": 72.7,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-07-03 02:00",
+        "tempFahrenheit": 72.3,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-07-03 03:00",
+        "tempFahrenheit": 72.1,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-07-03 04:00",
+        "tempFahrenheit": 72.0,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-07-03 05:00",
+        "tempFahrenheit": 71.4,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-07-03 06:00",
+        "tempFahrenheit": 71.2,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-07-03 07:00",
+        "tempFahrenheit": 71.8,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-07-03 08:00",
+        "tempFahrenheit": 72.9,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-07-03 09:00",
+        "tempFahrenheit": 75.2,
+        "precipitationPercent": 15
+      }
+    ]
+  },
+  "LIME ROCK": {
+    "forecastHours": [
+      {
+        "time": "2025-06-23 10:00",
+        "tempFahrenheit": 82.4,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-23 11:00",
+        "tempFahrenheit": 84.6,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-23 12:00",
+        "tempFahrenheit": 86.5,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-23 13:00",
+        "tempFahrenheit": 88.5,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-23 14:00",
+        "tempFahrenheit": 90.5,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-23 15:00",
+        "tempFahrenheit": 90.9,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-23 16:00",
+        "tempFahrenheit": 91.4,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-23 17:00",
+        "tempFahrenheit": 90.7,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-23 18:00",
+        "tempFahrenheit": 90.1,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-23 19:00",
+        "tempFahrenheit": 88.0,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-23 20:00",
+        "tempFahrenheit": 85.6,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-23 21:00",
+        "tempFahrenheit": 81.9,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-23 22:00",
+        "tempFahrenheit": 79.5,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-23 23:00",
+        "tempFahrenheit": 77.0,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-24 00:00",
+        "tempFahrenheit": 75.7,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 01:00",
+        "tempFahrenheit": 73.2,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 02:00",
+        "tempFahrenheit": 71.4,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 03:00",
+        "tempFahrenheit": 70.7,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 04:00",
+        "tempFahrenheit": 69.4,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 05:00",
+        "tempFahrenheit": 68.4,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 06:00",
+        "tempFahrenheit": 68.4,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 07:00",
+        "tempFahrenheit": 72.0,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 08:00",
+        "tempFahrenheit": 76.3,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 09:00",
+        "tempFahrenheit": 79.0,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 10:00",
+        "tempFahrenheit": 81.7,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 11:00",
+        "tempFahrenheit": 84.4,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 12:00",
+        "tempFahrenheit": 87.1,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 13:00",
+        "tempFahrenheit": 88.9,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 14:00",
+        "tempFahrenheit": 90.9,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 15:00",
+        "tempFahrenheit": 91.8,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 16:00",
+        "tempFahrenheit": 91.8,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 17:00",
+        "tempFahrenheit": 90.7,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 18:00",
+        "tempFahrenheit": 89.2,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 19:00",
+        "tempFahrenheit": 87.6,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 20:00",
+        "tempFahrenheit": 85.3,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 21:00",
+        "tempFahrenheit": 81.3,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 22:00",
+        "tempFahrenheit": 78.8,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-24 23:00",
+        "tempFahrenheit": 76.8,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-25 00:00",
+        "tempFahrenheit": 76.1,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-25 01:00",
+        "tempFahrenheit": 74.5,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-25 02:00",
+        "tempFahrenheit": 73.0,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-25 03:00",
+        "tempFahrenheit": 72.3,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-25 04:00",
+        "tempFahrenheit": 71.4,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-25 05:00",
+        "tempFahrenheit": 71.1,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-25 06:00",
+        "tempFahrenheit": 72.0,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-25 07:00",
+        "tempFahrenheit": 73.8,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-25 08:00",
+        "tempFahrenheit": 75.4,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-25 09:00",
+        "tempFahrenheit": 77.0,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-06-25 10:00",
+        "tempFahrenheit": 78.8,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-25 11:00",
+        "tempFahrenheit": 80.1,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-25 12:00",
+        "tempFahrenheit": 81.0,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-25 13:00",
+        "tempFahrenheit": 82.0,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-25 14:00",
+        "tempFahrenheit": 82.8,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-25 15:00",
+        "tempFahrenheit": 82.9,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-25 16:00",
+        "tempFahrenheit": 83.8,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-25 17:00",
+        "tempFahrenheit": 81.3,
+        "precipitationPercent": 40
+      },
+      {
+        "time": "2025-06-25 18:00",
+        "tempFahrenheit": 81.5,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-25 19:00",
+        "tempFahrenheit": 79.9,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-25 20:00",
+        "tempFahrenheit": 78.1,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-25 21:00",
+        "tempFahrenheit": 76.3,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-25 22:00",
+        "tempFahrenheit": 74.7,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-25 23:00",
+        "tempFahrenheit": 72.9,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 00:00",
+        "tempFahrenheit": 71.6,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 01:00",
+        "tempFahrenheit": 70.2,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 02:00",
+        "tempFahrenheit": 69.3,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 03:00",
+        "tempFahrenheit": 69.3,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 04:00",
+        "tempFahrenheit": 68.9,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 05:00",
+        "tempFahrenheit": 67.8,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 06:00",
+        "tempFahrenheit": 67.6,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 07:00",
+        "tempFahrenheit": 68.7,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 08:00",
+        "tempFahrenheit": 69.4,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 09:00",
+        "tempFahrenheit": 70.0,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 10:00",
+        "tempFahrenheit": 70.2,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-26 11:00",
+        "tempFahrenheit": 70.9,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-26 12:00",
+        "tempFahrenheit": 71.4,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-26 13:00",
+        "tempFahrenheit": 72.9,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-26 14:00",
+        "tempFahrenheit": 72.3,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-26 15:00",
+        "tempFahrenheit": 71.8,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-26 16:00",
+        "tempFahrenheit": 71.2,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-26 17:00",
+        "tempFahrenheit": 69.8,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-26 18:00",
+        "tempFahrenheit": 68.9,
+        "precipitationPercent": 40
+      },
+      {
+        "time": "2025-06-26 19:00",
+        "tempFahrenheit": 68.0,
+        "precipitationPercent": 40
+      },
+      {
+        "time": "2025-06-26 20:00",
+        "tempFahrenheit": 66.4,
+        "precipitationPercent": 40
+      },
+      {
+        "time": "2025-06-26 21:00",
+        "tempFahrenheit": 64.4,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-26 22:00",
+        "tempFahrenheit": 63.5,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-26 23:00",
+        "tempFahrenheit": 62.4,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-27 00:00",
+        "tempFahrenheit": 61.9,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-27 01:00",
+        "tempFahrenheit": 61.5,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-27 02:00",
+        "tempFahrenheit": 61.0,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-27 03:00",
+        "tempFahrenheit": 60.1,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-27 04:00",
+        "tempFahrenheit": 59.2,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-27 05:00",
+        "tempFahrenheit": 58.5,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-27 06:00",
+        "tempFahrenheit": 58.5,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-27 07:00",
+        "tempFahrenheit": 59.2,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-27 08:00",
+        "tempFahrenheit": 60.1,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-27 09:00",
+        "tempFahrenheit": 61.5,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-27 10:00",
+        "tempFahrenheit": 62.8,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-27 11:00",
+        "tempFahrenheit": 63.9,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-27 12:00",
+        "tempFahrenheit": 64.6,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-27 13:00",
+        "tempFahrenheit": 65.1,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-27 14:00",
+        "tempFahrenheit": 65.3,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-27 15:00",
+        "tempFahrenheit": 65.5,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-27 16:00",
+        "tempFahrenheit": 65.5,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-27 17:00",
+        "tempFahrenheit": 65.3,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-27 18:00",
+        "tempFahrenheit": 64.9,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-27 19:00",
+        "tempFahrenheit": 64.4,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-27 20:00",
+        "tempFahrenheit": 63.7,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-27 21:00",
+        "tempFahrenheit": 62.8,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-27 22:00",
+        "tempFahrenheit": 61.7,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-27 23:00",
+        "tempFahrenheit": 60.8,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-28 00:00",
+        "tempFahrenheit": 60.3,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-28 01:00",
+        "tempFahrenheit": 60.1,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-28 02:00",
+        "tempFahrenheit": 59.9,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-28 03:00",
+        "tempFahrenheit": 59.5,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-28 04:00",
+        "tempFahrenheit": 59.0,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-06-28 05:00",
+        "tempFahrenheit": 58.8,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-28 06:00",
+        "tempFahrenheit": 58.8,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-28 07:00",
+        "tempFahrenheit": 59.2,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-28 08:00",
+        "tempFahrenheit": 60.3,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-28 09:00",
+        "tempFahrenheit": 61.9,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-28 10:00",
+        "tempFahrenheit": 63.7,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-28 11:00",
+        "tempFahrenheit": 65.7,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-28 12:00",
+        "tempFahrenheit": 67.5,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-28 13:00",
+        "tempFahrenheit": 69.1,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-28 14:00",
+        "tempFahrenheit": 70.2,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-28 15:00",
+        "tempFahrenheit": 70.7,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-28 16:00",
+        "tempFahrenheit": 70.9,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-28 17:00",
+        "tempFahrenheit": 71.1,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-28 18:00",
+        "tempFahrenheit": 71.1,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-28 19:00",
+        "tempFahrenheit": 71.1,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-28 20:00",
+        "tempFahrenheit": 70.5,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-28 21:00",
+        "tempFahrenheit": 69.4,
+        "precipitationPercent": 45
+      },
+      {
+        "time": "2025-06-28 22:00",
+        "tempFahrenheit": 67.8,
+        "precipitationPercent": 45
+      },
+      {
+        "time": "2025-06-28 23:00",
+        "tempFahrenheit": 66.6,
+        "precipitationPercent": 45
+      },
+      {
+        "time": "2025-06-29 00:00",
+        "tempFahrenheit": 65.5,
+        "precipitationPercent": 45
+      },
+      {
+        "time": "2025-06-29 01:00",
+        "tempFahrenheit": 64.6,
+        "precipitationPercent": 45
+      },
+      {
+        "time": "2025-06-29 02:00",
+        "tempFahrenheit": 63.9,
+        "precipitationPercent": 45
+      },
+      {
+        "time": "2025-06-29 03:00",
+        "tempFahrenheit": 63.3,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-29 04:00",
+        "tempFahrenheit": 62.6,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-29 05:00",
+        "tempFahrenheit": 62.1,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-29 06:00",
+        "tempFahrenheit": 62.2,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-29 07:00",
+        "tempFahrenheit": 62.8,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-29 08:00",
+        "tempFahrenheit": 64.6,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-29 09:00",
+        "tempFahrenheit": 66.0,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-29 10:00",
+        "tempFahrenheit": 69.1,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-29 11:00",
+        "tempFahrenheit": 72.3,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-29 12:00",
+        "tempFahrenheit": 75.2,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 13:00",
+        "tempFahrenheit": 77.9,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 14:00",
+        "tempFahrenheit": 79.7,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 15:00",
+        "tempFahrenheit": 80.6,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 16:00",
+        "tempFahrenheit": 80.8,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 17:00",
+        "tempFahrenheit": 80.1,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 18:00",
+        "tempFahrenheit": 78.4,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 19:00",
+        "tempFahrenheit": 76.8,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 20:00",
+        "tempFahrenheit": 74.5,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 21:00",
+        "tempFahrenheit": 72.7,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 22:00",
+        "tempFahrenheit": 70.9,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-29 23:00",
+        "tempFahrenheit": 69.1,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-30 00:00",
+        "tempFahrenheit": 68.0,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-30 01:00",
+        "tempFahrenheit": 66.9,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-30 02:00",
+        "tempFahrenheit": 66.0,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-30 03:00",
+        "tempFahrenheit": 64.9,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 04:00",
+        "tempFahrenheit": 64.2,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 05:00",
+        "tempFahrenheit": 63.9,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 06:00",
+        "tempFahrenheit": 64.6,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 07:00",
+        "tempFahrenheit": 65.7,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 08:00",
+        "tempFahrenheit": 67.5,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 09:00",
+        "tempFahrenheit": 69.4,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-30 10:00",
+        "tempFahrenheit": 71.6,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-30 11:00",
+        "tempFahrenheit": 73.8,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-30 12:00",
+        "tempFahrenheit": 75.6,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-30 13:00",
+        "tempFahrenheit": 77.0,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-30 14:00",
+        "tempFahrenheit": 78.1,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-06-30 15:00",
+        "tempFahrenheit": 78.8,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 16:00",
+        "tempFahrenheit": 79.0,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-06-30 17:00",
+        "tempFahrenheit": 78.4,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-30 18:00",
+        "tempFahrenheit": 77.4,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-30 19:00",
+        "tempFahrenheit": 76.1,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-30 20:00",
+        "tempFahrenheit": 74.5,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-30 21:00",
+        "tempFahrenheit": 72.7,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-06-30 22:00",
+        "tempFahrenheit": 71.1,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-06-30 23:00",
+        "tempFahrenheit": 70.0,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-07-01 00:00",
+        "tempFahrenheit": 69.3,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-07-01 01:00",
+        "tempFahrenheit": 68.7,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-07-01 02:00",
+        "tempFahrenheit": 68.2,
+        "precipitationPercent": 10
+      },
+      {
+        "time": "2025-07-01 03:00",
+        "tempFahrenheit": 67.6,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 04:00",
+        "tempFahrenheit": 66.9,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 05:00",
+        "tempFahrenheit": 66.4,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 06:00",
+        "tempFahrenheit": 66.4,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 07:00",
+        "tempFahrenheit": 67.1,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 08:00",
+        "tempFahrenheit": 68.7,
+        "precipitationPercent": 20
+      },
+      {
+        "time": "2025-07-01 09:00",
+        "tempFahrenheit": 70.7,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-07-01 10:00",
+        "tempFahrenheit": 73.4,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-07-01 11:00",
+        "tempFahrenheit": 76.1,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-07-01 12:00",
+        "tempFahrenheit": 78.3,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-07-01 13:00",
+        "tempFahrenheit": 79.9,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-07-01 14:00",
+        "tempFahrenheit": 80.6,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-07-01 15:00",
+        "tempFahrenheit": 80.6,
+        "precipitationPercent": 45
+      },
+      {
+        "time": "2025-07-01 16:00",
+        "tempFahrenheit": 79.5,
+        "precipitationPercent": 50
+      },
+      {
+        "time": "2025-07-01 17:00",
+        "tempFahrenheit": 78.1,
+        "precipitationPercent": 50
+      },
+      {
+        "time": "2025-07-01 18:00",
+        "tempFahrenheit": 76.1,
+        "precipitationPercent": 50
+      },
+      {
+        "time": "2025-07-01 19:00",
+        "tempFahrenheit": 73.9,
+        "precipitationPercent": 50
+      },
+      {
+        "time": "2025-07-01 20:00",
+        "tempFahrenheit": 72.0,
+        "precipitationPercent": 45
+      },
+      {
+        "time": "2025-07-01 21:00",
+        "tempFahrenheit": 70.0,
+        "precipitationPercent": 25
+      },
+      {
+        "time": "2025-07-01 22:00",
+        "tempFahrenheit": 68.4,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-07-01 23:00",
+        "tempFahrenheit": 66.9,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-07-02 00:00",
+        "tempFahrenheit": 65.7,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-02 01:00",
+        "tempFahrenheit": 64.8,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-02 02:00",
+        "tempFahrenheit": 63.9,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-02 03:00",
+        "tempFahrenheit": 62.8,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-02 04:00",
+        "tempFahrenheit": 61.9,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-02 05:00",
+        "tempFahrenheit": 61.2,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-02 06:00",
+        "tempFahrenheit": 61.2,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-02 07:00",
+        "tempFahrenheit": 61.7,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-02 08:00",
+        "tempFahrenheit": 63.0,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-07-02 09:00",
+        "tempFahrenheit": 64.8,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-07-02 10:00",
+        "tempFahrenheit": 66.9,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-07-02 11:00",
+        "tempFahrenheit": 69.1,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-07-02 12:00",
+        "tempFahrenheit": 70.7,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-07-02 13:00",
+        "tempFahrenheit": 72.0,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-07-02 14:00",
+        "tempFahrenheit": 73.0,
+        "precipitationPercent": 15
+      },
+      {
+        "time": "2025-07-02 15:00",
+        "tempFahrenheit": 73.8,
+        "precipitationPercent": 5
+      },
+      {
+        "time": "2025-07-02 16:00",
+        "tempFahrenheit": 73.8,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-02 17:00",
+        "tempFahrenheit": 73.4,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-02 18:00",
+        "tempFahrenheit": 72.3,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-02 19:00",
+        "tempFahrenheit": 70.7,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-02 20:00",
+        "tempFahrenheit": 68.7,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-02 21:00",
+        "tempFahrenheit": 66.6,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-02 22:00",
+        "tempFahrenheit": 64.6,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-02 23:00",
+        "tempFahrenheit": 62.8,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-03 00:00",
+        "tempFahrenheit": 61.2,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-03 01:00",
+        "tempFahrenheit": 60.1,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-03 02:00",
+        "tempFahrenheit": 59.2,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-03 03:00",
+        "tempFahrenheit": 58.1,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-03 04:00",
+        "tempFahrenheit": 57.6,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-03 05:00",
+        "tempFahrenheit": 57.4,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-03 06:00",
+        "tempFahrenheit": 57.9,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-03 07:00",
+        "tempFahrenheit": 59.2,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-03 08:00",
+        "tempFahrenheit": 61.2,
+        "precipitationPercent": 0
+      },
+      {
+        "time": "2025-07-03 09:00",
+        "tempFahrenheit": 63.7,
+        "precipitationPercent": 0
+      }
+    ]
+  }
+}
