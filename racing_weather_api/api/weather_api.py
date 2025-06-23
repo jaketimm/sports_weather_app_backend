@@ -199,7 +199,7 @@ def download_maps_api_data(maps_api_url, output_file=TRACK_FORECAST_FILE):
 
 
 def clear_forecast_cache():
-    """Clear the forecast cache and saved all forecasts file."""
+    """Clear the forecast cache and saved all-locations 10 days forecasts file."""
     forecast_cache.clear()
 
     # Clear the forecast file 
@@ -268,7 +268,7 @@ def format_display_time(display_datetime):
     return f"{year}-{month}-{day} {hours}:{minutes}"
 
 
-def save_10_day_location_forecast(forecast_data, location):
+def save_10_day_location_forecast(forecast_data, location, json_file=TRACKS_FILE):
     """Save 10 day track temp/precipication forecast to ALL_LOCATIONS_FORECAST_FILE.json"""
     try:
         # Load existing data if file exists  
@@ -278,6 +278,14 @@ def save_10_day_location_forecast(forecast_data, location):
         except FileNotFoundError:
             all_locations_data = {}
         
+        # Load tracks and extract the track/speedway name
+        with open(json_file, 'r') as file:
+            tracks = json.load(file)
+
+        for track in tracks:
+            if track['name'].upper() == location:
+                track_name = track['trackName']
+
         # Process the forecast data for this location
         processed_hours = []
         
@@ -291,7 +299,7 @@ def save_10_day_location_forecast(forecast_data, location):
                 processed_hours.append(processed_hour)
         
         # Add this location's data to the all location foreacast file
-        all_locations_data[location] = {
+        all_locations_data[track_name] = {
             "forecastHours": processed_hours
         }
         
