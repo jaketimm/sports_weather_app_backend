@@ -9,10 +9,16 @@ FILE_PATHS = {
 
 # Buoy station IDs to extract
 ENABLED_BUOYS = [
-    '45029',
-    'LDTM4',
-    '45168',
-    '45198'
+    '45029',    # Holland, MI
+    'LDTM4',    # Ludington, MI
+    '45168',    # South Haven, MI
+    '45198',    # Chicago, IL
+    '45026',    # Stevensville, MI
+    '45022',    # Petosky, MI
+    '45194',    # Mackinac, MI
+    '45170',    # Michigan City, IN
+    '45186',    # Waukegan, WI
+    '45014',    # Green Bay, WI
 ]
 
 # Data fields to extract (in order they will appear in output)
