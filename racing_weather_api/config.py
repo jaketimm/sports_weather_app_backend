@@ -37,7 +37,7 @@ SERIES_SCHEDULE_FILES = {
     'NASCAR TRUCK SERIES': NASCAR_TRUCKS_SCHEDULE_FILE,
     'INDYCAR': INDYCAR_SCHEDULE_FILE,
     'ARCA': ARCA_SCHEDULE_FILE,
-    'CARS TOUR': CARS_TOUR_SCHEDULE_FILE,
+    'CARS TOUR PLM': CARS_TOUR_SCHEDULE_FILE,  # Note that CARS Tour events are PLM race, then LMSC 2 hrs later at same track
     'F1': F1_SCHEDULE_FILE
 }
 
@@ -59,7 +59,8 @@ ENABLED_SERIES = [
     'NASCAR XFINITY SERIES', 
     'NASCAR TRUCK SERIES',
     'INDYCAR',
-    'ARCA'
+    'ARCA',
+    'CARS TOUR PLM'
 ]  # Modify to enable/disable specific series
 
 # Ensure data directories exist

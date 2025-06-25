@@ -1,6 +1,6 @@
 [
     {
-        "Series": "CARS TOUR",
+        "Series": "CARS TOUR PLM PLM",
         "location": "NEW RIVER ALL AMERICAN SPEEDWAY",
         "day_of_week": "SAT",
         "date": "2025-03-01",
@@ -8,7 +8,7 @@
         "channel": "FloRacing"
     },
     {
-        "Series": "CARS TOUR",
+        "Series": "CARS TOUR PLM",
         "location": "WAKE COUNTY SPEEDWAY",
         "day_of_week": "SAT",
         "date": "2025-03-29",
@@ -16,7 +16,7 @@
         "channel": "FloRacing"
     },
     {
-        "Series": "CARS TOUR",
+        "Series": "CARS TOUR PLM",
         "location": "CORDELE MOTOR SPEEDWAY",
         "day_of_week": "SAT",
         "date": "2025-04-12",
@@ -24,7 +24,7 @@
         "channel": "FloRacing"
     },
     {
-        "Series": "CARS TOUR",
+        "Series": "CARS TOUR PLM",
         "location": "ORANGE COUNTY SPEEDWAY",
         "day_of_week": "SAT",
         "date": "2025-04-26",
@@ -32,7 +32,7 @@
         "channel": "FloRacing"
     },
     {
-        "Series": "CARS TOUR",
+        "Series": "CARS TOUR PLM",
         "location": "ACE SPEEDWAY",
         "day_of_week": "SAT",
         "date": "2025-05-03",
@@ -40,7 +40,7 @@
         "channel": "FloRacing"
     },
     {
-        "Series": "CARS TOUR",
+        "Series": "CARS TOUR PLM",
         "location": "N. WILKESBORO",
         "day_of_week": "THU",
         "date": "2025-05-14",
@@ -48,7 +48,7 @@
         "channel": "FloRacing"
     },
     {
-        "Series": "CARS TOUR",
+        "Series": "CARS TOUR PLM",
         "location": "LANGLEY SPEEDWAY",
         "day_of_week": "SAT",
         "date": "2025-05-31",
@@ -56,7 +56,7 @@
         "channel": "FloRacing"
     },
     {
-        "Series": "CARS TOUR",
+        "Series": "CARS TOUR PLM",
         "location": "DOMINION RACEWAY",
         "day_of_week": "SAT",
         "date": "2025-06-14",
@@ -64,15 +64,7 @@
         "channel": "FloRacing"
     },
     {
-        "Series": "CARS TOUR",
-        "location": "SOUTH BOSTON SPEEDWAY",
-        "day_of_week": "SAT",
-        "date": "2025-06-28",
-        "time": "5 PM",
-        "channel": "FloRacing"
-    },
-    {
-        "Series": "CARS TOUR",
+        "Series": "CARS TOUR PLM",
         "location": "CARAWAY SPEEDWAY",
         "day_of_week": "WED",
         "date": "2025-07-02",
@@ -80,7 +72,7 @@
         "channel": "FloRacing"
     },
     {
-        "Series": "CARS TOUR",
+        "Series": "CARS TOUR PLM",
         "location": "HICKORY MOTOR SPEEDWAY",
         "day_of_week": "SAT",
         "date": "2025-08-02",
@@ -88,7 +80,7 @@
         "channel": "FloRacing"
     },
     {
-        "Series": "CARS TOUR",
+        "Series": "CARS TOUR PLM",
         "location": "ANDERSON MOTOR SPEEDWAY",
         "day_of_week": "SAT",
         "date": "2025-08-16",
@@ -96,7 +88,7 @@
         "channel": "FloRacing"
     },
     {
-        "Series": "CARS TOUR",
+        "Series": "CARS TOUR PLM",
         "location": "FLORENCE MOTOR SPEEDWAY",
         "day_of_week": "FRI",
         "date": "2025-08-29",
@@ -104,7 +96,7 @@
         "channel": "FloRacing"
     },
     {
-        "Series": "CARS TOUR",
+        "Series": "CARS TOUR PLM",
         "location": "SOUTH BOSTON SPEEDWAY",
         "day_of_week": "SAT",
         "date": "2025-09-13",
@@ -112,7 +104,7 @@
         "channel": "FloRacing"
     },
     {
-        "Series": "CARS TOUR",
+        "Series": "CARS TOUR PLM",
         "location": "TRI COUNTY SPEEDWAY",
         "day_of_week": "SAT",
         "date": "2025-10-04",
@@ -120,7 +112,7 @@
         "channel": "FloRacing"
     },
     {
-        "Series": "CARS TOUR",
+        "Series": "CARS TOUR PLM",
         "location": "N. WILKESBORO",
         "day_of_week": "SAT",
         "date": "2025-10-18",

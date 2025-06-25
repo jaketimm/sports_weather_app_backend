@@ -40,7 +40,7 @@ def normalize_text_case(data):
     """Normalize text case in JSON structure, preserve known acronyms in uppercase"""
     
     skip_keys = {"time", "channel", "track_location"}
-    known_acronyms = {"NASCAR", "CARS", "ARCA"}  # add more acronyms here as needed
+    known_acronyms = {"NASCAR", "CARS", "ARCA", "PLM"}  # add more acronyms here as needed
     
     def normalize_string(s):
         if s.strip().upper() == "INDYCAR SERIES":
