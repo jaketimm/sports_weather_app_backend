@@ -1,0 +1,35 @@
+# Configuration file for NDBC buoy data downloader
+
+# File paths
+file_paths:
+  raw_data_dir: "./data/raw/"
+  processed_data_dir: "./data/processed/"
+  raw_filename_template: "buoy_data_hour_{hour}.txt"
+  processed_filename_template: "processed_buoy_data_hour_{hour}.csv"
+
+# Buoy station IDs to extract
+enabled_buoys:
+  - "13001"
+  - "13002"
+  - "13008"
+  - "44013"
+
+# Data fields to extract (in order they will appear in output)
+# Available fields: WDIR, WSPD, GST, WVHT, DPD, APD, MWD, PRES, ATMP, WTMP, DEWP, VIS, PTDY, TIDE
+enabled_fields:
+  - "WDIR"    # Wind Direction (degrees)
+  - "WSPD"    # Wind Speed (will be converted to mph)
+  - "ATMP"    # Air Temperature (Celsius)
+  - "WVHT"    # Wave Height (will be converted to feet)
+  - "WTMP"    # Water Temperature (will be converted to Fahrenheit)
+
+# Unit conversion settings
+conversions:
+  convert_wspd_to_mph: true      # Convert m/s to mph
+  convert_wvht_to_feet: true     # Convert meters to feet
+  convert_wtmp_to_fahrenheit: true # Convert Celsius to Fahrenheit
+
+# Other settings
+settings:
+  request_timeout: 30
+  missing_value_placeholder: "N/A"
