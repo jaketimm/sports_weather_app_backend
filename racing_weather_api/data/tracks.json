@@ -99,7 +99,7 @@
   },
   {
     "name": "LUCAS OIL IRP",
-    "location": "Brownsburg, Indiana",
+    "location": "Brownsburg, IN",
     "latitude": 39.8433163,
     "longitude": -86.397956,
     "trackName": "Lucas Oil Indianapolis Raceway Park"
@@ -211,7 +211,7 @@
   },
   {
     "name": "LIME ROCK",
-    "location": "Salisbury, Connecticut",
+    "location": "Salisbury, CT",
     "latitude": 41.983426,
     "longitude": -73.4212318,
     "trackName": "Lime Rock Park"
@@ -270,7 +270,7 @@
     "location": "Lakeville, MN",
     "latitude": 44.6496868,
     "longitude": -93.24271999999999,
-    "trackName": "New Hampshire Motor Speedway (assumed mistake, corrected as MN)"
+    "trackName": "New Hampshire Motor Speedway"
   },
   {
     "name": "BROWNSBURG",
@@ -575,7 +575,7 @@
   },
   {
     "name": "LAS VEGAS STRIP CIRCUIT",
-    "location": "Las Vegas, NV, United States",
+    "location": "Las Vegas, NV",
     "latitude": 36.171563,
     "longitude": -115.1391009,
     "trackName": "Las Vegas Strip Circuit"
