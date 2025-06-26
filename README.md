@@ -1,59 +1,25 @@
-## Description
+# Description
 
-This project is a Python application that parses racing event schedules, retrieves weather data for track locations, and saves it
-to a JSON file. It uses the Google Weather API to fetch and process weather and location data.
+This project is a Python codebase that contains 3 data APIs.
+
+1) Racing Weather API:
+
+- parses racing event schedules and retrieves weather data for track locations. It uses the Google Weather API to fetch and process weather and location data.
+Schedule data is compiled manually and stored in racing_weather_api/data/series_schedules
+- Runs a scheduled job every hour
+- Output data is saved at var/www/html/data/events_with_weather.json and var/www/html/data/all_10_day_forecasts.json
 
 ## Features
 
-- Parse racing schedules from PDF or JSON data
-- Fetch weather forecasts for specific tracks
-- Process maps weather API data for locations
+- Processes events in a rolling 7 day window
+- Fetches weather forecasts for specific tracks
+- Process maps weather API data to create a 5 hour forecast window for each event
 
-## Requirements
+2) Wilson Ave River Data API
 
-- Python 3.x
-- Required libraries: PyQt5 requests python-dotenv pdfplumber
+- Downloads 6 hours of river data from the USGS and appends it to var/www/html/data/river_data_m-11.csv
+- Runs a scheduled job every 6 hours
 
-## Installation
+3) NOAA Buoy Data API
 
-1. Clone the repository:
-   ```
-   git clone <repo-url>
-   cd sports_weather_app
-   ```
-
-2. Install dependencies:
-   ```
-   pip install PyQt5 requests python-dotenv pdfplumber
-   ```
-
-## Environment Setup
-
-### Creating a .env File
-
-This project uses environment variables for sensitive information like API keys. Create a `.env` file in the root directory of the project.
-
-1. Create a new .env file:
-   ```
-   touch .env
-   ```
-
-2. Add the necessary variables. 
-   ```
-   MAPSAPI_KEY="your_api_key_here"
-   ```
-
-### Getting a Google Weather API Key
-
-1. Visit: [https://console.cloud.google.com/marketplace/product/google/weather.googleapis.com](https://console.cloud.google.com/marketplace/product/google/weather.googleapis.com)
-2. Enable the Weather API for your project.
-3. Create an API key in the credentials section.
-4. Add the key to your `.env` file as `MAPSAPI_KEY`.
-
-## Usage
-
-1. Run the main application:
-   ```
-   python main.py
-   ```
-
+- under construction
