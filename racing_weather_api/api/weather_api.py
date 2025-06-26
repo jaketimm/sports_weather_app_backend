@@ -8,6 +8,7 @@ import os
 import logging
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
+from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type, before_sleep_log
 from racing_weather_api.config import (TRACKS_FILE, TRACK_FORECAST_FILE, MAPSAPI_BASE_URL, ALL_LOCATIONS_FORECAST_FILE,
                                        API_TIMEOUT, FORECAST_HOURS_BEFORE_EVENT, FORECAST_HOURS_AFTER_EVENT)
 from racing_weather_api.utils.conversion_utils import celsius_to_fahrenheit, kph_to_mph, parse_event_time
@@ -169,8 +170,8 @@ def download_maps_api_data(maps_api_url, output_file=TRACK_FORECAST_FILE):
 
     # Loop through paginated results
     while next_url:
-        response = requests.get(next_url, timeout=API_TIMEOUT)
-        if response.status_code == 200:
+        try:
+            response = make_api_request(next_url)
             data = response.json()
 
             # Append current page's forecast data
@@ -184,9 +185,10 @@ def download_maps_api_data(maps_api_url, output_file=TRACK_FORECAST_FILE):
                 next_url = f"{maps_api_url}&pageToken={urllib.parse.quote(next_page_token)}"
             else:
                 next_url = None  # Done
-        else:
-            logger.error(f"API request failed with status code {response.status_code}")
-            raise Exception(f"API request failed with status code {response.status_code}")
+                
+        except Exception as e:
+            logger.error(f"Failed to download API data: {e}")
+            raise
 
     # Save to file
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
@@ -195,6 +197,33 @@ def download_maps_api_data(maps_api_url, output_file=TRACK_FORECAST_FILE):
 
     logger.info(f"Forecast saved to {output_file}")
     return all_forecast_data
+
+
+# API retry logic using tenacity
+@retry(
+    stop=stop_after_attempt(3),
+    wait=wait_exponential(multiplier=1, min=1, max=10),
+    retry=retry_if_exception_type((
+        requests.exceptions.RequestException,
+        requests.exceptions.Timeout,
+        requests.exceptions.ConnectionError
+    )),
+    before_sleep=before_sleep_log(logger, logging.WARNING)
+)
+
+def make_api_request(url):
+    """Make API request with retry logic using tenacity."""
+    response = requests.get(url, timeout=API_TIMEOUT)
+    
+    # Retry on server errors and rate limiting
+    if response.status_code in [429, 500, 502, 503, 504]:
+        raise requests.exceptions.RequestException(f"API request failed with status code {response.status_code}")
+    elif response.status_code != 200:
+        # Don't retry on client errors (4xx except 429)
+        logger.error(f"API request failed with non-retryable status code {response.status_code}")
+        raise Exception(f"API request failed with status code {response.status_code}")
+    
+    return response
 
 
 
