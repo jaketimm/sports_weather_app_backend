@@ -1,1 +1,4 @@
 .env
+log_file.log
+racing_weather_api/log_file.log
+wilson_ave_river_data_api/log_file.log
