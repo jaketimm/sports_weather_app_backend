@@ -2,6 +2,7 @@
 Utility functions for handling units conversion and data formatting.
 """
 import logging
+import datetime
 
 logger = logging.getLogger(__name__)
 
@@ -35,6 +36,16 @@ def parse_event_time(event_time_str: str):
         event_time_str = event_time_str.upper()
 
     return event_time_str
+
+def parse_datetime(date_str, time_str):
+    dt_str = f"{date_str} {time_str}"
+    formats = ["%Y-%m-%d %I %p", "%Y-%m-%d %I:%M %p"]
+    for fmt in formats:
+        try:
+            return datetime.strptime(dt_str, fmt)
+        except ValueError:
+            continue
+    raise ValueError(f"Date/time format not recognized: {dt_str}")
 
 def normalize_text_case(data):
     """Normalize text case in JSON structure, preserve known acronyms in uppercase"""

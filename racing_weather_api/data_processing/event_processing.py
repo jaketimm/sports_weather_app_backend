@@ -8,7 +8,7 @@ from racing_weather_api.config import (
     SERIES_SCHEDULE_FILES, ENABLED_SERIES
 )
 from racing_weather_api.utils.file_utils import load_json, save_json
-from racing_weather_api.utils.conversion_utils import parse_event_time, normalize_text_case, normalize_wind_directions
+from racing_weather_api.utils.conversion_utils import parse_event_time, parse_datetime, normalize_text_case, normalize_wind_directions
 from racing_weather_api.api.weather_api import get_weather_for_event, clear_forecast_cache
 
 logger = logging.getLogger(__name__)
@@ -90,8 +90,13 @@ def get_events_with_weather(schedule_file=None, use_cached=True, series_list=Non
         # Remove events that have already happened
         filtered_events = exclude_past_events(current_week_events)
 
-        # Loop through each event and add matched track details
+        # Loop through each event add matched track details and create new datetime key
         for event in filtered_events:
+            # create datetime 
+            combined_dt = parse_datetime(event.get('date', ''), event.get('time', ''))
+            event['datetime'] = combined_dt  # Combined date+time
+
+            # find event track
             matching_track = next(
                 (track for track in track_info_file if track['name'] == event['location']),
                 None
@@ -113,7 +118,7 @@ def get_events_with_weather(schedule_file=None, use_cached=True, series_list=Non
         logger.info("Forecast data successfully downloaded and processed")
 
         # Sort events by date and time for consistent display
-        filtered_events.sort(key=lambda e: datetime.strptime(f"{e.get('date', '')} {e.get('time', '')}", "%Y-%m-%d %I %p"))
+        filtered_events.sort(key=lambda e: e['datetime'])
 
         # Clean up text case, convert wind dir. to N,E,S,W
         filtered_events = normalize_text_case(filtered_events)
