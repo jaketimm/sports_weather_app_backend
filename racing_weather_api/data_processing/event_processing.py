@@ -94,7 +94,8 @@ def get_events_with_weather(schedule_file=None, use_cached=True, series_list=Non
         for event in filtered_events:
             # create datetime 
             combined_dt = parse_datetime(event.get('date', ''), event.get('time', ''))
-            event['datetime'] = combined_dt  # Combined date+time
+
+            event['datetime'] = combined_dt.strftime("%Y-%m-%d %H:%M") # Combined date+time as a string
 
             # find event track
             matching_track = next(
