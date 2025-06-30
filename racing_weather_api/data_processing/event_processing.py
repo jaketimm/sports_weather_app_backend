@@ -145,7 +145,7 @@ def get_next_7_days_events(schedule_data):
         # Calculate the next 7 days date range
         today = datetime.now()
         start_date = today
-        end_date = today + timedelta(days=6)  # Next 6 days + today = 7 days total
+        end_date = today + timedelta(days=7)  # Next 7 days + today 
         
         # Convert to date strings for comparison
         start_date_str = start_date.strftime("%Y-%m-%d")
