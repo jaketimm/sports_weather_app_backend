@@ -76,7 +76,7 @@ class BuoyDataDownloader:
         processed_filename = self.config.FILE_PATHS['processed_filename_template'].format(hour=current_hour)
         
         raw_filepath = Path(self.config.FILE_PATHS['data_dir']) / raw_filename
-        processed_filepath = Path(self.config.FILE_PATHS['data_dir']) / processed_filename
+        processed_filepath = Path(self.config.FILE_PATHS['output_data_dir']) / processed_filename
         
         try:
             print(f"Downloading data from: {url}")

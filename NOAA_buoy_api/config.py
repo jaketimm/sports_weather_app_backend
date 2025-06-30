@@ -1,8 +1,11 @@
 # Configuration file for NDBC buoy data downloader
+import os
+
 
 # File paths
 FILE_PATHS = {
     'data_dir': './NOAA_buoy_api/data/',
+    'output_data_dir': os.path.join('/', 'var', 'www', 'html', 'data'),
     'raw_filename_template': 'buoy_data_current_hour.txt',
     'processed_filename_template': 'processed_buoy_data.csv'
 }
