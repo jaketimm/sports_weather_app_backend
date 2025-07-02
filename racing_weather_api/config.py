@@ -49,8 +49,8 @@ LOG_LEVEL = 'INFO'
 LOG_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 
 # Weather Settings
-FORECAST_HOURS_BEFORE_EVENT = 1
-FORECAST_HOURS_AFTER_EVENT = 4
+FORECAST_HOURS_BEFORE_EVENT = 2
+FORECAST_HOURS_AFTER_EVENT = 3
 USE_CACHED_DATA_BY_DEFAULT = False
 
 # Series Options
@@ -60,7 +60,8 @@ ENABLED_SERIES = [
     'NASCAR TRUCK SERIES',
     'INDYCAR',
     'ARCA',
-    'CARS TOUR PLM'
+    'CARS TOUR PLM',
+    'F1'
 ]  # Modify to enable/disable specific series
 
 # Ensure data directories exist

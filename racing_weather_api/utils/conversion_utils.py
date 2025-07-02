@@ -2,6 +2,7 @@
 Utility functions for handling units conversion and data formatting.
 """
 import logging
+import pytz
 from datetime import datetime
 
 logger = logging.getLogger(__name__)
@@ -26,6 +27,49 @@ def kph_to_mph(kph):
     except (TypeError, ValueError):
         return 'N/A'
 
+
+def convert_est_to_utc(event_date_str: str, event_time_str: str):
+    """Convert EST event time to UTC datetime."""
+    try:
+        # Parse event date and time
+        event_date = datetime.strptime(event_date_str, '%Y-%m-%d')
+        event_time = datetime.strptime(event_time_str, '%I:%M %p')
+        event_datetime = event_date.replace(hour=event_time.hour, minute=event_time.minute)
+        
+        # Create timezone objects
+        est = pytz.timezone('US/Eastern')
+        utc = pytz.UTC
+        
+        # Localize to EST and convert to UTC
+        event_datetime_est = est.localize(event_datetime)
+        event_datetime_utc = event_datetime_est.astimezone(utc)
+        
+        # Return as naive datetime for comparison
+        return event_datetime_utc.replace(tzinfo=None)
+        
+    except Exception as e:
+        logger.error(f"Error converting EST to UTC: {e}")
+        return None
+
+
+def convert_utc_to_est(utc_datetime):
+    """Convert UTC datetime back to EST for display."""
+    try:
+        # Create timezone objects
+        utc = pytz.UTC
+        est = pytz.timezone('US/Eastern')
+        
+        # Add UTC timezone and convert to EST
+        utc_datetime_tz = utc.localize(utc_datetime)
+        est_datetime = utc_datetime_tz.astimezone(est)
+        
+        # Return as naive datetime
+        return est_datetime.replace(tzinfo=None)
+        
+    except Exception as e:
+        logger.error(f"Error converting UTC to EST: {e}")
+        return utc_datetime  # Return ori
+    
 
 def parse_event_time(event_time_str: str):
     """Parse event time string into a standardized format."""

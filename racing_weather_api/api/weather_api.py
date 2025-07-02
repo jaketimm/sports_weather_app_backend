@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type, before_sleep_log
 from racing_weather_api.config import (TRACKS_FILE, TRACK_FORECAST_FILE, MAPSAPI_BASE_URL, ALL_LOCATIONS_FORECAST_FILE,
                                        API_TIMEOUT, FORECAST_HOURS_BEFORE_EVENT, FORECAST_HOURS_AFTER_EVENT)
-from racing_weather_api.utils.conversion_utils import celsius_to_fahrenheit, kph_to_mph, parse_event_time
+from racing_weather_api.utils.conversion_utils import celsius_to_fahrenheit, kph_to_mph, parse_event_time, convert_est_to_utc, convert_utc_to_est
 
 logger = logging.getLogger(__name__)
 
@@ -36,12 +36,13 @@ def get_weather_for_event(event: dict):
         # Parse event time
         event_time_str = parse_event_time(event_time_str)
 
-        # Convert to datetime
-        event_date = datetime.strptime(event_date_str, '%Y-%m-%d')
-        event_time = datetime.strptime(event_time_str, '%I:%M %p')
-        event_datetime = event_date.replace(hour=event_time.hour, minute=event_time.minute)
+        # Convert EST event time from schedule file to UTC
+        event_datetime_utc = convert_est_to_utc(event_date_str, event_time_str)
+        if not event_datetime_utc:
+            return {}
 
-        # Extract daily high and low temperatures for the event date
+        # Extract daily high and low temperatures for the event date (use original date)
+        event_date = datetime.strptime(event_date_str, '%Y-%m-%d')
         daily_max_min = extract_daily_high_low_temps(forecast_data, event_date)
 
         # Extract hours from weather file
@@ -50,18 +51,25 @@ def get_weather_for_event(event: dict):
 
         # Save forecast data starting 1 hr before, 4 hours after event start time
         for forecast_hour in forecast_hours:
-            # Parse the forecast time
-            display_time = forecast_hour.get('displayDateTime', {})
-            forecast_dt = datetime(
-                year=display_time.get('year', 0),
-                month=display_time.get('month', 0),
-                day=display_time.get('day', 0),
-                hour=display_time.get('hours', 0),
-                minute=display_time.get('minutes', 0)
-            )
+            # Parse the forecast time (assuming this is in UTC from Google API)
+            start_time = forecast_hour.get('startTime', '')
+            if start_time:
+                # Parse UTC timestamp: "2025-06-27T18:00:00Z"
+                forecast_dt_utc = datetime.fromisoformat(start_time.replace('Z', '+00:00'))
+                forecast_dt_utc = forecast_dt_utc.replace(tzinfo=None)  # Remove timezone info for comparison
+            else:
+                # Fallback to displayDateTime if startTime not available
+                display_time = forecast_hour.get('displayDateTime', {})
+                forecast_dt_utc = datetime(
+                    year=display_time.get('year', 0),
+                    month=display_time.get('month', 0),
+                    day=display_time.get('day', 0),
+                    hour=display_time.get('hours', 0),
+                    minute=display_time.get('minutes', 0)
+                )
 
-            # Check if this forecast is within configured hours of event start
-            time_diff = forecast_dt - event_datetime
+            # Check if this forecast is within configured hours of event start (all in UTC)
+            time_diff = forecast_dt_utc - event_datetime_utc
             if timedelta(hours=-FORECAST_HOURS_BEFORE_EVENT) <= time_diff <= timedelta(hours=FORECAST_HOURS_AFTER_EVENT):
                 # Get original values and convert units
                 temp_fahrenheit = celsius_to_fahrenheit(forecast_hour.get('temperature', {}).get('degrees'))
@@ -69,16 +77,17 @@ def get_weather_for_event(event: dict):
                     forecast_hour.get('feelsLikeTemperature', {}).get('degrees'))
                 wind_speed_mph = kph_to_mph(forecast_hour.get('wind', {}).get('speed', {}).get('value'))
 
+                # Convert UTC time back to EST for display
+                forecast_dt_est = convert_utc_to_est(forecast_dt_utc)
+
                 # Save hourly weather conditions
                 weather_info = {
-                    'time': forecast_dt.strftime('%I:%M %p'),
+                    'time': forecast_dt_est.strftime('%I:%M %p'),
                     'temperature': temp_fahrenheit,
                     'feels_like': feels_like_fahrenheit,
                     'condition': forecast_hour.get('weatherCondition', {}).get('description', {}).get('text', 'N/A'),
-                    'precipitation_type': forecast_hour.get('precipitation', {}).get('probability', {}).get('type',
-                                                                                                        'N/A'),
-                    'precipitation_prob': forecast_hour.get('precipitation', {}).get('probability', {}).get('percent',
-                                                                                                        'N/A'),
+                    'precipitation_type': forecast_hour.get('precipitation', {}).get('probability', {}).get('type', 'N/A'),
+                    'precipitation_prob': forecast_hour.get('precipitation', {}).get('probability', {}).get('percent', 'N/A'),
                     'wind_speed': wind_speed_mph,
                     'wind_speed_direction': forecast_hour.get('wind', {}).get('direction', {}).get('cardinal', 'N/A')
                 }
