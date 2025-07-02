@@ -12,7 +12,7 @@
     "location": "SILVERSTONE CIRCUIT",
     "day_of_week": "SUN",
     "date": "2025-07-06",
-    "time": "9:55 AM",
+    "time": "10:00 AM",
     "channel": "ESPN"
   },
   {
@@ -20,7 +20,7 @@
     "location": "CIRCUIT DE SPA-FRANCORCHAMPS",
     "day_of_week": "SUN",
     "date": "2025-07-27",
-    "time": "8:55 AM",
+    "time": "9:00 AM",
     "channel": "ESPN"
   },
   {
@@ -28,7 +28,7 @@
     "location": "HUNGARORING",
     "day_of_week": "SUN",
     "date": "2025-08-03",
-    "time": "8:55 AM",
+    "time": "9:00 AM",
     "channel": "ESPN"
   },
   {
@@ -36,7 +36,7 @@
     "location": "CIRCUIT ZANDVOORT",
     "day_of_week": "SUN",
     "date": "2025-08-31",
-    "time": "8:55 AM",
+    "time": "9:00 AM",
     "channel": "ESPN"
   },
   {
@@ -44,7 +44,7 @@
     "location": "AUTODROMO NAZIONALE MONZA",
     "day_of_week": "SUN",
     "date": "2025-09-07",
-    "time": "8:55 AM",
+    "time": "9:00 AM",
     "channel": "ESPN"
   },
   {
@@ -52,7 +52,7 @@
     "location": "BAKU CITY CIRCUIT",
     "day_of_week": "SUN",
     "date": "2025-09-21",
-    "time": "6:55 AM",
+    "time": "7:00 AM",
     "channel": "ESPN"
   },
   {
@@ -60,7 +60,7 @@
     "location": "MARINA BAY STREET CIRCUIT",
     "day_of_week": "SUN",
     "date": "2025-10-05",
-    "time": "7:55 AM",
+    "time": "8:00 AM",
     "channel": "ESPN"
   },
   {
@@ -68,7 +68,7 @@
     "location": "COTA",
     "day_of_week": "SUN",
     "date": "2025-10-19",
-    "time": "2:55 PM",
+    "time": "3:00 PM",
     "channel": "ABC"
   },
   {
@@ -76,7 +76,7 @@
     "location": "MEXICO CITY",
     "day_of_week": "SUN",
     "date": "2025-10-26",
-    "time": "3:55 PM",
+    "time": "4:00 PM",
     "channel": "ABC"
   },
   {
@@ -84,7 +84,7 @@
     "location": "AUTODROMO JOSE CARLOS PACE",
     "day_of_week": "SUN",
     "date": "2025-11-09",
-    "time": "11:55 AM",
+    "time": "12:00 PM",
     "channel": "ESPN2"
   },
   {
@@ -92,7 +92,7 @@
     "location": "LAS VEGAS STRIP CIRCUIT",
     "day_of_week": "SAT",
     "date": "2025-11-22",
-    "time": "10:55 PM",
+    "time": "11:00 PM",
     "channel": "ESPN"
   },
   {
@@ -100,7 +100,7 @@
     "location": "LOSAIL INTERNATIONAL CIRCUIT",
     "day_of_week": "SUN",
     "date": "2025-11-30",
-    "time": "10:55 AM",
+    "time": "11:00 AM",
     "channel": "ESPN"
   },
   {
@@ -108,7 +108,7 @@
     "location": "YAS MARINA CIRCUIT",
     "day_of_week": "SUN",
     "date": "2025-12-07",
-    "time": "7:55 AM",
+    "time": "8:00 AM",
     "channel": "ESPN"
   }
 ]
