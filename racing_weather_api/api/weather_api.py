@@ -6,7 +6,7 @@ import urllib.parse
 import requests
 import os
 import logging
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from dotenv import load_dotenv
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type, before_sleep_log
 from racing_weather_api.config import (TRACKS_FILE, TRACK_FORECAST_FILE, MAPSAPI_BASE_URL, ALL_LOCATIONS_FORECAST_FILE,
@@ -41,6 +41,9 @@ def get_weather_for_event(event: dict):
         if not event_datetime_utc:
             return {}
 
+        # Get current time in UTC for dynamic window calculation
+        current_time_utc = datetime.now(timezone.utc).replace(tzinfo=None)
+
         # Extract daily high and low temperatures for the event date (use original date)
         event_date = datetime.strptime(event_date_str, '%Y-%m-%d')
         daily_max_min = extract_daily_high_low_temps(forecast_data, event_date)
@@ -49,7 +52,17 @@ def get_weather_for_event(event: dict):
         forecast_hours = forecast_data.get('forecastHours', [])
         relevant_forecasts = []
 
-        # Save forecast data starting 1 hr before, 4 hours after event start time
+        # Calculate dynamic forecast window based on current time and event time
+        if current_time_utc < event_datetime_utc:
+            # Event hasn't started yet - show 2 hours before event to 3 hours after
+            window_start = event_datetime_utc - timedelta(hours=FORECAST_HOURS_BEFORE_EVENT)
+            window_end = event_datetime_utc + timedelta(hours=FORECAST_HOURS_AFTER_EVENT)
+        else:
+            # Event has started - show from current time to original end time (shrinking window)
+            window_start = current_time_utc
+            window_end = event_datetime_utc + timedelta(hours=FORECAST_HOURS_AFTER_EVENT)
+
+        # Save forecast data within the calculated window
         for forecast_hour in forecast_hours:
             # Parse the forecast time (assuming this is in UTC from Google API)
             start_time = forecast_hour.get('startTime', '')
@@ -68,9 +81,8 @@ def get_weather_for_event(event: dict):
                     minute=display_time.get('minutes', 0)
                 )
 
-            # Check if this forecast is within configured hours of event start (all in UTC)
-            time_diff = forecast_dt_utc - event_datetime_utc
-            if timedelta(hours=-FORECAST_HOURS_BEFORE_EVENT) <= time_diff <= timedelta(hours=FORECAST_HOURS_AFTER_EVENT):
+            # Check if this forecast is within the calculated window
+            if window_start <= forecast_dt_utc <= window_end:
                 # Get original values and convert units
                 temp_fahrenheit = celsius_to_fahrenheit(forecast_hour.get('temperature', {}).get('degrees'))
                 feels_like_fahrenheit = celsius_to_fahrenheit(
