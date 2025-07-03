@@ -60,7 +60,7 @@ def get_weather_for_event(event: dict):
         else:
             # Event has started - show from current time to original end time (shrinking window)
             window_start = current_time_utc
-            window_end = event_datetime_utc + timedelta(hours=FORECAST_HOURS_AFTER_EVENT)
+            window_end = event_datetime_utc + timedelta(hours=(FORECAST_HOURS_AFTER_EVENT-1))
 
         # Save forecast data within the calculated window
         for forecast_hour in forecast_hours:
