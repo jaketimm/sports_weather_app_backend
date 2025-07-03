@@ -82,6 +82,17 @@ def parse_event_time(event_time_str: str):
     return event_time_str
 
 
+def format_display_time(display_datetime):
+    """Format the display time to a readable string"""
+    year = display_datetime['year']
+    month = str(display_datetime['month']).zfill(2)
+    day = str(display_datetime['day']).zfill(2)
+    hours = str(display_datetime['hours']).zfill(2)
+    minutes = str(display_datetime['minutes']).zfill(2)
+    
+    return f"{year}-{month}-{day} {hours}:{minutes}"
+
+
 def parse_datetime(date_str, time_str):
     """Turn event date and time e.g. 2PM into single datatime value"""
     dt_str = f"{date_str} {time_str}"

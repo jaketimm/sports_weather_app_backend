@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type, before_sleep_log
 from racing_weather_api.config import (TRACKS_FILE, TRACK_FORECAST_FILE, MAPSAPI_BASE_URL, ALL_LOCATIONS_FORECAST_FILE,
                                        API_TIMEOUT, FORECAST_HOURS_BEFORE_EVENT, FORECAST_HOURS_AFTER_EVENT)
-from racing_weather_api.utils.conversion_utils import celsius_to_fahrenheit, kph_to_mph, parse_event_time, convert_est_to_utc, convert_utc_to_est
+from racing_weather_api.utils.conversion_utils import celsius_to_fahrenheit, kph_to_mph, parse_event_time, format_display_time, convert_est_to_utc, convert_utc_to_est
 
 logger = logging.getLogger(__name__)
 
@@ -60,7 +60,7 @@ def get_weather_for_event(event: dict):
         else:
             # Event has started - show from current time to original end time (shrinking window)
             window_start = current_time_utc
-            window_end = event_datetime_utc + timedelta(hours=(FORECAST_HOURS_AFTER_EVENT-1))
+            window_end = event_datetime_utc + timedelta(hours=(FORECAST_HOURS_AFTER_EVENT))
 
         # Save forecast data within the calculated window
         for forecast_hour in forecast_hours:
@@ -144,7 +144,7 @@ def get_location_forecast(location: str):
         # Cache the result
         forecast_cache[location] = forecast_data
 
-        # Process and save the forecast data to all locations forecasts file
+        # Process and save the forecast data to the file that contains all 10 day forecasts
         save_10_day_location_forecast(forecast_data, location)
 
         logger.info(f"Downloaded and cached forecast for {location}")
@@ -247,18 +247,6 @@ def make_api_request(url):
     return response
 
 
-
-def clear_forecast_cache():
-    """Clear the forecast cache and saved all-locations 10 days forecasts file."""
-    forecast_cache.clear()
-
-    # Clear the forecast file 
-    with open(ALL_LOCATIONS_FORECAST_FILE, 'w') as f:
-        json.dump({}, f)
-
-    logger.info("Forecast cache cleared")
-
-
 def extract_daily_high_low_temps(forecast_data, event_date):
     """Extract daily high and low temperatures for the given date from forecast data."""
     try:
@@ -307,19 +295,8 @@ def extract_daily_high_low_temps(forecast_data, event_date):
         }
 
 
-def format_display_time(display_datetime):
-    """Format the display time to a readable string"""
-    year = display_datetime['year']
-    month = str(display_datetime['month']).zfill(2)
-    day = str(display_datetime['day']).zfill(2)
-    hours = str(display_datetime['hours']).zfill(2)
-    minutes = str(display_datetime['minutes']).zfill(2)
-    
-    return f"{year}-{month}-{day} {hours}:{minutes}"
-
-
 def save_10_day_location_forecast(forecast_data, location, json_file=TRACKS_FILE):
-    """Save 10 day track temp/precipication forecast to ALL_LOCATIONS_FORECAST_FILE.json"""
+    """Save 10 day track temp/precipication forecast to the json file that contains all 10 day track forecasts"""
     try:
         # Load existing data if file exists  
         try:
@@ -361,3 +338,14 @@ def save_10_day_location_forecast(forecast_data, location, json_file=TRACKS_FILE
         
     except Exception as e:
         logger.error(f"Error processing and saving forecast data for {location}: {e}")
+
+
+def clear_forecast_cache():
+    """Clear the forecast cache and saved all-locations forecasts file."""
+    forecast_cache.clear()
+
+    # Clear the forecast file 
+    with open(ALL_LOCATIONS_FORECAST_FILE, 'w') as f:
+        json.dump({}, f)
+
+    logger.info("Forecast cache cleared")
