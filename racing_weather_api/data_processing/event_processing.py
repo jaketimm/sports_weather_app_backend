@@ -187,7 +187,7 @@ def exclude_past_events(events):
                     event_datetime = event_date.replace(hour=event_time.hour, minute=event_time.minute)
 
                     # Dont't exclude events until 2 hrs after start time
-                    if current_time <= event_datetime + timedelta(hours=3):
+                    if current_time <= event_datetime + timedelta(hours=2):
                         filtered_events.append(event)
                 except ValueError as e:
                     logger.error(f"Error parsing event time: {e}")
