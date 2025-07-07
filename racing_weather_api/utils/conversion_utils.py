@@ -3,7 +3,7 @@ Utility functions for handling units conversion and data formatting.
 """
 import logging
 import pytz
-from datetime import datetime
+from datetime import datetime, timedelta
 
 logger = logging.getLogger(__name__)
 
@@ -83,14 +83,24 @@ def parse_event_time(event_time_str: str):
 
 
 def format_display_time(display_datetime):
-    """Format the display time to a readable string"""
+    """Format the display time to a readable string in UTC"""
     year = display_datetime['year']
-    month = str(display_datetime['month']).zfill(2)
-    day = str(display_datetime['day']).zfill(2)
-    hours = str(display_datetime['hours']).zfill(2)
-    minutes = str(display_datetime['minutes']).zfill(2)
+    month = display_datetime['month']
+    day = display_datetime['day']
+    hours = display_datetime['hours']
+    minutes = display_datetime['minutes']
+    seconds = display_datetime.get('seconds', 0)
     
-    return f"{year}-{month}-{day} {hours}:{minutes}"
+    # Parse the UTC offset and convert to hours
+    utc_offset_str = display_datetime.get('utcOffset', '0s')
+    utc_offset_seconds = int(utc_offset_str.rstrip('s'))
+    utc_offset_hours = utc_offset_seconds // 3600
+    
+    # Create datetime and subtract the offset to get UTC
+    original_dt = datetime(year, month, day, hours, minutes, seconds)
+    utc_dt = original_dt - timedelta(hours=utc_offset_hours)
+    
+    return utc_dt.strftime("%Y-%m-%d %H:%M")
 
 
 def parse_datetime(date_str, time_str):
@@ -103,7 +113,6 @@ def parse_datetime(date_str, time_str):
         except ValueError:
             continue
     raise ValueError(f"Date/time format not recognized: {dt_str}")
-
 
 
 def normalize_text_case(data):
@@ -136,7 +145,6 @@ def normalize_text_case(data):
         return normalize_string(data)
     else:
         return data  # Leave numbers, bools, None unchanged
-
 
 
 def convert_wind_direction(direction):
