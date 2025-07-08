@@ -66,21 +66,11 @@ def get_weather_for_event(event: dict):
         for forecast_hour in forecast_hours:
             # Parse the forecast time (UTC from Google API)
             start_time = forecast_hour.get('interval', {}).get('startTime', '')
-            if start_time:
-                # Parse UTC timestamp: "2025-06-27T18:00:00Z"
-                forecast_dt_utc = datetime.fromisoformat(start_time.replace('Z', '+00:00'))
-                forecast_dt_utc = forecast_dt_utc.replace(tzinfo=None)  # Remove timezone info for comparison
-            else:
-                # Fallback to displayDateTime if startTime not available
-                display_time = forecast_hour.get('displayDateTime', {})
-                forecast_dt_utc = datetime(
-                    year=display_time.get('year', 0),
-                    month=display_time.get('month', 0),
-                    day=display_time.get('day', 0),
-                    hour=display_time.get('hours', 0),
-                    minute=display_time.get('minutes', 0)
-                )
-
+            
+            # Parse UTC timestamp: "2025-06-27T18:00:00Z"
+            forecast_dt_utc = datetime.fromisoformat(start_time.replace('Z', '+00:00'))
+            forecast_dt_utc = forecast_dt_utc.replace(tzinfo=None)  # Remove timezone info for comparison
+            
             # Check if this forecast is within the calculated window
             if window_start <= forecast_dt_utc <= window_end:
                 # Get original values and convert units
