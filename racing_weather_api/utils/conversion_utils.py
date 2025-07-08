@@ -82,26 +82,6 @@ def parse_event_time(event_time_str: str):
     return event_time_str
 
 
-def format_display_time(display_datetime):
-    """Format the display time to a readable string in UTC"""
-    year = display_datetime['year']
-    month = display_datetime['month']
-    day = display_datetime['day']
-    hours = display_datetime['hours']
-    minutes = display_datetime['minutes']
-    seconds = display_datetime.get('seconds', 0)
-    
-    # Parse the UTC offset and convert to hours
-    utc_offset_str = display_datetime.get('utcOffset', '0s')
-    utc_offset_seconds = int(utc_offset_str.rstrip('s'))
-    utc_offset_hours = utc_offset_seconds // 3600
-    
-    # Create datetime and subtract the offset to get UTC
-    original_dt = datetime(year, month, day, hours, minutes, seconds)
-    utc_dt = original_dt - timedelta(hours=utc_offset_hours)
-    
-    return utc_dt.strftime("%Y-%m-%d %H:%M")
-
 
 def parse_datetime(date_str, time_str):
     """Turn event date and time e.g. 2PM into single datatime value"""
