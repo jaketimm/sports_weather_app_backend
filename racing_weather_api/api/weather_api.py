@@ -64,8 +64,8 @@ def get_weather_for_event(event: dict):
 
         # Save forecast data within the calculated window
         for forecast_hour in forecast_hours:
-            # Parse the forecast time (assuming this is in UTC from Google API)
-            start_time = forecast_hour.get('startTime', '')
+            # Parse the forecast time (UTC from Google API)
+            start_time = forecast_hour.get('interval', {}).get('startTime', '')
             if start_time:
                 # Parse UTC timestamp: "2025-06-27T18:00:00Z"
                 forecast_dt_utc = datetime.fromisoformat(start_time.replace('Z', '+00:00'))
