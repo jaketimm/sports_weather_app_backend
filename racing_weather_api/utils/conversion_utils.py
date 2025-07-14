@@ -61,15 +61,16 @@ def convert_start_time_utc(est_time_str: str) -> str:
 
     # Parse the input string to a naive datetime object
     local_time = datetime.strptime(est_time_str, '%Y-%m-%d %H:%M')
-    
-    # Attach Eastern Time zone info (auto handles EST/EDT depending on date)
+
+    # Attach Eastern Time zone info
     eastern_time = local_time.replace(tzinfo=ZoneInfo("America/New_York"))
-    
+
     # Convert to UTC
     utc_time = eastern_time.astimezone(ZoneInfo("UTC"))
-    
-    # Return as ISO 8601 string
-    return utc_time.isoformat()
+
+    # Return in the desired ISO 8601 format with 'Z'
+    return utc_time.strftime('%Y-%m-%dT%H:%M:%SZ')
+
 
 
 def parse_event_time(event_time_str: str):
