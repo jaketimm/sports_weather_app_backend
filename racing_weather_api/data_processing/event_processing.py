@@ -8,7 +8,7 @@ from racing_weather_api.config import (
     SERIES_SCHEDULE_FILES, ENABLED_SERIES
 )
 from racing_weather_api.utils.file_utils import load_json, save_json
-from racing_weather_api.utils.conversion_utils import parse_event_time, parse_datetime, normalize_text_case, normalize_wind_directions
+from racing_weather_api.utils.conversion_utils import parse_datetime, normalize_text_case, normalize_wind_directions, convert_start_time_utc, parse_event_time
 from racing_weather_api.api.weather_api import get_weather_for_event, clear_forecast_cache
 
 logger = logging.getLogger(__name__)
@@ -92,10 +92,11 @@ def get_events_with_weather(schedule_file=None, use_cached=True, series_list=Non
 
         # Loop through each event add matched track details and create new datetime key
         for event in filtered_events:
+            
             # create datetime 
             combined_dt = parse_datetime(event.get('date', ''), event.get('time', ''))
-
-            event['datetime'] = combined_dt.strftime("%Y-%m-%d %H:%M") # Combined date+time as a string
+            event_time_est = combined_dt.strftime("%Y-%m-%d %H:%M") # Combined date+time as a string
+            event['start_time_UTC'] = convert_start_time_utc(event_time_est)
 
             # find event track
             matching_track = next(
@@ -125,7 +126,7 @@ def get_events_with_weather(schedule_file=None, use_cached=True, series_list=Non
         filtered_events = normalize_text_case(filtered_events)
         filtered_events = normalize_wind_directions(filtered_events)
 
-        # Save the events with weather to JSON file using Monday as key
+        # Save the events with weather to JSON file 
         weekend_events = {monday_str: filtered_events}
         save_events_with_weather(weekend_events)
 

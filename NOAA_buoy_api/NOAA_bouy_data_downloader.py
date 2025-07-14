@@ -213,8 +213,6 @@ class BuoyDataDownloader:
         
         result_df = df_filtered[available_cols].copy()
         
-        # Convert numeric columns, replacing 'MM' with NaN for now (will be replaced with N/A after conversion)
-        missing_val = self.config.SETTINGS['missing_value_placeholder']
         numeric_cols = [col for col in available_cols if col not in ['Station_ID', 'datetime']]
         
         for col in numeric_cols:

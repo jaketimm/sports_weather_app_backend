@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type, before_sleep_log
 from racing_weather_api.config import (TRACKS_FILE, TRACK_FORECAST_FILE, MAPSAPI_BASE_URL, ALL_LOCATIONS_FORECAST_FILE,
                                        API_TIMEOUT, FORECAST_HOURS_BEFORE_EVENT, FORECAST_HOURS_AFTER_EVENT)
-from racing_weather_api.utils.conversion_utils import celsius_to_fahrenheit, kph_to_mph, parse_event_time, convert_est_to_utc, convert_utc_to_est
+from racing_weather_api.utils.conversion_utils import celsius_to_fahrenheit, kph_to_mph, parse_event_time, convert_est_to_utc
 
 logger = logging.getLogger(__name__)
 
@@ -64,11 +64,12 @@ def get_weather_for_event(event: dict):
 
         # Save forecast data within the calculated window
         for forecast_hour in forecast_hours:
+            
             # Parse the forecast time (UTC from Google API)
-            start_time = forecast_hour.get('interval', {}).get('startTime', '')
+            hour = forecast_hour.get('interval', {}).get('startTime', '')
             
             # Parse UTC timestamp: "2025-06-27T18:00:00Z"
-            forecast_dt_utc = datetime.fromisoformat(start_time.replace('Z', '+00:00'))
+            forecast_dt_utc = datetime.fromisoformat(hour.replace('Z', '+00:00'))
             forecast_dt_utc = forecast_dt_utc.replace(tzinfo=None)  # Remove timezone info for comparison
             
             # Check if this forecast is within the calculated window
@@ -79,12 +80,9 @@ def get_weather_for_event(event: dict):
                     forecast_hour.get('feelsLikeTemperature', {}).get('degrees'))
                 wind_speed_mph = kph_to_mph(forecast_hour.get('wind', {}).get('speed', {}).get('value'))
 
-                # Convert UTC time back to EST for display
-                forecast_dt_est = convert_utc_to_est(forecast_dt_utc)
-
                 # Save hourly weather conditions
                 weather_info = {
-                    'time': forecast_dt_est.strftime('%I:%M %p'),
+                    'time': hour,
                     'temperature': temp_fahrenheit,
                     'feels_like': feels_like_fahrenheit,
                     'condition': forecast_hour.get('weatherCondition', {}).get('description', {}).get('text', 'N/A'),

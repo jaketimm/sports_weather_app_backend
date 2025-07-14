@@ -3,7 +3,8 @@ Utility functions for handling units conversion and data formatting.
 """
 import logging
 import pytz
-from datetime import datetime, timedelta
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 logger = logging.getLogger(__name__)
 
@@ -52,24 +53,24 @@ def convert_est_to_utc(event_date_str: str, event_time_str: str):
         return None
 
 
-def convert_utc_to_est(utc_datetime):
-    """Convert UTC datetime back to EST for display."""
-    try:
-        # Create timezone objects
-        utc = pytz.UTC
-        est = pytz.timezone('US/Eastern')
-        
-        # Add UTC timezone and convert to EST
-        utc_datetime_tz = utc.localize(utc_datetime)
-        est_datetime = utc_datetime_tz.astimezone(est)
-        
-        # Return as naive datetime
-        return est_datetime.replace(tzinfo=None)
-        
-    except Exception as e:
-        logger.error(f"Error converting UTC to EST: {e}")
-        return utc_datetime  # Return ori
+def convert_start_time_utc(est_time_str: str) -> str:
+    """
+    Convert a time string in 'YYYY-MM-DD HH:MM' format from Eastern Time (handling DST)
+    to UTC in ISO 8601 format.
+    """
+
+    # Parse the input string to a naive datetime object
+    local_time = datetime.strptime(est_time_str, '%Y-%m-%d %H:%M')
     
+    # Attach Eastern Time zone info (auto handles EST/EDT depending on date)
+    eastern_time = local_time.replace(tzinfo=ZoneInfo("America/New_York"))
+    
+    # Convert to UTC
+    utc_time = eastern_time.astimezone(ZoneInfo("UTC"))
+    
+    # Return as ISO 8601 string
+    return utc_time.isoformat()
+
 
 def parse_event_time(event_time_str: str):
     """Parse event time string into a standardized format."""
@@ -82,9 +83,8 @@ def parse_event_time(event_time_str: str):
     return event_time_str
 
 
-
 def parse_datetime(date_str, time_str):
-    """Turn event date and time e.g. 2PM into single datatime value"""
+    """Turn event date and time e.g. 2PM into single datetime value"""
     dt_str = f"{date_str} {time_str}"
     formats = ["%Y-%m-%d %I %p", "%Y-%m-%d %I:%M %p"]
     for fmt in formats:
