@@ -120,7 +120,7 @@ def get_events_with_weather(schedule_file=None, use_cached=True, series_list=Non
         logger.info("Forecast data successfully downloaded and processed")
 
         # Sort events by date and time for consistent display
-        filtered_events.sort(key=lambda e: e['datetime'])
+        filtered_events.sort(key=lambda e: e['start_time_UTC'])
 
         # Clean up text case, convert wind dir. to N,E,S,W
         filtered_events = normalize_text_case(filtered_events)
