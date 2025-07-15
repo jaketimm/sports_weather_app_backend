@@ -110,7 +110,7 @@ def get_location_forecast(location: str):
 
     # Check if we already have forecast data for this location (avoid redundant 10-day weather downloads)
     if location in forecast_cache:
-        logger.info(f"Using cached forecast for {location}, data already downloaded")
+        logger.info(f"Using cached forecast for event at {location}, weather data already downloaded")
         return forecast_cache[location]
 
     try:
@@ -322,7 +322,7 @@ def save_10_day_location_forecast(forecast_data, location, json_file=TRACKS_FILE
         with open(ALL_LOCATIONS_FORECAST_FILE, 'w') as f:
             json.dump(all_locations_data, f, indent=2)
         
-        logger.info(f"Processed and saved forecast data for {location} to {ALL_LOCATIONS_FORECAST_FILE}")
+        logger.info(f"Saved forecast data for {location} to all 10 day forecasts file")
         
     except Exception as e:
         logger.error(f"Error processing and saving forecast data for {location}: {e}")

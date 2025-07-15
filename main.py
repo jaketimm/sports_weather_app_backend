@@ -19,7 +19,7 @@ try:
     events = get_events_with_weather(use_cached=False)
 
     if events:
-        logger.info(f"Retrieved {len(events)} events for the current weekend")
+        logger.info(f"Processed {len(events)} events for the current weekend")
     else:
         logger.warning("No events found for the current weekend")
 
