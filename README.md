@@ -2,7 +2,7 @@
 
 This project is a Python codebase that contains 3 data APIs.
 
-## 1) Racing Weather API:
+## Racing Weather API:
 
 - Uses the Google Weather API to fetch and process weather data for motorsports events.
 - Creates a 5 hour event forecast for all events in a rolling 7 day window
@@ -10,12 +10,3 @@ This project is a Python codebase that contains 3 data APIs.
 - Updates data every hour
 
 - Schedule data is compiled manually and stored in racing_weather_api/data/series_schedules (All start times are in EST). Start times are converted to UTC when retrieving event weather data.
-
-## 2) Wilson Ave River Data API
-
-- Downloads 6 hours of river data from the USGS and appends it to var/www/html/data/river_data_m-11.csv
-- Updates data every 6 hours
-
-## 3) NOAA Buoy Data API
-
-- under construction
