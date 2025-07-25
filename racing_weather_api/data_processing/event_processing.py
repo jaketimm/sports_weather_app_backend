@@ -122,8 +122,8 @@ def get_events_with_weather(schedule_file=None, use_cached=True, series_list=Non
         filtered_events.sort(key=lambda e: e['start_time_UTC'])
 
         # Clean up text case, convert wind dir. to N,E,S,W
-        current_week_events = normalize_text_case(filtered_events)
-        current_week_events = normalize_wind_directions(filtered_events)
+        filtered_events = normalize_text_case(filtered_events)
+        filtered_events = normalize_wind_directions(filtered_events)
 
         # Save the events with weather to JSON file 
         weekend_events = {monday_str: filtered_events}
