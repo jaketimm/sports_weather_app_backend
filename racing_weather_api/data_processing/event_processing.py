@@ -87,8 +87,11 @@ def get_events_with_weather(schedule_file=None, use_cached=True, series_list=Non
         # Filter events for the current week (Monday to Sunday)
         current_week_events = get_next_7_days_events(schedule_data)
 
+        # Remove events that have already happened
+        filtered_events = exclude_past_events(current_week_events)
+
         # Loop through each event add matched track details and create new datetime key
-        for event in current_week_events:
+        for event in filtered_events:
             
             # create datetime 
             combined_dt = parse_datetime(event.get('date', ''), event.get('time', ''))
@@ -110,23 +113,23 @@ def get_events_with_weather(schedule_file=None, use_cached=True, series_list=Non
                 logger.warning(f"No match found for event location: {event['location']}")
 
         # Get weather data for filtered events
-        for event in current_week_events:
+        for event in filtered_events:
             weather_data = get_weather_for_event(event)
             event['weather'] = weather_data
             logger.info(f"Processed weather data for event at {event['location']}")
 
         # Sort events by date and time for consistent display
-        current_week_events.sort(key=lambda e: e['start_time_UTC'])
+        filtered_events.sort(key=lambda e: e['start_time_UTC'])
 
         # Clean up text case, convert wind dir. to N,E,S,W
-        current_week_events = normalize_text_case(current_week_events)
-        current_week_events = normalize_wind_directions(current_week_events)
+        current_week_events = normalize_text_case(filtered_events)
+        current_week_events = normalize_wind_directions(filtered_events)
 
         # Save the events with weather to JSON file 
-        weekend_events = {monday_str: current_week_events}
+        weekend_events = {monday_str: filtered_events}
         save_events_with_weather(weekend_events)
 
-        return current_week_events
+        return filtered_events
 
     except Exception as e:
         logger.error(f"Error processing weather data: {e}")
@@ -163,6 +166,43 @@ def get_next_7_days_events(schedule_data):
         return []
 
 
+def exclude_past_events(events):
+    """Filter events to only include future or current events."""
+    try:
+        current_time = datetime.now()
+        filtered_events = []
+
+        for event in events:
+            event_date_str = event.get('date', '')
+            event_time_str = event.get('time', '')
+
+            if event_date_str and event_time_str:
+                try:
+                    # Standardize the time format
+                    std_time_str = parse_event_time(event_time_str)
+
+                    # Parse the datetime
+                    event_date = datetime.strptime(event_date_str, '%Y-%m-%d')
+                    event_time = datetime.strptime(std_time_str, '%I:%M %p')
+                    event_datetime = event_date.replace(hour=event_time.hour, minute=event_time.minute)
+
+                    # Dont't exclude events until 2 hrs after start time
+                    if current_time <= event_datetime + timedelta(hours=2):
+                        filtered_events.append(event)
+                except ValueError as e:
+                    logger.error(f"Error parsing event time: {e}")
+                    # If parsing fails, include the event anyway
+                    filtered_events.append(event)
+            else:
+                # Include events without date/time
+                filtered_events.append(event)
+
+        return filtered_events
+
+    except Exception as e:
+        logger.error(f"Error filtering past events: {e}")
+        return []
+    
 def save_events_with_weather(events_with_weather, file_path=EVENTS_WITH_WEATHER_FILE):
     """Save events with weather data to a JSON file."""
     return save_json(events_with_weather, file_path)
